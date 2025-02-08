@@ -1,0 +1,39 @@
+<mat-drawer-container class="demo-root" fullscreen>
+  <mat-drawer #start>
+    <mat-toolbar>
+      @for (item of routes; track item) {
+      <a mat-list-item (click)="start.close()" routerLinkActive #routerLinkActiveInstance="routerLinkActive"
+        [attr.tabindex]="routerLinkActiveInstance.isActive ? 0 : -1" [routerLink]="[item.route]">
+        {{ item.name }}
+      </a>
+      }
+      <hr>
+    </mat-toolbar>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="start.open()">
+        <mat-icon class="mat-24">menu</mat-icon>
+      </button>
+      <div class="demo-toolbar">
+        <h1>ng-admin</h1>
+        <div>
+          <button mat-icon-button (click)="toggleFullscreen()" title="Toggle fullscreen">
+            <mat-icon class="mat-24">fullscreen</mat-icon>
+          </button>
+          <button mat-button (click)="toggleTheme()">
+            {{ (isDarkTheme$ | async) ? 'Light' : 'Dark' }} theme
+          </button>
+          <button mat-button (click)="root.dir = (root.dir == 'rtl' ? 'ltr' : 'rtl')"
+            title="Toggle between RTL and LTR">
+            {{ root.dir.toUpperCase() }}
+          </button>
+        </div>
+      </div>
+    </mat-toolbar>
+
+    <div #root="dir" dir="ltr" class="demo-content">
+      <router-outlet />
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

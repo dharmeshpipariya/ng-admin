@@ -1,0 +1,7286 @@
+// @charset "utf-8";
+// // Fabrx Font Family Variables
+// $roboto-font-family: 'Roboto', sans-serif;
+
+// // Fabrx Color Variables
+// $dark: #343a40;
+// $primary: #006eff;
+// $secondary: #6c757d;
+// $danger: #dc3545;
+// $success: #198754;
+// $warning: #ffc107;
+// $warning-light: #fcd287;
+// $warning-light-hover: #f8bf59;
+// $btn-warning: #ff7200;
+// $dark-light: #212121;
+// $dark-100: #121212;
+// $dark-600: #4c4c4c;
+// $dark-800: #3c3b3b;
+// $purple: #6f42c1;
+// $purple-600: #5d37a2;
+// $purple-light: #6742b7;
+// $blue-dark: #091119;
+// $info: #0dcaf0;
+// $light: #f8f9fa;
+// $gray-light: #606170;
+// $success-light: #4ee0bc;
+// $secondary-600: #605f5f;
+// $secondary-100: #fafafb;
+// $secondary-200: #f5f5f5;
+// $secondary-300: #eaeaea;
+// $secondary-400: #c4c4c4;
+// $secondary-900: #303133;
+// $danger-100: #ffcccc;
+// $danger-200: #f89595;
+// $danger-300: #f67878;
+// $danger-500: #c54e4e;
+// $danger-600: #9c3e3e;
+// $success-100: #c6ffdf;
+// $success-200: #9cffc8;
+// $success-300: #5fdd97;
+// $success-400: #41e187;
+// $success-500: #27b264;
+// $success-600: #1f9050;
+// $warning-100: #ffd5b3;
+// $warning-200: #febb83;
+// $warning-300: #ffa65e;
+// $warning-500: #dc7d30;
+// $warning-600: #b86927;
+// $shade-100: #f6faff;
+// $shade-200: #ebf4ff;
+// $shade-300: #97c3ff;
+// $shade-400: #59a0ff;
+// $shade-600: #085ed0;
+// $brand-1: #ecf1f8;
+// $brand-2: #203956;
+// $brand-5: #232e7b;
+// $brand-6: #ff3636;
+// $brand-7: #fed385;
+// $brand-8: #ffe5cd;
+// $brand-9: #fb5858;
+// $brand-11: #3c468b;
+// $dark-link: #333333;
+// $btn-light: #e1e1e1;
+// $btn-thin-light: #f3f3f3;
+// $tooltip-bg: #363a40;
+// $muted: #5d6f88;
+// $primary-light: #4b99ff;
+// $primary-light2: #80b7ff;
+// $danger-light: #ff9d9d;
+// $danger-light2: #ff8a8a;
+// $danger-light3: #ee656f;
+// $success-light2: #5bc188;
+// $success-light3: #6beaa3;
+// $warning-light2: #fdb881;
+// $warning-light3: #ffb87f;
+// $warning-light4: #ffb36b;
+// $secondary-dark2: #757575;
+// $tints: #38e0c5;
+// $pink-light: #bc5980;
+// $secondary-light: #ebecec;
+// $secondary-light-300: #e6e6e6;
+// $secondary-dark-500: #9a9c9f;
+// $primary-light-300: #add0ff;
+// $dark-light-border: #5a5a5a;
+// $green-light-border: #74eacf;
+// $secondary-light-100: #f0f0f1;
+// $secondary-light-200: #e9e9e9;
+// $secondary-light-600: #888888;
+// $secondary-light-400: #dddcdc;
+// $danger-light-500: #ff6565;
+// $primary-dark-500: #445161;
+// $dark-700: #404040;
+// $blue-dark-700: #082054;
+// $blue-dark-800: #1c2d50;
+// $blue-700: #094bac;
+// $indigo-400: #7e36f4;
+// $gray-light-100: #f9f9f9;
+// $gray-light-300: #cccccc;
+// $gray-light-200: #dededf;
+// $gray-light-400: #eeeeef;
+// $gray-light-500: #d8d8d8;
+// $gray-dark-600: #444444;
+// $info-light: #38dfc5;
+// $black-800: #131415;
+// $white: #ffffff;
+// $black: #000000;
+// $transparent: transparent;
+// $info-dark: #2f6f9f;
+// $info-dark-200: #4f9fcf;
+// $danger-light-100: #d44950;
+// $dark-blue-100: #f0f0f3;
+// $info-800: #17a2b8;
+// $black-900: #0a0a0a;
+// $dark-600: #959ea9;
+// $info-400: #4bbde1;
+// $purple-light: #6871b6;
+
+// // Fabrx Font Weight Variables
+// $font-weight-medium: 500;
+// $font-weight-100: 100;
+
+// @import '../../../node_modules/bootstrap/scss/bootstrap1';
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+// /*
+// 	1. Fabrx Normal CSS
+// 	2. Fabrx Components CSS
+// 		 2. 1. Fabrx Colors CSS
+// 				2. 1. 1. Fabrx Selection Color CSS
+// 				2. 1. 2. Fabrx Default Colors CSS
+// 				2. 1. 3. Fabrx Default Hover Colors CSS
+// 				2. 1. 4. Fabrx Default Backgrounds CSS
+// 				2. 1. 5. Fabrx Default Borders CSS
+// 				2. 1. 6. Fabrx Default SVG Fill Colors CSS
+// 				2. 1. 7. Fabrx Outline Shades CSS
+// 				2. 1. 8. Fabrx Background Shades CSS
+// 				2. 1. 9. Fabrx Background Transparency CSS
+//         2. 1. 10. Fabrx Border Transparency CSS
+//         2. 1. 11. Fabrx Gradient Background CSS
+//         2. 1. 12. Fabrx Gradient Background Transparency CSS
+//         2. 1. 13. Fabrx Brand Background CSS
+//         2. 1. 14. Fabrx Brand Gradient CSS
+// 		 2. 2. Fabrx Font Family CSS
+// 		 2. 3. Fabrx Font Weights CSS
+// 		 2. 4. Fabrx Font Sizes CSS
+// 		 2. 5. Fabrx After CSS
+// 		 2. 6. Fabrx Shapes CSS
+// 		 2. 7. Fabrx Box Shadow CSS
+// 		 2. 8. Fabrx Gradient With Caption CSS
+// 		 2. 9. Fabrx Overlay Image CSS
+// 		 2. 10. Fabrx Alert CSS
+// 		 2. 11. Fabrx Avatar CSS
+// 		 2. 12. Fabrx Bages Circle CSS
+// 		 2. 13. Fabrx Breadcrumbs CSS
+// 		 2. 14. Fabrx Buttons CSS
+// 		 2. 15. Fabrx Cards CSS
+// 		 2. 16. Fabrx Forms CSS
+// 				 2. 16. 1. Fabrx Custom Control CSS
+// 				 2. 16. 2. Fabrx Custom Colored Controls CSS
+// 				 2. 16. 3. Fabrx Custom Control White CSS
+// 				 2. 16. 4. Fabrx Custom Switch CSS
+// 				 2. 16. 5. Fabrx Inputs CSS
+// 				 2. 16. 6. Fabrx Select CSS
+// 		 2. 17. Fabrx Circle Progressbar CSS
+// 		 2. 18. Fabrx Progress Bar CSS
+// 		 2. 19. Fabrx Testimonials CSS
+// 		 2. 20. Fabrx Chips CSS
+// 		 2. 21. Fabrx Comments CSS
+// 		 2. 22. Fabrx Media CSS
+// 		 2. 23. Fabrx Media Links CSS
+// 		 2. 24. Fabrx Datepicker CSS
+// 		 2. 25. Fabrx Dropdown CSS
+// 		 2. 26. Fabrx Malihu Custom Scrollbar CSS
+// 		 2. 27. Fabrx Uploader CSS
+// 		 2. 28. Fabrx Page Controls CSS
+// 		 2. 29. Fabrx Nav Tabs CSS
+// 				29. 1. Fabrx Nav Tabs Default CSS
+// 				29. 2. Fabrx Nav Tabs Large CSS
+// 				29. 3. Fabrx Nav Tabs Small CSS
+// 				29. 4. Fabrx Nav Tabs Rounded CSS
+// 				29. 5. Fabrx Nav Tabs line CSS
+// 				29. 6. Fabrx Nav Tabs medium CSS
+// 				29. 7. Fabrx Nav Tabs No Background CSS
+// 				29. 8. Fabrx Nav Tabs Stack CSS
+// 				29. 9. Fabrx Nav Tabs Flex Column CSS
+//         29. 10. Fabrx Nav Tabs Children CSS
+// 				29. 11. Fabrx Light Tabs CSS
+// 		 2. 30. Fabrx Pagination CSS
+// 				30. 1. Fabrx Default Pagination CSS
+// 				30. 2. Fabrx Custom Pagination CSS
+// 		 2. 31. Fabrx Checks CSS
+// 				31. 1. Fabrx Plan Price CSS
+// 				31. 2. Fabrx lines CSS
+// 		 2. 32. Fabrx Emoji CSS
+// 		 2. 33. Fabrx Range Slider CSS
+// 		 2. 34. Fabrx Spinners CSS
+// 				34. 1. Fabrx Spinners Fill CSS
+// 				34. 2. Fabrx Spinners Dotted CSS
+// 		 2. 35. Fabrx Table CSS
+// 				35. 1. Fabrx Table has No Border CSS
+// 				35. 2. Fabrx Table Large CSS
+// 		 2. 36. Fabrx Social CSS
+// 		 2. 37. Fabrx Status CSS
+// 		 2. 38. Fabrx Horizontal Line CSS
+// 		 2. 39. Fabrx Tooltip CSS
+// 		 2. 40. Fabrx Volting CSS
+// 		 2. 41. Fabrx Star Ratings CSS
+// 		 2. 42. Fabrx Like CSS
+//      2. 43. Fabrx Sections CSS
+//      2. 44. Fabrx Style Guide CSS
+// 		 2. 45. Fabrx Sticky CSS
+// 	3. Fabrx Element Pages CSS
+// 		 3. 1. Fabrx Typography Page CSS
+// 		 3. 2. Fabrx Shapes Page CSS
+// 		 3. 3. Fabrx Colors Page CSS
+// 		 3. 4. Fabrx Layout Settings Page CSS
+// 	4. Fabrx Layouts Pages CSS
+// 		 4. 1. Fabrx Aside CSS
+// 		 4. 2. Fabrx Aside Two CSS
+// 		 4. 3. Fabrx Aside Three CSS
+// 		 4. 4. Fabrx Aside Four CSS
+// 		 4. 5. Fabrx Aside Five CSS
+// 		 4. 7. Fabrx Header CSS
+// 		 4. 7. 1. Fabrx Header Four CSS
+// 		 4. 8. Fabrx Footer CSS
+// 		 4. 9. Fabrx Hero CSS
+// 		 4. 10. Fabrx Features CSS
+// 		 4. 10. 1. Fabrx Item Boxes CSS
+// 		 4. 10. 2. Fabrx Owl Carousel Slider CSS
+// 		 4. 10. 3. Fabrx Owl Has Counter Slider CSS
+// 		 4. 10. 4. Fabrx Owl disable dots Slider CSS
+// 		 4. 11. Fabrx Masonry CSS
+// 		 4. 12. Fabrx Testimonial CSS
+// 		 4. 13. Fabrx Logo Center CSS
+// 		 4. 14. Fabrx Accordion CSS
+// 	5. Fabrx Templates CSS
+// 		 5. 1. Fabrx Tech CSS
+// 		 5. 2. Fabrx Commerce CSS
+// 		 5. 3. Fabrx Service CSS
+// 		 5. 4. Fabrx Tool Full CSS
+// 		 5. 5. Fabrx Quantity CSS
+// 		 5. 6. Fabrx Package Delivery CSS
+// 		 5. 7. Fabrx Product CSS
+// 		 5. 8. Fabrx Background CSS
+// 		 5. 9. Fabrx spaces CSS
+// 		 5. 10. Fabrx Lesser CSS
+// 		 5. 11. Fabrx Dashboard CSS
+//      5. 12. Fabrx Tool CSS
+//      5. 13. Fabrx Has Btn Manage CSS
+//   6. Fabrx Tables Light CSS
+//   7. Fabrx Library CSS
+//   8. Fabrx Back to Top
+// */
+// /* 1. Fabrx Normal CSS */
+// body {
+//   background: $light;
+//   font-weight: $font-weight-normal;
+//   text-rendering: optimizeLegibility;
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-font-smoothing: antialiased;
+// }
+// * {
+//   outline: none;
+//   &:focus {
+//     outline: none;
+//   }
+// }
+// a {
+//   text-decoration: none;
+//   transition: all ease 0.4s;
+//   &:focus {
+//     outline: none;
+//     outline-offset: 0;
+//   }
+//   &:hover,
+//   &:focus {
+//     text-decoration: none;
+//   }
+// }
+// b,
+// strong,
+// .dropdown-menu span.strong {
+//   font-weight: $font-weight-bold;
+// }
+// img {
+//   max-width: 100%;
+//   transition: all ease 0.4s;
+//   user-select: none;
+// }
+// iframe {
+//   display: block;
+//   width: 100%;
+//   border: none;
+// }
+// video {
+//   display: block;
+//   width: auto;
+//   height: auto;
+//   min-width: 100%;
+//   min-height: 100%;
+//   background: $light;
+// }
+// audio,
+// canvas,
+// progress,
+// video {
+//   vertical-align: middle;
+// }
+// button {
+//   outline: none;
+//   outline-offset: 0;
+//   transition: all ease 0.4s;
+//   &:focus {
+//     outline: none;
+//     outline-offset: 0;
+//     transition: all ease 0.4s;
+//   }
+// }
+// label {
+//   cursor: pointer;
+//   &.disable {
+//     cursor: none;
+//     opacity: 0.3;
+//   }
+// }
+// .has-unalignment-cards [class*='col-'] .card {
+//   height: auto;
+// }
+// .vertical-none {
+//   vertical-align: unset;
+// }
+// .mw-auto {
+//   max-width: none;
+// }
+// .direction-rtl {
+//   direction: rtl;
+// }
+// /* 2. Fabrx Components CSS */
+// /* 2. 1. Fabrx Colors CSS */
+// /* 2. 1. 1. Fabrx Selection Color CSS  */
+// ::selection,
+// ::-webkit-selection,
+// ::-moz-selection,
+// ::-o-selection,
+// ::-ms-selection {
+//   background: $dark;
+//   color: $white;
+// }
+// select::-ms-expand {
+//   display: none;
+// }
+// /* 2. 1. 2. Fabrx Default Colors CSS */
+// body,
+// a,
+// .alert-light,
+// .list-group-item-action,
+// .fabrx-avatar.more .avatar-wrap,
+// .badge-light,
+// .breadcrumb-item + .breadcrumb-item:before,
+// .badge-outline-dark,
+// .btn-outline-dark,
+// .btn-light,
+// span.flatpickr-weekday,
+// .fileuploader-input .fileuploader-input-caption,
+// .fileuploader-items .fileuploader-item .column-title div {
+//   color: $dark;
+// }
+// .nav-tags-stack {
+//   .nav-link.active p,
+//   .nav-item.show .nav-link p {
+//     color: $dark;
+//   }
+// }
+// .pagination-default .page-link {
+//   color: $dark;
+// }
+// .menu-category li {
+//   a:hover,
+//   &.active a {
+//     color: $dark;
+//   }
+// }
+// .fabrx-aside-four .menu-category > li {
+//   > a:hover,
+//   &.active > a {
+//     color: $dark;
+//   }
+// }
+// .fabrx-header-links .avatar-user,
+// .fabrx-item-list li {
+//   color: $dark;
+// }
+// p,
+// .avatar-user,
+// .progress-title,
+// .nav-tabs.nav-tabs-children .nav-tabs .nav-link,
+// .fabrx-table td,
+// .fabrx-footer-contnet p {
+//   color: $muted;
+// }
+// .fabrx-media-links li a,
+// .fabrx-alert p {
+//   color: $secondary;
+// }
+// .flatpickr-day {
+//   &.disabled {
+//     color: $secondary;
+//     &:hover {
+//       color: $secondary;
+//     }
+//   }
+//   &.prevMonthDay,
+//   &.nextMonthDay {
+//     color: $secondary;
+//   }
+//   &.notAllowed {
+//     color: $secondary;
+//     &.prevMonthDay,
+//     &.nextMonthDay {
+//       color: $secondary;
+//     }
+//   }
+// }
+// .custom-control-input {
+//   &:disabled ~ .custom-control-label,
+//   &[disabled] ~ .custom-control-label {
+//     color: $secondary;
+//   }
+// }
+// .fileuploader-items .fileuploader-item {
+//   .fileuploader-action i,
+//   .column-title span {
+//     color: $secondary;
+//   }
+// }
+// .nav-tags-stack .nav-link p,
+// .fabrx-footer-menu li a {
+//   color: $secondary;
+// }
+// .text-dark {
+//   color: $dark !important;
+// }
+// .text-primary {
+//   color: $primary !important;
+// }
+// .text-secondary {
+//   color: $secondary !important;
+// }
+// .text-danger {
+//   color: $danger !important;
+// }
+// .text-success {
+//   color: $success !important;
+// }
+// .text-warning {
+//   color: $warning !important;
+// }
+// .text-muted {
+//   color: $muted !important;
+// }
+// /* 2. 1. 3. Fabrx Default Hover Colors CSS  */
+// a {
+//   &:hover,
+//   &:focus {
+//     color: $primary;
+//   }
+// }
+// .badge-outline-primary,
+// .btn-outline-primary,
+// .fabrx-outline-primary,
+// .btn-link {
+//   color: $primary;
+// }
+// .dark-icon {
+//   .btn {
+//     &.btn-link {
+//       &:hover {
+//         svg,
+//         svg * {
+//           fill: $dark !important;
+//         }
+//       }
+//     }
+//   }
+// }
+// .btn-outline-primary {
+//   &:hover {
+//     color: $white;
+//   }
+// }
+// .btn-outline-info {
+//   &:hover,
+//   &:focus {
+//     background-color: $cyan;
+//     border-color: $cyan;
+//     color: $white;
+//   }
+// }
+// .btn-danger {
+//   color: $white;
+//   &:hover,
+//   &:focus {
+//     color: $white;
+//   }
+// }
+// .breadcrumb-item.active {
+//   color: $primary;
+//   a {
+//     color: $primary;
+//     text-decoration: none;
+//     &:after {
+//       display: none;
+//     }
+//   }
+// }
+// .btn-group .btn-light,
+// .btn-group-vertical .btn-light,
+// .circle-counter,
+// .fabrx-media-links li a:hover,
+// .fileuploader-input .fileuploader-input-button {
+//   color: $primary;
+// }
+// .fileuploader-popup .fileuploader-popup-content .fileuploader-popup-button {
+//   color: $primary;
+//   &.button-success {
+//     color: $primary;
+//   }
+// }
+// .nav-tabs {
+//   &.nav-tabs-lie .nav-item.show .nav-link,
+//   &.nav-tabs-line .nav-link.active {
+//     color: $primary;
+//   }
+// }
+// .pagination .page-item.active .page-link,
+// .fabrx-lines svg {
+//   color: $primary;
+// }
+// .fabrx-aside-four {
+//   .menu-category > li > a,
+//   .fabrx-aside-footer a:hover {
+//     color: $primary;
+//   }
+// }
+// .fabrx-header-links .avatar-user:hover,
+// .fabrx-footer-menu li a:hover,
+// .fabrx-like.active,
+// .nav-tabs.nav-tabs-children .nav-tabs .nav-link:hover,
+// .alert-light .list-group-item:hover {
+//   color: $primary;
+// }
+// /* 2. 1. 4. Fabrx Default Backgrounds CSS  */
+// .bg-dark,
+// .badge-dark,
+// .fabrx-lft-dash:before,
+// .btn-dark {
+//   background-color: $dark;
+// }
+// .bg-dark-light,
+// .badge-dark-light,
+// .btn-dark-light {
+//   background-color: $dark-light;
+// }
+// .bg-dark-100,
+// .badge-dark-100,
+// .btn-dark-100 {
+//   background-color: $dark-100 !important;
+// }
+// .btn-primary {
+//   background-color: $primary;
+//   color: $white;
+//   &:hover,
+//   &:focus {
+//     color: $white;
+//   }
+//   &.disabled,
+//   &:disabled {
+//     background-color: $primary;
+//     border-color: $primary;
+//     color: $white;
+//   }
+// }
+// .btn-black {
+//   background-color: $blue-dark;
+//   color: $white;
+// }
+// .btn-black:hover {
+//   background-color: $secondary-900;
+//   color: $white;
+// }
+// .fabrx-avatar {
+//   &.more:hover .avatar-wrap,
+//   .avatar-wrap {
+//     background-color: $primary;
+//   }
+// }
+// .breadcrumb-item {
+//   a:after,
+//   &.active span:after {
+//     background-color: $primary;
+//   }
+// }
+// .dropdown-item {
+//   &.active,
+//   &:active {
+//     background-color: $primary;
+//   }
+// }
+// .custom-control-input:checked ~ .custom-control-label:before {
+//   background-color: $primary;
+// }
+// .daterangepicker td.active {
+//   background-color: $primary;
+//   &:hover {
+//     background-color: $primary;
+//   }
+// }
+// .flatpickr-day {
+//   &.startRange {
+//     &:before,
+//     &:hover:before,
+//     &:focus:before {
+//       background-color: $primary;
+//     }
+//   }
+//   &.endRange:before,
+//   &.selected.inRange,
+//   &.startRange.inRange,
+//   &.endRange.inRange {
+//     background-color: $primary;
+//   }
+//   &.selected {
+//     &.startRange:focus:before,
+//     &.endRange:focus:before {
+//       background-color: $primary;
+//     }
+//   }
+//   &.startRange:focus:before,
+//   &.endRange:focus:before,
+//   &.startRange:hover:before,
+//   &.endRange:hover:before,
+//   &.selected.prevMonthDay:before,
+//   &.startRange.prevMonthDay:before,
+//   &.endRange.prevMonthDay:before,
+//   &.selected.nextMonthDay:before,
+//   &.startRange.nextMonthDay:before,
+//   &.endRange.nextMonthDay:before {
+//     background-color: $primary;
+//   }
+// }
+// .custom-switch .custom-control-label:after,
+// .fabrx-page-controls .page-control.active {
+//   background-color: $primary;
+// }
+// .nav-tabs {
+//   .nav-item.show .nav-link,
+//   .nav-link.active {
+//     background-color: $primary;
+//   }
+// }
+// .pagination .page-item.active .page-link {
+//   background-color: $primary;
+// }
+// .addui-slider .addui-slider-track {
+//   .addui-slider-range,
+//   .addui-slider-handle:after {
+//     background-color: $primary;
+//   }
+// }
+// .slider-handle {
+//   background-color: $primary;
+//   background-image: unset;
+//   width: 16px;
+//   height: 16px;
+// }
+// .slider {
+//   &.slider-horizontal {
+//     width: 100%;
+//     height: 16px;
+//     .slider-track {
+//       height: 4px;
+//       background-image: unset;
+//       background-color: $secondary-light;
+//       box-shadow: none;
+//       margin-top: -2px;
+//       .slider-selection {
+//         background-color: $primary;
+//         background-image: unset;
+//       }
+//     }
+//   }
+// }
+// .flatpickr-current-month span.cur-month:hover,
+// .numInputWrapper:hover {
+//   background-color: transparent !important;
+// }
+// .fabrx-pipe {
+//   background-color: $primary;
+// }
+// .flatpickr-day {
+//   &.selected {
+//     &:before,
+//     &:focus:before,
+//     &:hover:before {
+//       background-color: $primary;
+//     }
+//   }
+//   &.today.selected {
+//     &:before,
+//     &:hover:before,
+//     &:focus:before {
+//       background-color: $primary;
+//     }
+//   }
+//   &.endRange.nextMonthDay.inRange.selected {
+//     &:before,
+//     &:hover:before,
+//     &:focus:before {
+//       background-color: $primary;
+//     }
+//   }
+//   &.prevMonthDay.endRange {
+//     &:hover:before,
+//     &:focus:before {
+//       background-color: $primary;
+//     }
+//   }
+//   &.nextMonthDay.endRange {
+//     &:hover:before,
+//     &:focus:before {
+//       background-color: $primary;
+//     }
+//   }
+//   &.prevMonthDay.startRange {
+//     &:hover:before,
+//     &:focus:before {
+//       background-color: $primary;
+//     }
+//   }
+//   &.nextMonthDay {
+//     &.startRange {
+//       &:hover:before,
+//       &:focus:before,
+//       &:before {
+//         background-color: $primary;
+//       }
+//     }
+//     &.selected.startRange.inRange:before {
+//       background-color: $primary;
+//     }
+//   }
+//   &.selected.startRange + .flatpickr-day.endRange:before {
+//     background-color: $primary;
+//   }
+// }
+// .fabrx-volting a:hover,
+// .fabrx-noti-dot:after {
+//   background-color: $primary;
+// }
+// .bg-primary,
+// .badge-primary,
+// .control-has-primary .custom-control-label:before {
+//   background-color: $primary !important;
+// }
+// .bg-info-dark,
+// .badge-info-dark,
+// .control-has-info-dark .custom-control-label:before {
+//   background-color: $info !important;
+// }
+// .bg-secondary,
+// .badge-secondary,
+// .control-has-secondary .custom-control-label:before,
+// .has-vertical-line:after,
+// .delivery-steps li .steps-common:after {
+//   background-color: $secondary !important;
+// }
+// .bg-danger,
+// .badge-danger,
+// .control-has-danger .custom-control-label:before,
+// .fabrx-status.dnd:after,
+// .fabrx-noti-dot.dnd:after {
+//   background-color: $danger !important;
+// }
+// .bg-success,
+// .badge-success,
+// .control-has-success .custom-control-label:before,
+// .fabrx-status.online:after {
+//   background-color: $success !important;
+// }
+// .bg-success-light,
+// .badge-success-light,
+// .control-has-success-light .custom-control-label:before,
+// .btn-success-light {
+//   background-color: $success-light !important;
+// }
+// .bg-warning,
+// .badge-warning,
+// .control-has-warning .custom-control-label:before,
+// .fabrx-status.away:after {
+//   background-color: $warning !important;
+// }
+// .bg-light,
+// .badge-light,
+// .control-has-light .custom-control-label:before {
+//   background-color: $light !important;
+// }
+// .bg-indigo {
+//   background-color: $indigo !important;
+// }
+// .bg-purple {
+//   background-color: $purple;
+// }
+// .bg-purple-light {
+//   background-color: $purple-light;
+// }
+// .bg-black-100 {
+//   background-color: $dark-100;
+// }
+// .blue-dark {
+//   background-color: $blue-dark;
+// }
+// .dark-blue-100 {
+//   background-color: $dark-blue-100;
+// }
+// .bg-info-400 {
+//   background-color: $info-400;
+// }
+// /* 2. 1. 5. Fabrx Default Borders CSS  */
+// .badge-outline-dark,
+// .btn-outline-dark,
+// .fabrx-outline-dark,
+// .btn-dark {
+//   border-color: $dark;
+// }
+// .badge-outline-primary,
+// .btn-outline-primary,
+// .fabrx-outline-primary,
+// .btn-primary,
+// .custom-control-input:checked ~ .custom-control-label:before {
+//   border-color: $primary;
+// }
+// .flatpickr-day {
+//   &.startRange,
+//   &.selected.inRange,
+//   &.startRange.inRange,
+//   &.endRange.inRange,
+//   &.startRange:focus,
+//   &.endRange:focus,
+//   &.startRange:hover,
+//   &.endRange:hover {
+//     border-color: $primary;
+//   }
+// }
+// .form-control:focus,
+// .fabrx-checks li:before,
+// .spinner-fill:before {
+//   border-color: $primary;
+// }
+// .menu-category li {
+//   a:hover,
+//   &.active > a {
+//     border-color: $primary;
+//   }
+//   a.mPS2id-clicked {
+//     border-color: $primary;
+//   }
+// }
+// .fabrx-aside-two .menu-category > li {
+//   > a:hover,
+//   &.active > a {
+//     border-color: $primary;
+//   }
+// }
+// .fileuploader-items .fileuploader-item .fileuploader-action i {
+//   border-color: $secondary;
+// }
+// /* 2. 1. 6. Fabrx Default SVG Fill Colors CSS  */
+// .badge-light svg {
+//   fill: $dark;
+//   * {
+//     fill: $dark;
+//   }
+// }
+// .btn {
+//   &.btn-light svg,
+//   &.btn-outline-light svg,
+//   &.btn-outline-dark svg {
+//     fill: $dark;
+//     * {
+//       fill: $dark;
+//     }
+//   }
+// }
+// .pagination-default .page-link svg,
+// .fabrx-like svg,
+// .fabrx-header-links a svg,
+// .card-header .btn svg,
+// .fabrx-table-header .fabrx-header-links a:hover svg {
+//   fill: $dark;
+//   * {
+//     fill: $dark;
+//   }
+// }
+// .btn {
+//   &.btn-outline-primary {
+//     svg,
+//     * {
+//       fill: $primary;
+//     }
+//   }
+//   &.btn-link {
+//     svg,
+//     * {
+//       fill: $primary;
+//     }
+//     &:hover {
+//       svg,
+//       svg * {
+//         fill: $blue-700 !important;
+//       }
+//     }
+//   }
+// }
+// .fabrx-outline-primary svg {
+//   fill: $primary;
+//   * {
+//     fill: $primary;
+//   }
+// }
+// .flatpickr-months {
+//   .flatpickr-prev-month:hover svg,
+//   .flatpickr-next-month:hover svg {
+//     fill: $primary;
+//   }
+// }
+// .nav-tags-stack .active .fabrx-icon svg,
+// .page-link svg,
+// .fabrx-lines svg,
+// .fabrx-media-links li a:hover svg {
+//   fill: $primary;
+//   * {
+//     fill: $primary;
+//   }
+// }
+// .fabrx-like {
+//   &:hover svg,
+//   &.active svg {
+//     fill: $primary;
+//     * {
+//       fill: $primary;
+//     }
+//   }
+// }
+// .fabrx-header-links a:hover svg,
+// .navbar-toggler:hover svg,
+// .fabrx-table-header .fabrx-header-links a svg,
+// [class*='btn-outline-']:not(.btn-outline-light):focus svg {
+//   fill: $primary;
+//   * {
+//     fill: $primary;
+//   }
+// }
+// /* 2. 1. 7. Fabrx Outline Shades CSS  */
+// .border-100 {
+//   border-color: $shade-100 !important;
+// }
+// .border-200 {
+//   border-color: $shade-200 !important;
+// }
+// .border-300 {
+//   border-color: $shade-300 !important;
+// }
+// .border-400 {
+//   border-color: $shade-400 !important;
+// }
+// .border-500 {
+//   border-color: $primary !important;
+// }
+// .border-600 {
+//   border-color: $shade-600 !important;
+// }
+// .border-700 {
+//   border-color: $blue-700 !important;
+// }
+// .border-secondary-100 {
+//   border-color: $secondary-100 !important;
+// }
+// .border-secondary-200 {
+//   border-color: $secondary-200 !important;
+// }
+// .border-secondary-300 {
+//   border-color: $secondary-300 !important;
+// }
+// .border-secondary-400 {
+//   border-color: $secondary-400 !important;
+// }
+// .border-secondary-500 {
+//   border-color: $secondary !important;
+// }
+// .border-secondary-600 {
+//   border-color: $secondary-600 !important;
+// }
+// .border-secondary-700 {
+//   border-color: $dark !important;
+// }
+// .border-secondary-800 {
+//   border-color: $dark-light !important;
+// }
+// .border-secondary-900 {
+//   border-color: $secondary-900 !important;
+// }
+// .border-danger-100,
+// .border-danger-200 {
+//   border-color: $danger-200 !important;
+// }
+// .border-danger-300 {
+//   border-color: $danger-300 !important;
+// }
+// .border-danger-400 {
+//   border-color: $danger !important;
+// }
+// .border-danger-500 {
+//   border-color: $danger-500 !important;
+// }
+// .border-danger-600 {
+//   border-color: $danger-600 !important;
+// }
+// .border-success-100 {
+//   border-color: $success-100 !important;
+// }
+// .border-success-200 {
+//   border-color: $success-200 !important;
+// }
+// .border-success-300 {
+//   border-color: $success-300 !important;
+// }
+// .border-success-400 {
+//   border-color: $success-400 !important;
+// }
+// .border-success-500 {
+//   border-color: $success-500 !important;
+// }
+// .border-success-600 {
+//   border-color: $success-600 !important;
+// }
+// .border-warning-100 {
+//   border-color: $warning-100 !important;
+// }
+// .border-warning-200 {
+//   border-color: $warning-200 !important;
+// }
+// .border-warning-300 {
+//   border-color: $warning-300 !important;
+// }
+// .border-warning-400 {
+//   border-color: $warning !important;
+// }
+// .border-warning-500 {
+//   border-color: $warning-500 !important;
+// }
+// .border-warning-600 {
+//   border-color: $warning-600 !important;
+// }
+// /* 2. 1. 8. Fabrx Background Shades CSS  */
+// .bg-shade-100 {
+//   background-color: $shade-100 !important;
+// }
+// .bg-shade-200 {
+//   background-color: $shade-200 !important;
+// }
+// .bg-shade-300 {
+//   background-color: $shade-300 !important;
+// }
+// .bg-shade-400 {
+//   background-color: $shade-400 !important;
+// }
+// .bg-shade-500 {
+//   background-color: $primary !important;
+// }
+// .bg-shade-600 {
+//   background-color: $shade-600 !important;
+// }
+// .bg-shade-700 {
+//   background-color: $blue-700 !important;
+// }
+// .bg-secondary-shade-100 {
+//   background-color: $secondary-100 !important;
+// }
+// .bg-secondary-shade-200 {
+//   background-color: $secondary-200 !important;
+// }
+// .bg-secondary-shade-300 {
+//   background-color: $secondary-300 !important;
+// }
+// .bg-secondary-shade-400 {
+//   background-color: $secondary-400 !important;
+// }
+// .bg-secondary-shade-500 {
+//   background-color: $secondary !important;
+// }
+// .bg-secondary-shade-600 {
+//   background-color: $secondary-600 !important;
+// }
+// .bg-secondary-shade-700 {
+//   background-color: $dark !important;
+// }
+// .bg-secondary-shade-800 {
+//   background-color: $dark-light !important;
+// }
+// .bg-secondary-shade-900 {
+//   background-color: $dark-100 !important;
+// }
+// .bg-danger-shade-100 {
+//   background-color: $danger-100 !important;
+// }
+// .bg-danger-shade-200 {
+//   background-color: $danger-200 !important;
+// }
+// .bg-danger-shade-300 {
+//   background-color: $danger-300 !important;
+// }
+// .bg-danger-shade-400 {
+//   background-color: $danger !important;
+// }
+// .bg-danger-shade-500 {
+//   background-color: $danger-500 !important;
+// }
+// .bg-danger-shade-600 {
+//   background-color: $danger-600 !important;
+// }
+// .bg-success-shade-100 {
+//   background-color: $success-100 !important;
+// }
+// .bg-success-shade-200 {
+//   background-color: $success-200 !important;
+// }
+// .bg-success-shade-300 {
+//   background-color: $success-300 !important;
+// }
+// .bg-success-shade-400 {
+//   background-color: $success !important;
+// }
+// .bg-success-shade-500 {
+//   background-color: $success-500 !important;
+// }
+// .bg-success-shade-600 {
+//   background-color: $success-600 !important;
+// }
+// .bg-warning-shade-100 {
+//   background-color: $warning-100 !important;
+// }
+// .bg-warning-shade-200 {
+//   background-color: $warning-200 !important;
+// }
+// .bg-warning-shade-300 {
+//   background-color: $warning-300 !important;
+// }
+// .bg-warning-shade-400 {
+//   background-color: $warning !important;
+// }
+// .bg-warning-shade-500 {
+//   background-color: $warning-500 !important;
+// }
+// .bg-warning-shade-600 {
+//   background-color: $warning-600 !important;
+// }
+// .bg-white {
+//   background-color: $white !important;
+// }
+// /* 2. 1. 9. Fabrx Background Transparency CSS  */
+// .bg-trans-8 {
+//   background-color: rgba($primary, 0.08) !important;
+// }
+// .bg-trans-16 {
+//   background-color: rgba($primary, 0.16) !important;
+// }
+// .bg-trans-24 {
+//   background-color: rgba($primary, 0.24) !important;
+// }
+// .bg-trans-32 {
+//   background-color: rgba($primary, 0.32) !important;
+// }
+// .bg-trans-48 {
+//   background-color: rgba($primary, 0.48) !important;
+// }
+// .bg-trans-64 {
+//   background-color: rgba($primary, 0.64) !important;
+// }
+// .bg-trans-80 {
+//   background-color: rgba($primary, 0.8) !important;
+// }
+// .bg-trans-90 {
+//   background-color: rgba($primary, 0.9) !important;
+// }
+// .bg-secondary-trans-8 {
+//   background-color: rgba($dark-100, 0.08) !important;
+// }
+// .bg-secondary-trans-16 {
+//   background-color: rgba($dark-100, 0.16) !important;
+// }
+// .bg-secondary-trans-24 {
+//   background-color: rgba($dark-100, 0.24) !important;
+// }
+// .bg-secondary-trans-32 {
+//   background-color: rgba($dark-100, 0.32) !important;
+// }
+// .bg-secondary-trans-48 {
+//   background-color: rgba($dark-100, 0.48) !important;
+// }
+// .bg-secondary-trans-64 {
+//   background-color: rgba($dark-100, 0.64) !important;
+// }
+// .bg-secondary-trans-80 {
+//   background-color: rgba($dark-100, 0.8) !important;
+// }
+// .bg-secondary-trans-90 {
+//   background-color: rgba($dark-100, 0.9) !important;
+// }
+// .bg-danger-trans-8 {
+//   background-color: rgba($danger, 0.08) !important;
+// }
+// .bg-danger-trans-16 {
+//   background-color: rgba($danger, 0.16) !important;
+// }
+// .bg-danger-trans-24 {
+//   background-color: rgba($danger, 0.24) !important;
+// }
+// .bg-danger-trans-32 {
+//   background-color: rgba($danger, 0.32) !important;
+// }
+// .bg-danger-trans-48 {
+//   background-color: rgba($danger, 0.48) !important;
+// }
+// .bg-danger-trans-64 {
+//   background-color: rgba($danger, 0.64) !important;
+// }
+// .bg-danger-trans-80 {
+//   background-color: rgba($danger, 0.8) !important;
+// }
+// .bg-danger-trans-90 {
+//   background-color: rgba($danger, 0.9) !important;
+// }
+// .bg-success-trans-8 {
+//   background-color: rgba($success, 0.08) !important;
+// }
+// .bg-success-trans-16 {
+//   background-color: rgba($success, 0.16) !important;
+// }
+// .bg-success-trans-24 {
+//   background-color: rgba($success, 0.24) !important;
+// }
+// .bg-success-trans-32 {
+//   background-color: rgba($success, 0.32) !important;
+// }
+// .bg-success-trans-48 {
+//   background-color: rgba($success, 0.48) !important;
+// }
+// .bg-success-trans-64 {
+//   background-color: rgba($success, 0.64) !important;
+// }
+// .bg-success-trans-80 {
+//   background-color: rgba($success, 0.8) !important;
+// }
+// .bg-success-trans-90 {
+//   background-color: rgba($success, 0.9) !important;
+// }
+// .bg-warning-trans-8 {
+//   background-color: rgba($warning, 0.08) !important;
+// }
+// .bg-warning-trans-16 {
+//   background-color: rgba($warning, 0.16) !important;
+// }
+// .bg-warning-trans-24 {
+//   background-color: rgba($warning, 0.24) !important;
+// }
+// .bg-warning-trans-32 {
+//   background-color: rgba($warning, 0.32) !important;
+// }
+// .bg-warning-trans-48 {
+//   background-color: rgba($warning, 0.48) !important;
+// }
+// .bg-warning-trans-64 {
+//   background-color: rgba($warning, 0.64) !important;
+// }
+// .bg-warning-trans-80 {
+//   background-color: rgba($warning, 0.8) !important;
+// }
+// .bg-warning-trans-90 {
+//   background-color: rgba($warning, 0.9) !important;
+// }
+// .bg-white-trans-8 {
+//   background-color: rgba($white, 0.08) !important;
+// }
+// .bg-white-trans-16 {
+//   background-color: rgba($white, 0.16) !important;
+// }
+// .bg-white-trans-24 {
+//   background-color: rgba($white, 0.24) !important;
+// }
+// .bg-white-trans-32 {
+//   background-color: rgba($white, 0.32) !important;
+// }
+// .bg-white-trans-48 {
+//   background-color: rgba($white, 0.48) !important;
+// }
+// .bg-white-trans-64 {
+//   background-color: rgba($white, 0.64) !important;
+// }
+// .bg-white-trans-80 {
+//   background-color: rgba($white, 0.8) !important;
+// }
+// .bg-white-trans-90 {
+//   background-color: rgba($white, 0.9) !important;
+// }
+// .bg-dark-trans-8 {
+//   background-color: rgba($black, 0.08) !important;
+// }
+// /* 2. 1. 10. Fabrx Border Transparency CSS  */
+// .border-trans-8 {
+//   border-color: rgba($primary, 0.08) !important;
+// }
+// .border-trans-16 {
+//   border-color: rgba($primary, 0.16) !important;
+// }
+// .border-trans-24 {
+//   border-color: rgba($primary, 0.24) !important;
+// }
+// .border-trans-32 {
+//   border-color: rgba($primary, 0.32) !important;
+// }
+// .border-trans-48 {
+//   border-color: rgba($primary, 0.48) !important;
+// }
+// .border-trans-64 {
+//   border-color: rgba($primary, 0.64) !important;
+// }
+// .border-trans-80 {
+//   border-color: rgba($primary, 0.8) !important;
+// }
+// .border-trans-90 {
+//   border-color: rgba($primary, 0.9) !important;
+// }
+// .border-secondary-trans-8 {
+//   border-color: rgba($dark-100, 0.08) !important;
+// }
+// .border-secondary-trans-16 {
+//   border-color: rgba($dark-100, 0.16) !important;
+// }
+// .border-secondary-trans-24 {
+//   border-color: rgba($dark-100, 0.24) !important;
+// }
+// .border-secondary-trans-32 {
+//   border-color: rgba($dark-100, 0.32) !important;
+// }
+// .border-secondary-trans-48 {
+//   border-color: rgba($dark-100, 0.48) !important;
+// }
+// .border-secondary-trans-64 {
+//   border-color: rgba($dark-100, 0.64) !important;
+// }
+// .border-secondary-trans-80 {
+//   border-color: rgba($dark-100, 0.8) !important;
+// }
+// .border-secondary-trans-90 {
+//   border-color: rgba($dark-100, 0.9) !important;
+// }
+// .border-danger-trans-8 {
+//   border-color: rgba($danger, 0.08) !important;
+// }
+// .border-danger-trans-16 {
+//   border-color: rgba($danger, 0.16) !important;
+// }
+// .border-danger-trans-24 {
+//   border-color: rgba($danger, 0.24) !important;
+// }
+// .border-danger-trans-32 {
+//   border-color: rgba($danger, 0.32) !important;
+// }
+// .border-danger-trans-48 {
+//   border-color: rgba($danger, 0.48) !important;
+// }
+// .border-danger-trans-64 {
+//   border-color: rgba($danger, 0.64) !important;
+// }
+// .border-danger-trans-80 {
+//   border-color: rgba($danger, 0.8) !important;
+// }
+// .border-danger-trans-90 {
+//   border-color: rgba($danger, 0.9) !important;
+// }
+// .border-success-trans-8 {
+//   border-color: rgba($success, 0.08) !important;
+// }
+// .border-success-trans-16 {
+//   border-color: rgba($success, 0.16) !important;
+// }
+// .border-success-trans-24 {
+//   border-color: rgba($success, 0.24) !important;
+// }
+// .border-success-trans-32 {
+//   border-color: rgba($success, 0.32) !important;
+// }
+// .border-success-trans-48 {
+//   border-color: rgba($success, 0.48) !important;
+// }
+// .border-success-trans-64 {
+//   border-color: rgba($success, 0.64) !important;
+// }
+// .border-success-trans-80 {
+//   border-color: rgba($success, 0.8) !important;
+// }
+// .border-success-trans-90 {
+//   border-color: rgba($success, 0.9) !important;
+// }
+// .border-warning-trans-8 {
+//   border-color: rgba($warning, 0.08) !important;
+// }
+// .border-warning-trans-16 {
+//   border-color: rgba($warning, 0.16) !important;
+// }
+// .border-warning-trans-24 {
+//   border-color: rgba($warning, 0.24) !important;
+// }
+// .border-warning-trans-32 {
+//   border-color: rgba($warning, 0.32) !important;
+// }
+// .border-warning-trans-48 {
+//   border-color: rgba($warning, 0.48) !important;
+// }
+// .border-warning-trans-64 {
+//   border-color: rgba($warning, 0.64) !important;
+// }
+// .border-warning-trans-80 {
+//   border-color: rgba($warning, 0.8) !important;
+// }
+// .border-warning-trans-90 {
+//   border-color: rgba($warning, 0.9) !important;
+// }
+// .border-white {
+//   border-color: $white !important;
+// }
+// /* 2. 1. 11. Fabrx Gradient Background CSS  */
+// .gradient-box {
+//   height: 131px;
+// }
+// .gradient-primary {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b99ff+0,80b7ff+100 */
+//   background: $primary-light;
+//   /* Old browsers */
+//   background: -moz-linear-gradient(top, $primary-light 0%, $primary-light2 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, $primary-light 0%, $primary-light2 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, $primary-light 0%, $primary-light2 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b99ff', endColorstr='#80b7ff',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .gradient-danger {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$danger+0,ff9d9d+100 */
+//   background: $danger;
+//   /* Old browsers */
+//   background: -moz-linear-gradient(top, $danger 0%, $danger-light 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, $danger 0%, $danger-light 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, $danger 0%, $danger-light 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F46363', endColorstr='#ff9d9d',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .gradient-success {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5bc188+0,6beaa3+100 */
+//   background: $success-light2;
+//   /* Old browsers */
+//   background: -moz-linear-gradient(top, $success-light2 0%, $success-light3 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, $success-light2 0%, $success-light3 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, $success-light2 0%, $success-light3 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bc188', endColorstr='#6beaa3',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .gradient-warning {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$warning+0,fdb881+100 */
+//   background: $warning;
+//   /* Old browsers */
+//   background: -moz-linear-gradient(top, $warning 0%, $warning-light2 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, $warning 0%, $warning-light2 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, $warning 0%, $warning-light2 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF9138', endColorstr='#fdb881',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .gradient-secondary {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#121212+0,757575+100 */
+//   background: $dark-100;
+//   /* Old browsers */
+//   background: -moz-linear-gradient(top, $dark-100 0%, $secondary-dark2 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, $dark-100 0%, $secondary-dark2 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, $dark-100 0%, $secondary-dark2 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121212', endColorstr='#757575',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .gradient-pri-dang {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b99ff+0,ff8a8a+100 */
+//   background: $primary-light;
+//   /* Old browsers */
+//   background: -moz-linear-gradient(top, $primary-light 0%, $danger-light2 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, $primary-light 0%, $danger-light2 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, $primary-light 0%, $danger-light2 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b99ff', endColorstr='#ff8a8a',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .gradient-pri-succ {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b99ff+0,38e0c5+100 */
+//   background: $primary-light;
+//   /* Old browsers */
+//   background: -moz-linear-gradient(top, $primary-light 0%, $tints 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, $primary-light 0%, $tints 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, $primary-light 0%, $tints 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b99ff', endColorstr='#38e0c5',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .gradient-pri-warn {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b99ff+0,ffb87f+100 */
+//   background: $primary-light;
+//   /* Old browsers */
+//   background: -moz-linear-gradient(top, $primary-light 0%, $warning-light3 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, $primary-light 0%, $warning-light3 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, $primary-light 0%, $warning-light3 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b99ff', endColorstr='#ffb87f',GradientType=0 );
+//   /* IE6-9 */
+// }
+// /* 2. 1. 12. Fabrx Gradient Background Transparency CSS  */
+// .gradient-white-trans {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#121212+0,121212+100&0+0,1+100 */
+//   background: -moz-linear-gradient(top, rgba($white, 0) 0%, rgba($white, 1) 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, rgba($white, 0) 0%, rgba($white, 1) 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, rgba($white, 0) 0%, rgba($white, 1) 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .gradient-secondary-trans {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#121212+0,121212+100&0+0,1+100 */
+//   background: -moz-linear-gradient(top, rgba($dark-100, 0) 0%, rgba($dark-100, 0.7) 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, rgba($dark-100, 0) 0%, rgba($dark-100, 0.7) 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, rgba($dark-100, 0) 0%, rgba($dark-100, 0.7) 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00121212', endColorstr='#121212',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .gradient-primary-trans {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#121212+0,121212+100&0+0,1+100 */
+//   background: -moz-linear-gradient(top, rgba($primary, 0) 0%, rgba($primary, 0.7) 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, rgba($primary, 0) 0%, rgba($primary, 0.7) 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, rgba($primary, 0) 0%, rgba($primary, 0.7) 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00121212', endColorstr='#121212',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .gradient-warning-trans {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#121212+0,121212+100&0+0,1+100 */
+//   background: -moz-linear-gradient(top, rgba($warning, 0) 0%, rgba($warning, 0.7) 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, rgba($warning, 0) 0%, rgba($warning, 0.7) 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, rgba($warning, 0) 0%, rgba($warning, 0.7) 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00121212', endColorstr='#121212',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .gradient-danger-trans {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#121212+0,121212+100&0+0,1+100 */
+//   background: -moz-linear-gradient(top, rgba($danger, 0) 0%, rgba($danger, 0.7) 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, rgba($danger, 0) 0%, rgba($danger, 0.7) 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, rgba($danger, 0) 0%, rgba($danger, 0.7) 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00121212', endColorstr='#121212',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .gradient-success-trans {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#121212+0,121212+100&0+0,1+100 */
+//   background: -moz-linear-gradient(top, rgba($success, 0) 0%, rgba($success, 0.7) 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, rgba($success, 0) 0%, rgba($success, 0.7) 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, rgba($success, 0) 0%, rgba($success, 0.7) 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00121212', endColorstr='#121212',GradientType=0 );
+//   /* IE6-9 */
+// }
+// /* 2. 1. 13. Fabrx Brand Background CSS  */
+// .bg-brand-1 {
+//   background-color: $brand-1 !important;
+// }
+// .bg-brand-2 {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#082054+0,203956+100 */
+//   background: $blue-dark-700; /* Old browsers */
+//   background: -moz-linear-gradient(top, $blue-dark-700 0%, $brand-2 100%); /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, $blue-dark-700 0%, $brand-2 100%); /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(
+//     to bottom,
+//     $blue-dark-700 0%,
+//     $brand-2 100%
+//   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#082054', endColorstr='#203956',GradientType=0 ); /* IE6-9 */
+// }
+// .bg-brand-3 {
+//   background-color: $purple !important;
+// }
+// .bg-brand-4 {
+//   background-color: $success-light !important;
+// }
+// .bg-brand-5 {
+//   background-color: $brand-5 !important;
+// }
+// .bg-brand-6 {
+//   background-color: $brand-6 !important;
+// }
+// .bg-brand-7 {
+//   background-color: $brand-7 !important;
+// }
+// .bg-brand-8 {
+//   background-color: $brand-8 !important;
+// }
+// .bg-brand-9 {
+//   background-color: $brand-9 !important;
+// }
+// .bg-brand-10 {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6742b7+0,FF9138+100 */
+//   background: $purple-light;
+//   /* Old browsers */
+//   background: -moz-linear-gradient(45deg, $purple-light 0%, $warning 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(45deg, $purple-light 0%, $warning 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(45deg, $purple-light 0%, $warning 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6742b7', endColorstr='',GradientType=1 );
+//   /* IE6-9 fallback on horizontal gradient */
+// }
+// .bg-brand-11 {
+//   background-color: $brand-11 !important;
+// }
+// /* 2. 1. 14. Fabrx Brand Gradient CSS  */
+// .brand-gradient-1 {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bc5980+0,ee656f+100 */
+//   background: $pink-light;
+//   /* Old browsers */
+//   background: -moz-linear-gradient(-45deg, $pink-light 0%, $danger-light3 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(-45deg, $pink-light 0%, $danger-light3 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(135deg, $pink-light 0%, $danger-light3 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc5980', endColorstr='#ee656f',GradientType=1 );
+//   /* IE6-9 fallback on horizontal gradient */
+// }
+// /* 2. 2. Fabrx Font Family CSS  */
+// body {
+//   font-family: $roboto-font-family;
+// }
+// /* 2. 3. Fabrx Font Weights CSS  */
+// h1,
+// .h1,
+// h2,
+// .h2,
+// h3,
+// .h3,
+// h4,
+// .h4,
+// h5,
+// .h5,
+// h6,
+// .h6 {
+//   font-weight: $font-weight-medium;
+// }
+// .font-weight-medium {
+//   font-weight: $font-weight-medium !important;
+// }
+// .font-weight-regular {
+//   font-weight: $font-weight-normal !important;
+// }
+// .font-weight-light {
+//   font-weight: $font-weight-light !important;
+// }
+// .font-weight-thin {
+//   font-weight: $font-weight-100 !important;
+// }
+// /* 2. 4. Fabrx Font Sizes CSS  */
+// body,
+// big.font-size-16,
+// .font-size-16,
+// .nav.font-size-16,
+// .custom-control {
+//   font-size: 16px;
+// }
+// .font-size-100 {
+//   font-size: 100px;
+//   line-height: 100px;
+// }
+// .font-size-140 {
+//   font-size: 140px;
+//   line-height: 140px;
+// }
+// h1,
+// .h1 {
+//   font-size: 80px;
+// }
+// h2,
+// .h2 {
+//   font-size: 60px;
+// }
+// h3,
+// .h3 {
+//   font-size: 40px;
+// }
+// h4,
+// .h4 {
+//   font-size: 30px;
+// }
+// h5,
+// .h5 {
+//   font-size: 24px;
+// }
+// h6,
+// .h6 {
+//   font-size: 20px;
+// }
+// big,
+// .big {
+//   font-size: 18px;
+// }
+// small,
+// .small,
+// .component-list li > span,
+// .valid-feedback,
+// .invalid-feedback,
+// .fileuploader {
+//   font-size: 12px;
+// }
+// caption,
+// .caption,
+// .component-list.strength li > span,
+// .gradient-with-caption p,
+// .component-list.spacing span,
+// .badge.lg,
+// .avatar-user,
+// .card-sm p,
+// .font-size-14,
+// .progress-title,
+// .fabrx-chip,
+// .fabrx-media-links,
+// .datepicker-dropdown,
+// .datepicker-inline,
+// .dropdown-menu,
+// .custom-control.custom-control-sm,
+// .custom-switch,
+// .form-control,
+// .control-icon,
+// .card-numbers,
+// .fileuploader-input .fileuploader-input-button {
+//   font-size: 14px;
+// }
+// .fileuploader-popup .fileuploader-popup-content .fileuploader-popup-button {
+//   font-size: 14px;
+//   &.button-success {
+//     font-size: 14px;
+//   }
+// }
+// .nav-tabs,
+// .pagination .page-item .page-link,
+// .table-user-name strong,
+// .alert {
+//   font-size: 14px;
+// }
+// .tiny,
+// .avatar-name small {
+//   font-size: 12px;
+// }
+// .fabrx-fsize-xxxl {
+//   font-size: 240px;
+//   line-height: 1.1;
+// }
+// /* 2. 5. Fabrx After CSS  */
+// .component-list:after,
+// .resources-footer:after,
+// .progress-title:after,
+// .fabrx-masonry:after {
+//   display: block;
+//   clear: both;
+//   content: '';
+// }
+// /* 2. 6. Fabrx Shapes CSS  */
+// .rounded-3 {
+//   @include border-radius(3px !important);
+// }
+// .rounded-6 {
+//   @include border-radius(6px !important);
+// }
+// .rounded-12 {
+//   @include border-radius(12px !important);
+// }
+// .rounded-24 {
+//   @include border-radius(24px !important);
+// }
+// .rounded-40 {
+//   @include border-radius(40px !important);
+// }
+// .rounded-top {
+//   @include border-radius(12px 12px 0 0 !important);
+// }
+// .rounded-bottom {
+//   @include border-radius(0 0 12px 12px !important);
+// }
+// .rounded-left {
+//   @include border-radius(12px 0 0 12px !important);
+// }
+// .rounded-right {
+//   @include border-radius(0 12px 12px 0 !important);
+// }
+// .rounded-pill-left {
+//   @include border-radius(50px 0 0 50px !important);
+// }
+// /* 2. 7. Fabrx Box Shadow CSS */
+// .shadow-none {
+//   box-shadow: none;
+// }
+// .shadow-20 {
+//   box-shadow: 0 0 2px rgba($gray-light, 0.2);
+// }
+// .shadow-40 {
+//   box-shadow: 0 2px 4px rgba($gray-light, 0.2);
+// }
+// .shadow-60 {
+//   box-shadow: 0 4px 7px rgba($gray-light, 0.2);
+// }
+// .shadow-80 {
+//   box-shadow: 0 5px 10px rgba($gray-light, 0.2);
+// }
+// .shadow-100 {
+//   box-shadow: 0 6px 14px rgba($gray-light, 0.2);
+// }
+// .shadow-top-20 {
+//   box-shadow: 0 -0.5px 2px rgba($gray-light, 0.2);
+// }
+// .shadow-top-40 {
+//   box-shadow: 0 -2px 4px rgba($gray-light, 0.2);
+// }
+// .shadow-top-60 {
+//   box-shadow: 0 -4px 8px rgba($gray-light, 0.2);
+// }
+// .shadow-top-80 {
+//   box-shadow: 0 -8px 16px rgba($gray-light, 0.2);
+// }
+// .shadow-top-100 {
+//   box-shadow: 0 -16px 24px rgba($gray-light, 0.2);
+// }
+// .shadow-dark-20 {
+//   box-shadow: 0 1px 2px rgba($black, 0.4);
+// }
+// .shadow-dark-40 {
+//   box-shadow: 0 2px 4px rgba($black, 0.4);
+// }
+// .shadow-dark-60 {
+//   box-shadow: 0 4px 8px rgba($black, 0.4);
+// }
+// .shadow-dark-80 {
+//   box-shadow: 0 8px 16px rgba($black, 0.4);
+// }
+// .shadow-dark-100 {
+//   box-shadow: 0 16px 24px rgba($black, 0.4);
+// }
+// .shadow-dark-top-20 {
+//   box-shadow: 0 -1px 2px rgba($black, 0.4);
+// }
+// .shadow-dark-top-40 {
+//   box-shadow: 0 -2px 4px rgba($black, 0.4);
+// }
+// .shadow-dark-top-60 {
+//   box-shadow: 0 -4px 8px rgba($black, 0.4);
+// }
+// .shadow-dark-top-80 {
+//   box-shadow: 0 -8px 16px rgba($black, 0.4);
+// }
+// .shadow-dark-top-100 {
+//   box-shadow: 0 -16px 24px rgba($black, 0.4);
+// }
+// .shadow-light-top {
+//   box-shadow: 0 -6px 12px rgba($gray-light, 0.2);
+// }
+// .shadow-light-bottom {
+//   box-shadow: 0 6px 12px rgba($gray-light, 0.2);
+// }
+// .shadow-dark-top {
+//   box-shadow: 0 -6px 12px rgba($black, 0.4);
+// }
+// .shadow-dark-bottom {
+//   box-shadow: 0 6px 12px rgba($black, 0.4);
+// }
+// /* 2. 8. Fabrx Gradient With Caption CSS  */
+// .gradient-with-caption {
+//   margin-bottom: 0;
+//   color: $white;
+//   position: relative;
+//   text-align: left;
+//   p {
+//     margin-bottom: 10px;
+//     color: $white;
+//     line-height: 1.32857143;
+//     &:last-child {
+//       margin-bottom: 0;
+//     }
+//   }
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   h6 {
+//     margin-bottom: 0;
+//     font-weight: $font-weight-bold;
+//     line-height: 1.2;
+//   }
+//   figcaption {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     padding: 15px 20px;
+//     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+//     background: -moz-linear-gradient(top, rgba($black, 0) 0%, rgba($black, 0.65) 100%);
+//     /* FF3.6-15 */
+//     background: -webkit-linear-gradient(top, rgba($black, 0) 0%, rgba($black, 0.65) 100%);
+//     /* Chrome10-25,Safari5.1-6 */
+//     background: linear-gradient(to bottom, rgba($black, 0) 0%, rgba($black, 0.65) 100%);
+//     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+//     /* IE6-9 */
+//     z-index: 1;
+//   }
+// }
+// /* 2. 9. Fabrx Overlay Image CSS  */
+// .overlay-image {
+//   margin-bottom: 0;
+//   position: relative;
+//   &:before {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: $success;
+//     opacity: 0.32;
+//     content: '';
+//     @include border-radius(12px);
+//     z-index: 1;
+//   }
+// }
+// /* 2. 10. Fabrx Alert CSS  */
+// .alert-light {
+//   background-color: $white;
+//   border-color: $white;
+// }
+// .alert-danger,
+// .alert-success,
+// .alert-warning {
+//   color: $white;
+// }
+// .alert {
+//   padding: 11px 13px;
+//   display: flex;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   .float-right {
+//     margin-left: auto;
+//   }
+//   &:after {
+//     content: '';
+//     display: block;
+//     clear: both;
+//   }
+//   &:not(.fabrx-alert) .btn {
+//     min-width: 10px;
+//     min-height: 20px;
+//     padding: 5px 14px;
+//   }
+// }
+// .fabrx-alert {
+//   display: flex;
+//   padding: 25px;
+//   border: none;
+//   align-items: center;
+//   flex-wrap: nowrap;
+//   p {
+//     margin-bottom: 0;
+//     font-size: 14px;
+//     line-height: 1.2;
+//   }
+//   img + .alert-captions,
+//   svg + .alert-captions,
+//   i + .alert-captions,
+//   div + .alert-captions {
+//     padding-left: 15px;
+//   }
+//   .btn-link {
+//     min-width: 10px;
+//     padding-left: 17px;
+//     padding-right: 17px;
+//   }
+// }
+// .alert-captions {
+//   padding-right: 15px;
+// }
+// .alert-caption-title {
+//   font-weight: $font-weight-medium;
+//   + p {
+//     margin-top: 5px;
+//   }
+// }
+// .fabrx-alert.fabrx-alert-stack {
+//   padding: 0 0 0 25px;
+//   align-items: inherit;
+// }
+// .fabrx-alert-stack {
+//   .list-group-item {
+//     min-width: 125px;
+//     padding: 10px 20px;
+//     font-weight: $font-weight-medium;
+//     text-align: center;
+//     border-top: none;
+//     border-left: none;
+//     border-right: none;
+//     border-color: $secondary-300;
+//     border-top-left-radius: 0;
+//     border-bottom-left-radius: 0;
+//     &:last-child {
+//       border-bottom: none;
+//     }
+//   }
+//   img + .alert-captions,
+//   svg + .alert-captions,
+//   i + .alert-captions,
+//   div + .alert-captions {
+//     padding: 10px 15px;
+//   }
+//   .alert-actions {
+//     border-left: 1px solid $secondary-300;
+//   }
+//   > div {
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: column;
+//     justify-content: center;
+//   }
+// }
+// .fabrx-alert:not(.fabrx-alert-stack) .fabrx-icon {
+//   min-width: 32px;
+// }
+// .alert-actions {
+//   margin-left: auto;
+//   white-space: nowrap;
+//   .btn + .btn {
+//     margin-left: 10px;
+//   }
+// }
+// .fabrx-alert-sm {
+//   padding: 10px 10px 10px 20px;
+// }
+// /* 2. 11. Fabrx Avatar CSS  */
+// .fabrx-avatar-group .fabrx-avatar {
+//   + .fabrx-avatar {
+//     margin-left: -15px;
+//   }
+//   &.lg + .fabrx-avatar {
+//     margin-left: -25px;
+//   }
+//   &.md + .fabrx-avatar {
+//     margin-left: -20px;
+//   }
+//   &.sm + .fabrx-avatar {
+//     margin-left: -12px;
+//   }
+// }
+// .fabrx-avatar {
+//   display: inline-block;
+//   vertical-align: middle;
+//   width: 32px;
+//   height: 32px;
+//   color: $white;
+//   font-weight: $font-weight-bold;
+//   font-size: 14px;
+//   text-transform: uppercase;
+//   @include border-radius(100%);
+//   &:hover,
+//   &:focus {
+//     color: $white;
+//   }
+//   &.xl {
+//     width: 64px;
+//     height: 64px;
+//     .avatar-wrap {
+//       font-size: 28px;
+//     }
+//     &.more .avatar-wrap {
+//       font-size: 24px;
+//     }
+//   }
+//   &.lg {
+//     width: 56px;
+//     height: 56px;
+//     .avatar-wrap {
+//       font-size: 24px;
+//     }
+//     &.fabrx-status:after {
+//       right: 4px;
+//     }
+//     &.more .avatar-wrap,
+//     + .avatar-user {
+//       font-size: 20px;
+//     }
+//   }
+//   &.md {
+//     width: 48px;
+//     height: 48px;
+//     .avatar-wrap {
+//       font-size: 20px;
+//     }
+//     &.fabrx-status:after {
+//       right: 4px;
+//     }
+//     &.more .avatar-wrap {
+//       font-weight: $font-weight-medium;
+//       font-size: 16px;
+//     }
+//     + .avatar-user {
+//       font-size: 16px;
+//     }
+//   }
+//   &.sm {
+//     width: 24px;
+//     height: 24px;
+//     .avatar-wrap {
+//       font-size: 10px;
+//     }
+//     &.more .avatar-wrap {
+//       font-weight: $font-weight-medium;
+//     }
+//     + .avatar-user {
+//       font-size: 12px;
+//     }
+//   }
+//   &.fabrx-status:after {
+//     position: absolute;
+//     bottom: 0;
+//     right: 1px;
+//     z-index: 1;
+//   }
+//   &.more {
+//     .avatar-wrap {
+//       background: $white;
+//       font-size: 10px;
+//     }
+//     &:hover .avatar-wrap {
+//       color: $white;
+//     }
+//   }
+//   img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     @include border-radius(100%);
+//   }
+//   .avatar-wrap {
+//     display: flex;
+//     width: 100%;
+//     height: 100%;
+//     @include border-radius(100%);
+//     align-items: center;
+//     justify-content: center;
+//     transition: all ease 0.4s;
+//     svg {
+//       width: 50%;
+//       height: 50%;
+//       fill: $white;
+//       * {
+//         fill: $white;
+//       }
+//     }
+//   }
+// }
+// .avatar-user,
+// .avatar-name {
+//   display: inline-block;
+//   vertical-align: middle;
+//   padding-left: 5px;
+// }
+// /* 2. 12. Fabrx Bages Circle CSS  */
+// .badge {
+//   line-height: 1.5;
+//   @include border-radius(3px);
+//   &.lg {
+//     min-width: 72px;
+//     padding: 4px 10px;
+//   }
+// }
+// .badge-lg {
+//   font-size: 14px;
+//   padding: 6px 25px;
+// }
+// .badge-md {
+//   font-size: 10px;
+//   padding: 5px 17px;
+// }
+// .badge-sm {
+//   font-size: 10px;
+//   padding: 1px 12px;
+// }
+// .badge.circle {
+//   display: inline-flex;
+//   vertical-align: middle;
+//   width: 32px;
+//   height: 32px;
+//   min-width: 1px;
+//   padding: 0;
+//   font-size: 16px;
+//   @include border-radius(100%);
+//   align-items: center;
+//   justify-content: center;
+//   + .badge.circle {
+//     margin-left: 10px;
+//   }
+//   &.xxl {
+//     width: 64px;
+//     height: 64px;
+//     font-size: 30px;
+//   }
+//   &.xl {
+//     width: 56px;
+//     height: 56px;
+//     font-size: 24px;
+//   }
+//   &.lg {
+//     width: 48px;
+//     height: 48px;
+//     font-size: 20px;
+//   }
+//   &.sm {
+//     width: 24px;
+//     height: 24px;
+//     font-size: 12px;
+//   }
+//   &.ssm {
+//     width: 18px;
+//     height: 18px;
+//     font-size: 9px;
+//     padding-top: 1px;
+//   }
+// }
+// .badge-absolute {
+//   position: absolute;
+//   top: 25px;
+//   right: 25px;
+//   z-index: 1;
+//   &.stack {
+//     top: -14px;
+//     &.ssm {
+//       top: -8px;
+//     }
+//     &.sm {
+//       top: -10px;
+//     }
+//     &.lg {
+//       top: -22px;
+//     }
+//     &.xl {
+//       top: -26px;
+//     }
+//     &.xxl {
+//       top: -30px;
+//     }
+//   }
+// }
+// .badge-pill {
+//   min-width: 18px;
+//   font-size: 10px;
+//   line-height: 1.3;
+//   @include border-radius(25px);
+// }
+// .badge-outline-primary,
+// .btn-outline-primary {
+//   border-width: 1px;
+//   border-style: solid;
+// }
+// .badge-outline-secondary,
+// .btn-outline-secondary,
+// .fabrx-outline-secondary {
+//   color: $secondary;
+//   border: 1px solid $secondary;
+// }
+// .btn.btn-outline-secondary {
+//   svg,
+//   * {
+//     fill: $secondary;
+//   }
+// }
+// .fabrx-outline-secondary {
+//   svg,
+//   * {
+//     fill: $secondary;
+//   }
+// }
+// .fabrx-media-links li a svg {
+//   fill: $secondary;
+//   * {
+//     fill: $secondary;
+//   }
+// }
+// .badge-outline-danger,
+// .btn-outline-danger,
+// .fabrx-outline-danger {
+//   color: $danger;
+//   border: 1px solid $danger;
+// }
+// .btn.btn-outline-danger {
+//   svg,
+//   * {
+//     fill: $danger;
+//   }
+// }
+// .fabrx-outline-danger {
+//   svg,
+//   * {
+//     fill: $danger;
+//   }
+// }
+// .fabrx-heart {
+//   &:hover svg,
+//   &.active svg {
+//     fill: $danger;
+//     * {
+//       fill: $danger;
+//     }
+//   }
+// }
+// .badge-outline-success,
+// .btn-outline-success,
+// .fabrx-outline-success {
+//   color: $success;
+//   border: 1px solid $success;
+// }
+// .btn.btn-outline-success {
+//   svg,
+//   * {
+//     fill: $success;
+//   }
+// }
+// .fabrx-outline-success {
+//   svg,
+//   * {
+//     fill: $success;
+//   }
+// }
+// .badge-outline-warning,
+// .btn-outline-warning,
+// .fabrx-outline-warning {
+//   color: $warning;
+//   border: 1px solid $warning;
+// }
+// .btn.btn-outline-warning {
+//   svg,
+//   * {
+//     fill: $warning;
+//   }
+// }
+// .fabrx-outline-warning {
+//   svg,
+//   * {
+//     fill: $warning;
+//   }
+// }
+// .rating.rating-done svg {
+//   fill: $warning;
+//   * {
+//     fill: $warning;
+//   }
+// }
+// .btn-outline-warning {
+//   &.focus,
+//   &:focus,
+//   &:hover {
+//     background-color: $warning;
+//     border-color: $warning;
+//     color: $white;
+//   }
+//   &:not(:disabled):not(.disabled) {
+//     &.active,
+//     &:active {
+//       background-color: $warning;
+//       border-color: $warning;
+//       color: $white;
+//     }
+//   }
+// }
+// .show > .btn-outline-warning.dropdown-toggle {
+//   background-color: $warning;
+//   border-color: $warning;
+//   color: $white;
+// }
+// .btn-outline-light {
+//   &.focus,
+//   &:focus,
+//   &:hover {
+//     background-color: $gray-100;
+//     border-color: $gray-100;
+//     color: $gray-900;
+//   }
+//   &:not(:disabled):not(.disabled) {
+//     &.active,
+//     &:active {
+//       background-color: $gray-100;
+//       border-color: $gray-100;
+//       color: $gray-900;
+//     }
+//   }
+// }
+// .show > .btn-outline-light.dropdown-toggle {
+//   background-color: $gray-100;
+//   border-color: $gray-100;
+//   color: $gray-900;
+// }
+// .btn-outline-danger {
+//   &.focus,
+//   &:focus,
+//   &:hover {
+//     background-color: $red;
+//     border-color: $red;
+//     color: $white;
+//   }
+//   &:not(:disabled):not(.disabled) {
+//     &.active,
+//     &:active {
+//       background-color: $red;
+//       border-color: $red;
+//       color: $white;
+//     }
+//   }
+// }
+// .show > .btn-outline-danger.dropdown-toggle {
+//   background-color: $red;
+//   border-color: $red;
+//   color: $white;
+// }
+// .btn-outline-success {
+//   &.focus,
+//   &:focus,
+//   &:hover {
+//     background-color: $green;
+//     border-color: $green;
+//     color: $white;
+//   }
+//   &:not(:disabled):not(.disabled) {
+//     &.active,
+//     &:active {
+//       background-color: $green;
+//       border-color: $green;
+//       color: $white;
+//     }
+//   }
+// }
+// .show > .btn-outline-success.dropdown-toggle {
+//   background-color: $green;
+//   border-color: $green;
+//   color: $white;
+// }
+// .badge-outline-light,
+// .btn-outline-light,
+// .fabrx-outline-light {
+//   color: $light;
+//   border: 1px solid $light;
+//   transition: all ease 0.4s;
+// }
+// .badge-outline-info,
+// .btn-outline-info,
+// .fabrx-outline-info {
+//   color: $cyan;
+//   border: 1px solid $cyan;
+// }
+// .btn.btn-outline-info {
+//   svg,
+//   * {
+//     fill: $cyan;
+//   }
+// }
+// .fabrx-outline-info {
+//   svg,
+//   * {
+//     fill: $cyan;
+//   }
+// }
+// .badge-outline-dark,
+// .btn-outline-dark {
+//   border-width: 1px;
+//   border-style: solid;
+// }
+// /* 2. 13. Fabrx Breadcrumbs CSS  */
+// .breadcrumb {
+//   padding: 0;
+//   background: none;
+//   font-size: 12px;
+//   @include border-radius(0);
+// }
+// .breadcrumb-item {
+//   a,
+//   &.active span {
+//     position: relative;
+//   }
+//   a:after,
+//   &.active span:after {
+//     position: absolute;
+//     bottom: -2px;
+//     left: 0;
+//     width: 0;
+//     height: 1px;
+//     content: '';
+//     transition: all ease 0.4s;
+//     z-index: 1;
+//   }
+//   a:hover:after,
+//   &.active a:after {
+//     width: 100%;
+//   }
+// }
+// /* 2. 14. Fabrx Buttons CSS  */
+// .btn-group,
+// .btn-group-vertical {
+//   @include border-radius(6px);
+//   box-shadow: 0 0 0 1px $gray-light-400;
+// }
+// .btn-group .btn,
+// .btn-group-vertical .btn {
+//   min-width: 62px;
+// }
+// .btn-group.btn-group-lg .btn,
+// .btn-group-vertical.btn-group-lg .btn {
+//   min-width: 82px;
+//   min-height: 40px;
+//   padding: 11px 15px;
+//   font-size: 14px;
+// }
+// .btn-group.btn-group-sm .btn,
+// .btn-group-vertical.btn-group-sm .btn {
+//   min-width: 40px;
+//   min-height: 40px;
+//   padding: 11px 15px;
+//   font-size: 14px;
+// }
+// .btn-group .btn-light,
+// .btn-group-vertical .btn-light,
+// .badge-white {
+//   background-color: $white;
+// }
+// .btn-group .btn-light:not(:hover),
+// .btn-group-vertical .btn-light:not(:hover) {
+//   border-color: $btn-thin-light;
+// }
+// .btn-group .btn-light:hover,
+// .btn-group-vertical .btn-light:hover {
+//   background-color: $gray-100;
+//   border-color: $btn-thin-light;
+// }
+// .btn-dark-link {
+//   color: $dark-link;
+// }
+// .btn {
+//   display: inline-flex;
+//   min-width: 120px;
+//   min-height: 40px;
+//   padding: 11px 15px;
+//   font-weight: $font-weight-bold;
+//   font-size: 14px;
+//   line-height: 1;
+//   @include border-radius(3px);
+//   align-items: center;
+//   justify-content: center;
+//   &.btn-has-one {
+//     min-width: 40px;
+//     padding: 11px 7px;
+//     font-size: 16px;
+//   }
+// }
+// .btn-group-sm > .btn,
+// .btn-sm {
+//   min-width: 100px;
+//   min-height: 32px;
+//   padding: 9px 12px;
+//   font-size: 12px;
+//   line-height: 1;
+// }
+// .btn.btn-sm.btn-has-one,
+// .btn-group-sm > .btn.btn-sm {
+//   min-width: 32px;
+//   padding: 8px 5px;
+//   font-size: 14px;
+// }
+// .btn-group-lg > .btn,
+// .btn-lg {
+//   min-width: 160px;
+//   min-height: 48px;
+//   padding: 12px 20px;
+//   font-size: 18px;
+//   line-height: 1;
+// }
+// .btn.btn-lg.btn-has-one,
+// .btn-group-lg > .btn.btn-lg {
+//   min-width: 48px;
+//   padding: 12px 8px;
+//   font-size: 20px;
+//   line-height: 1;
+// }
+// .btn.btn-lg {
+//   i + .btn-text,
+//   img + .btn-text,
+//   svg + .btn-text {
+//     margin-left: 9px;
+//   }
+//   .btn-text + {
+//     i,
+//     img,
+//     svg {
+//       margin-left: 9px;
+//     }
+//   }
+// }
+// .btn-group-xl > .btn,
+// .btn-xl {
+//   min-width: 212px;
+//   min-height: 64px;
+//   padding: 17px 20px;
+//   font-size: 23px;
+//   line-height: 1;
+//   @include border-radius(4px);
+// }
+// .btn.btn-xl.btn-has-one,
+// .btn-group-xl > .btn.btn-xl {
+//   min-width: 64px;
+//   padding: 16px 10px;
+//   font-size: 30px;
+// }
+// .btn {
+//   &.btn-xl {
+//     i + .btn-text,
+//     img + .btn-text,
+//     svg + .btn-text {
+//       margin-left: 12px;
+//     }
+//     .btn-text + {
+//       i,
+//       img,
+//       svg {
+//         margin-left: 12px;
+//       }
+//     }
+//   }
+//   svg {
+//     fill: $white;
+//     transition: all ease 0.4s;
+//     * {
+//       fill: $white;
+//       transition: all ease 0.4s;
+//     }
+//   }
+// }
+// .fabrx-volting a:hover svg,
+// .white-icon a svg,
+// .fabrx-commerce .btn-outline-light svg {
+//   fill: $white;
+//   transition: all ease 0.4s;
+//   * {
+//     fill: $white;
+//     transition: all ease 0.4s;
+//   }
+// }
+// .white-icon .fabrx-header-links a:hover svg,
+// .white-icon .fabrx-header-links a:hover svg *,
+// .white-icon.fabrx-header-links a:hover svg,
+// .white-icon.fabrx-header-links a:hover svg *,
+// .white-icon button.navbar-toggler:hover svg,
+// .white-icon button.navbar-toggler:hover svg * {
+//   opacity: 0.8;
+//   fill: $white;
+// }
+// .fabrx-food .white-icon {
+//   a:hover svg,
+//   button:hover svg {
+//     fill: $white;
+//     transition: all ease 0.4s;
+//     * {
+//       fill: $white;
+//       transition: all ease 0.4s;
+//     }
+//   }
+// }
+// .btn {
+//   i + .btn-text,
+//   img + .btn-text,
+//   svg + .btn-text {
+//     margin-left: 6px;
+//   }
+//   .btn-text + {
+//     i,
+//     img,
+//     svg {
+//       margin-left: 6px;
+//     }
+//   }
+//   &.btn-link {
+//     min-width: 1px;
+//     min-height: 1px;
+//     padding: 0;
+//     font-weight: $font-weight-bold;
+//     border: none;
+//     @include border-radius(0);
+//     + .btn.btn-link {
+//       margin-left: 15px;
+//     }
+//   }
+// }
+// .btn-rounded {
+//   @include border-radius(50px);
+// }
+// .btn-secondary {
+//   background-color: $secondary;
+//   border-color: $secondary;
+// }
+// .btn-danger,
+// .alert-danger {
+//   background-color: $danger;
+//   border-color: $danger;
+// }
+// .btn-danger-light,
+// .alert-danger-light {
+//   background-color: $brand-9;
+//   border-color: $brand-9;
+//   color: $white;
+// }
+// .btn-success,
+// .alert-success {
+//   color: $white;
+//   background-color: $success;
+//   border-color: $success;
+//   &:hover,
+//   &:focus {
+//     color: $white;
+//   }
+// }
+// .btn-warning-light,
+// .alert-warning-light {
+//   background-color: $warning-light;
+//   border-color: $warning-light;
+//   color: $dark-link;
+// }
+// .btn-warning-light {
+//   &.focus,
+//   &:focus,
+//   &:hover {
+//     background-color: $warning-light-hover;
+//     border-color: $warning-light-hover;
+//     color: $dark-link;
+//   }
+//   &:not(:disabled):not(.disabled) {
+//     &.active,
+//     &:active {
+//       background-color: $warning-light-hover;
+//       border-color: $warning-light-hover;
+//       color: $dark-link;
+//     }
+//   }
+// }
+// .show > .btn-warning-light.dropdown-toggle {
+//   background-color: $warning-light-hover;
+//   border-color: $warning-light-hover;
+//   color: $dark-link;
+// }
+// .btn-warning-light {
+//   &.focus,
+//   &:focus {
+//     box-shadow: 0 0 0 0.2rem rgba($warning-light-hover, 0.5);
+//   }
+//   &:not(:disabled):not(.disabled) {
+//     &.active:focus,
+//     &:active:focus {
+//       box-shadow: 0 0 0 0.2rem rgba($warning-light-hover, 0.5);
+//     }
+//   }
+// }
+// .show > .btn-warning-light.dropdown-toggle:focus {
+//   box-shadow: 0 0 0 0.2rem rgba($warning-light-hover, 0.5);
+// }
+// .btn-outline-warning-light {
+//   &:focus {
+//     box-shadow: 0 0 0 0.2rem rgba($warning-light-hover, 0.5);
+//   }
+//   &:not(:disabled):not(.disabled) {
+//     &.active:focus,
+//     &:active:focus {
+//       box-shadow: 0 0 0 0.2rem rgba($warning-light-hover, 0.5);
+//     }
+//   }
+// }
+// .show > .btn-outline-warning-light.dropdown-toggle:focus {
+//   box-shadow: 0 0 0 0.2rem rgba($warning-light-hover, 0.5);
+// }
+// .btn-warning,
+// .alert-warning {
+//   background-color: $warning;
+//   border-color: $warning;
+//   color: $white;
+// }
+// /*.btn-warning {
+//   &.focus, &:focus, &:hover {
+//     background-color: $btn-warning;
+//     border-color: $btn-warning;
+//     color: $white;
+//   }
+//   &:not(:disabled):not(.disabled) {
+//     &.active, &:active {
+//       background-color: $btn-warning;
+//       border-color: $btn-warning;
+//       color: $white;
+//     }
+//   }
+// }*/
+// .show > .btn-warning.dropdown-toggle {
+//   background-color: $btn-warning;
+//   border-color: $btn-warning;
+//   color: $white;
+// }
+// .btn-warning {
+//   &.focus,
+//   &:focus {
+//     box-shadow: 0 0 0 0.2rem rgba($btn-warning, 0.5);
+//   }
+//   &:not(:disabled):not(.disabled) {
+//     &.active:focus,
+//     &:active:focus {
+//       box-shadow: 0 0 0 0.2rem rgba($btn-warning, 0.5);
+//     }
+//   }
+// }
+// .show > .btn-warning.dropdown-toggle:focus {
+//   box-shadow: 0 0 0 0.2rem rgba($btn-warning, 0.5);
+// }
+// .btn-outline-warning {
+//   &:focus {
+//     box-shadow: 0 0 0 0.2rem rgba($btn-warning, 0.5);
+//   }
+//   &:not(:disabled):not(.disabled) {
+//     &.active:focus,
+//     &:active:focus {
+//       box-shadow: 0 0 0 0.2rem rgba($btn-warning, 0.5);
+//     }
+//   }
+// }
+// .show > .btn-outline-warning.dropdown-toggle:focus {
+//   box-shadow: 0 0 0 0.2rem rgba($btn-warning, 0.5);
+// }
+// .btn-light {
+//   background-color: $light;
+//   border-color: $light;
+// }
+// .btn-info {
+//   background-color: $cyan;
+//   border-color: $cyan;
+//   &:hover {
+//     background-color: $cyan-600;
+//     border-color: $cyan-600;
+//   }
+// }
+// .btn-link {
+//   font-weight: $font-weight-normal;
+//   text-decoration: none;
+//   &:hover,
+//   &:focus,
+//   &.focus {
+//     text-decoration: none;
+//   }
+// }
+// .btn-mwidth-145 {
+//   min-width: 145px;
+// }
+// [class*='btn-outline-']:not(.btn-outline-light):hover svg {
+//   fill: $white;
+//   * {
+//     fill: $white;
+//   }
+// }
+// .dropdown-item {
+//   &:active svg,
+//   &.active svg {
+//     fill: $white;
+//     * {
+//       fill: $white;
+//     }
+//   }
+// }
+// .alert-success svg,
+// .alert-danger svg,
+// .alert-warning svg {
+//   fill: $white;
+//   * {
+//     fill: $white;
+//   }
+// }
+// /* 2. 15. Fabrx Cards CSS  */
+// [class*='col-'] .card {
+//   height: 100%;
+// }
+// .card {
+//   border: none;
+//   @include border-radius(12px);
+//   h6,
+//   .h6 {
+//     line-height: 1.5;
+//   }
+// }
+// .card-overlay .card-img-top {
+//   @include border-radius(12px);
+// }
+// .card-gradient {
+//   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4b99ff+0,38dfc5+100 */
+//   background: $primary-light;
+//   /* Old browsers */
+//   background: -moz-linear-gradient(top, rgba($primary-light, 1) 0%, rgba($info-light, 1) 100%);
+//   /* FF3.6-15 */
+//   background: -webkit-linear-gradient(top, rgba($primary-light, 1) 0%, rgba($info-light, 1) 100%);
+//   /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(to bottom, rgba($primary-light, 1) 0%, rgba($info-light, 1) 100%);
+//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b99ff', endColorstr='#38dfc5',GradientType=0 );
+//   /* IE6-9 */
+// }
+// .card-gradient-height {
+//   min-height: 250px;
+// }
+// .card-xl {
+//   .card-body,
+//   .card-img-overlay {
+//     padding: 50px 60px;
+//   }
+// }
+// .card-transparent,
+// .fabrx-package-delivery .fabrx-chip {
+//   background: none !important;
+// }
+// .card-transparent {
+//   .card-body,
+//   .card-img-overlay {
+//     padding-bottom: 0;
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+// }
+// .overlay-wrap {
+//   position: relative;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+// }
+// .card-link {
+//   margin-top: auto;
+//   text-align: center;
+// }
+// .card-sm {
+//   .card-body,
+//   .card-img-overlay {
+//     padding-top: 12px;
+//   }
+// }
+// .card-img-top {
+//   @include border-radius(12px 12px 0 0);
+// }
+// .card-body {
+//   padding: 25px;
+// }
+// .card-img-overlay {
+//   padding: 25px;
+//   &.bottom {
+//     top: auto;
+//   }
+// }
+// .card-subtitle {
+//   display: block;
+// }
+// .card-meter {
+//   display: inline-block;
+//   vertical-align: middle;
+//   padding: 8px 10px;
+//   color: $white;
+//   font-weight: $font-weight-bold;
+//   font-size: 12px;
+//   &:hover,
+//   &:focus {
+//     color: $white;
+//   }
+// }
+// .fabrx-tech .fabrx-header-links .avatar-user,
+// .navbar-nav-white .nav-link {
+//   color: $white;
+// }
+// .card-meter {
+//   span {
+//     display: inline-block;
+//     vertical-align: middle;
+//   }
+//   svg + span,
+//   i + span,
+//   img + span {
+//     padding-left: 10px;
+//   }
+// }
+// .card-action {
+//   position: absolute;
+//   top: 15px;
+//   right: 15px;
+//   z-index: 1;
+// }
+// .card-numbers {
+//   display: flex;
+//   padding-left: 0;
+//   margin-bottom: 0;
+//   list-style: none;
+//   flex-wrap: wrap;
+//   li + li {
+//     padding-left: 30px;
+//   }
+// }
+// /* 2. 16. Fabrx Forms CSS */
+// /* 2. 16. 1. Fabrx Custom Control CSS  */
+// .form-group {
+//   margin-bottom: 1rem;
+// }
+// .form-check {
+//   min-height: 1rem;
+//   padding-left: 24px;
+//   .form-check-label {
+//     margin-left: 8px;
+//   }
+//   &.form-check-rounded {
+//     .form-check-input[type='checkbox'],
+//     .form-check-input[type='radio'] {
+//       border-radius: 100%;
+//     }
+//   }
+//   &.form-check-lg {
+//     .form-check-input {
+//       width: 24px;
+//       height: 24px;
+//       margin-top: 2px;
+//     }
+//     .form-check-label {
+//       font-size: 20px;
+//       margin-left: 10px;
+//     }
+//   }
+//   &.form-check-sm {
+//     padding-left: 1em;
+//     .form-check-input {
+//       width: 16px;
+//       height: 16px;
+//       margin-top: 4px;
+//       margin-left: -1em;
+//     }
+//     .form-check-label {
+//       font-size: 14px;
+//       margin-left: 8px;
+//     }
+//   }
+//   &.form-check-square {
+//     .form-check-input[type='checkbox'],
+//     .form-check-input[type='radio'] {
+//       border-radius: 0;
+//     }
+//   }
+//   .form-check-input[type='checkbox'],
+//   .form-check-input[type='radio'] {
+//     border-radius: 3px;
+//     cursor: pointer;
+//   }
+//   .form-check-input:checked[type='radio'] {
+//     background-image: none;
+//     box-shadow: 0 0 0 3px $white inset;
+//   }
+//   &.radio-has-check {
+//     .form-check-input:checked[type='radio'] {
+//       box-shadow: none;
+//       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+//     }
+//   }
+//   &.control-has-danger {
+//     .form-check-input {
+//       background-color: $danger;
+//       border-color: $danger;
+//     }
+//   }
+//   &.control-has-info-dark {
+//     .form-check-input {
+//       background-color: $info;
+//       border-color: $info;
+//     }
+//   }
+//   &.control-has-success {
+//     .form-check-input {
+//       background-color: $success;
+//       border-color: $success;
+//     }
+//   }
+//   &.control-has-primary {
+//     .form-check-input {
+//       background-color: $primary;
+//       border-color: $primary;
+//     }
+//   }
+//   &.control-has-warning {
+//     .form-check-input {
+//       background-color: $warning;
+//       border-color: $warning;
+//     }
+//   }
+// }
+// .form-check .form-check-input {
+//   margin-left: -24px;
+// }
+// .form-check-input {
+//   width: 20px;
+//   height: 20px;
+//   margin-top: 2px;
+//   border-color: $secondary-600;
+//   background: transparent;
+// }
+// .custom-control-white {
+//   .form-check-input {
+//     border-color: $white;
+//     background: transparent;
+//     &:checked[type='checkbox'] {
+//       //background-image: url(../images/icons/checkmark.svg);
+//       background-color: $white;
+//       background-repeat: no-repeat;
+//       background-position: center center;
+//       background-size: 10px;
+//     }
+//   }
+// }
+
+// .form-switch {
+//   &.form-switch-lg {
+//     padding-left: 52px;
+//     .form-check-input {
+//       width: 48px;
+//       height: 19px;
+//       margin-left: -52px;
+//       &[type='checkbox'] {
+//         border-radius: 50px;
+//       }
+//     }
+//   }
+//   .form-check-input {
+//     &[type='checkbox'] {
+//       border-radius: 50px;
+//     }
+//   }
+// }
+// .custom-control-input {
+//   position: absolute;
+//   left: 0;
+//   z-index: -1;
+//   width: 1rem;
+//   height: 1.25rem;
+//   opacity: 0;
+// }
+// .custom-control-label {
+//   position: relative;
+//   margin-bottom: 0;
+//   vertical-align: top;
+//   &:after {
+//     position: absolute;
+//     top: 0.25rem;
+//     left: -1.5rem;
+//     display: block;
+//     width: 1rem;
+//     height: 1rem;
+//     content: '';
+//     background: no-repeat 50% / 50% 50%;
+//   }
+// }
+// .custom-control {
+//   position: relative;
+//   display: block;
+//   min-height: 1.5rem;
+//   padding-left: 1.5rem;
+// }
+// .custom-control-label::before {
+//   position: absolute;
+//   top: 0.25rem;
+//   left: -1.5rem;
+//   display: block;
+//   width: 1rem;
+//   height: 1rem;
+//   pointer-events: none;
+//   content: '';
+//   background-color: #ffffff;
+//   border: #adb5bd solid 1px;
+// }
+// .custom-switch {
+//   .custom-control-input {
+//     &:checked ~ .custom-control-label {
+//       &:after {
+//         background-color: #ffffff;
+//       }
+//     }
+//   }
+//   .custom-control-label::after {
+//     width: calc(1rem - 4px);
+//     height: calc(1rem - 4px);
+//     background-color: #adb5bd;
+//     border-radius: 0.5rem;
+//     transition:
+//       transform 0.15s ease-in-out,
+//       background-color 0.15s ease-in-out,
+//       border-color 0.15s ease-in-out,
+//       box-shadow 0.15s ease-in-out;
+//   }
+// }
+// .custom-control-input:checked ~ .custom-control-label::before {
+//   color: #ffffff;
+//   border-color: #006eff;
+//   background-color: #006eff;
+// }
+// .custom-switch.custom-switch-lg[class*='custom-'] {
+//   font-size: 20px;
+// }
+// .custom-control.custom-control-lg[class*='custom-'] .custom-control-label {
+//   &:before,
+//   &:after {
+//     top: 3px;
+//     left: -34px;
+//     width: 24px;
+//     height: 24px;
+//   }
+// }
+// .custom-radio {
+//   .custom-control-label:after {
+//     background: none;
+//     border: 1px solid $transparent;
+//     @include border-radius(2px);
+//   }
+//   .custom-control-input:checked ~ .custom-control-label:after {
+//     background: none;
+//     box-shadow: 0 0 0 3px $white inset;
+//   }
+// }
+// .custom-control-input {
+//   &:focus:not(:checked) ~ .custom-control-label:before,
+//   &:not(:disabled):active ~ .custom-control-label:before {
+//     border-color: $transparent;
+//   }
+//   &:disabled ~ .custom-control-label {
+//     cursor: default;
+//   }
+// }
+// .custom-radio.radio-has-check .custom-control-input:checked ~ .custom-control-label:after {
+//   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e")
+//     no-repeat 50% / 50% 50%;
+//   box-shadow: none;
+//   border: none;
+// }
+// .fabrx-form {
+//   .form-control,
+//   .form-control:focus {
+//     background-color: $white;
+//     color: $dark;
+//     border-color: $white !important;
+//   }
+//   .custom-control:not(.custom-control-sm):not(.custom-switch) .custom-control-label {
+//     &:before,
+//     &:after {
+//       top: 0;
+//     }
+//   }
+// }
+// .was-validated .form-control:valid,
+// .form-control.is-valid,
+// .was-validated .form-control:invalid,
+// .form-control.is-invalid {
+//   background-image: none;
+// }
+// /* 2. 16. 2. Fabrx Custom Colored Controls CSS  */
+// .custom-colored-controls,
+// .card-body .custom-control {
+//   margin-right: 5px;
+// }
+// .custom-colored-controls {
+//   .custom-control-label:before {
+//     border-color: $transparent;
+//   }
+//   .custom-control-input {
+//     &:checked ~ .custom-control-label:before {
+//       border-color: $transparent;
+//     }
+//     &:focus ~ .custom-control-label:before {
+//       box-shadow: none;
+//     }
+//   }
+// }
+// /* 2. 16. 4. Fabrx Custom Control White CSS  */
+// .custom-control-white.custom-control {
+//   .custom-control-label:before,
+//   .custom-control-input:focus ~ .custom-control-label:before {
+//     border-color: $white;
+//     background-color: $transparent;
+//   }
+//   &.custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
+//     //background-image: url(../images/icons/checkmark.svg);
+//   }
+//   .custom-control-input:checked ~ .custom-control-label:before {
+//     background-color: $white;
+//     border-color: $white;
+//   }
+// }
+// /* 2. 16. 4. Fabrx Custom Switch CSS  */
+// .custom-switch {
+//   padding-left: 40px;
+//   &.custom-switch-stack {
+//     .custom-control-label {
+//       &:before {
+//         top: 4px;
+//         height: 12px;
+//       }
+//       &:after {
+//         top: 2px;
+//         left: -40px;
+//         width: 16px;
+//         height: 16px;
+//       }
+//     }
+//     .custom-control-input:checked ~ .custom-control-label:after {
+//       -webkit-transform: translateX(17px);
+//       transform: translateX(17px);
+//       box-shadow: 0 2px 5px rgba($gray-light, 0.2);
+//     }
+//   }
+//   &.custom-switch-lg {
+//     padding-left: 56px;
+//     .custom-control-label {
+//       &:before {
+//         left: -56px;
+//         width: 48px;
+//         height: 24px;
+//       }
+//       &:after {
+//         left: calc(-56px + 2px);
+//         width: 20px;
+//         height: 20px;
+//       }
+//     }
+//     .custom-control-input:checked ~ .custom-control-label:after {
+//       -webkit-transform: translateX(24px);
+//       transform: translateX(24px);
+//     }
+//     &.custom-switch-stack {
+//       .custom-control-label {
+//         &:before {
+//           top: 5px;
+//           height: 19px;
+//         }
+//         &:after {
+//           top: 2px;
+//           left: -58px;
+//           width: 24px;
+//           height: 24px;
+//         }
+//       }
+//       .custom-control-input:checked ~ .custom-control-label:after {
+//         -webkit-transform: translateX(28px);
+//         transform: translateX(28px);
+//         box-shadow: 0 2px 5px rgba($gray-light, 0.2);
+//       }
+//     }
+//   }
+//   .custom-control-label {
+//     &:before {
+//       top: 2px;
+//       left: -40px;
+//       width: 32px;
+//       height: 16px;
+//       border-color: $transparent;
+//       @include border-radius(50px);
+//       box-shadow: 0 2px 5px rgba($gray-light, 0.2);
+//     }
+//     &:after {
+//       top: 4px;
+//       left: calc(-40px + 2px);
+//       @include border-radius(50px);
+//     }
+//   }
+//   .custom-control-input {
+//     &:checked ~ .custom-control-label:after {
+//       -webkit-transform: translateX(16px);
+//       transform: translateX(16px);
+//     }
+//     &:disabled ~ .custom-control-label:before,
+//     &[disabled] ~ .custom-control-label:before {
+//       background: $btn-thin-light;
+//       box-shadow: none;
+//     }
+//     &:disabled ~ .custom-control-label:after,
+//     &[disabled] ~ .custom-control-label:after {
+//       background: $btn-light;
+//     }
+//   }
+// }
+// /* 2. 16. 5. Fabrx Inputs CSS  */
+// .form-group {
+//   position: relative;
+// }
+// .form-control {
+//   height: 48px;
+//   padding: 10px 15px;
+//   background-color: $transparent;
+//   color: $dark;
+//   border-color: $secondary-300;
+//   @include border-radius(3px);
+//   resize: none;
+//   -webkit-appearance: none;
+//   -ms-appearance: none;
+//   -o-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   &:focus {
+//     background-color: $transparent;
+//     box-shadow: none;
+//   }
+// }
+// textarea.form-control {
+//   height: auto;
+// }
+// .form-control-sm {
+//   height: calc(1.5em + 0.5rem + 2px);
+//   padding: 0.25rem 0.5rem;
+//   font-size: 0.875rem;
+//   line-height: 1.5;
+//   @include border-radius(0.2rem);
+// }
+// .form-control {
+//   &[class*='is-']:focus {
+//     box-shadow: none;
+//   }
+//   &.is-valid {
+//     border-color: $success !important;
+//   }
+// }
+// .was-validated .form-control:valid,
+// .form-control.is-valid:focus,
+// .was-validated .form-control:valid:focus {
+//   border-color: $success !important;
+// }
+// .form-control.is-invalid,
+// .was-validated .form-control:invalid,
+// .alert-outline-danger,
+// .form-control.is-invalid:focus,
+// .was-validated .form-control:invalid:focus {
+//   border-color: $danger;
+// }
+// .form-control {
+//   &:disabled,
+//   &[readonly] {
+//     background-color: $secondary-200;
+//     border-color: $transparent;
+//   }
+//   &::-webkit-input-placeholder,
+//   &::-moz-placeholder,
+//   &:-ms-input-placeholder,
+//   &::-ms-input-placeholder,
+//   &::placeholder {
+//     color: $secondary;
+//   }
+// }
+// .form-line-control {
+//   border-top: none;
+//   border-left: none;
+//   border-right: none;
+//   @include border-radius(0);
+// }
+// .valid-feedback i {
+//   margin-right: 5px;
+// }
+// .invalid-feedback {
+//   img,
+//   svg {
+//     margin-right: 5px;
+//   }
+// }
+// .valid-feedback span,
+// .invalid-feedback span {
+//   display: inline-block;
+//   vertical-align: middle;
+// }
+// .control-icon {
+//   display: flex;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 30px;
+//   height: 48px;
+//   margin-bottom: 0;
+//   align-items: center;
+//   justify-content: flex-end;
+//   @include border-radius(3px 0 0 3px);
+//   &.btn {
+//     width: 50px;
+//     height: 48px;
+//     min-width: 10px;
+//     padding: 10px;
+//     justify-content: center;
+//   }
+//   &:not(.btn) {
+//     padding: 13px 0 13px 13px;
+//   }
+//   &.btn:not(.control-icon-right) + .form-control {
+//     padding-left: 65px;
+//   }
+//   &.control-icon-right:not(.btn) {
+//     padding-left: 0;
+//     padding-right: 13px;
+//   }
+//   &.btn.control-icon-right {
+//     + .form-control {
+//       padding-right: 65px;
+//     }
+//     justify-content: center;
+//   }
+//   &.control-icon-right {
+//     left: auto;
+//     right: 0;
+//     @include border-radius(0 3px 3px 0);
+//     justify-content: flex-start;
+//     + .form-control {
+//       padding-right: 45px;
+//     }
+//   }
+//   &:not(.control-icon-right) + .form-control,
+//   + .control-icon-right + .form-control {
+//     padding-left: 45px;
+//   }
+//   &.control-icon-caption:not(.btn) {
+//     width: auto;
+//     height: auto;
+//   }
+//   &.btn-light {
+//     background-color: $btn-light;
+//   }
+// }
+// .control-icon-caption {
+//   i,
+//   img,
+//   svg {
+//     margin-right: 5px;
+//   }
+//   &:not(.control-icon-right) + .form-control,
+//   + .control-icon-right + .form-control {
+//     padding-left: 110px;
+//   }
+//   &.control-icon-right {
+//     + .form-control {
+//       padding-right: 110px;
+//     }
+//     i,
+//     img,
+//     svg {
+//       margin: 0 0 0 5px;
+//     }
+//   }
+// }
+// /* 2. 16. 6. Fabrx Select CSS  */
+// select {
+//   //background-image: url(../images/icons/down-arrow.svg);
+//   background-repeat: no-repeat;
+//   background-position: right 15px center;
+// }
+// /* 2. 17. Fabrx Circle Progressbar CSS  */
+// .progress-bar {
+//   width: 0;
+//   animation: progress 1.5s ease-in-out forwards;
+
+//   .title {
+//     opacity: 0;
+//     animation: show 0.35s forwards ease-in-out 0.5s;
+//   }
+// }
+
+// @keyframes progress {
+//   from {
+//     width: 0;
+//   }
+//   to {
+//     width: 100%;
+//   }
+// }
+// @keyframes show {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+// .fabrx-circle-progress {
+//   display: inline-block;
+//   vertical-align: middle;
+//   position: relative;
+//   &.w-100 {
+//     svg,
+//     svg * {
+//       width: 100% !important;
+//     }
+//   }
+//   &.label-none {
+//     .ldBar-label {
+//       display: none;
+//     }
+//   }
+// }
+// .circle-counter {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   font-size: 20px;
+//   transform: translateX(-50%) translateY(-50%);
+//   z-index: 1;
+// }
+// .circle-counter-lg {
+//   font-size: 40px;
+// }
+// /* 2. 18. Fabrx Progress Bar CSS  */
+// .progress-item {
+//   padding-bottom: 30px;
+//   &:last-child {
+//     padding-bottom: 0;
+//   }
+//   &.progress-md {
+//     padding-bottom: 10px;
+//   }
+// }
+// .progress-md {
+//   .progress {
+//     height: 6px;
+//   }
+//   .progress-title {
+//     padding-bottom: 5px;
+//     font-size: 10px;
+//   }
+// }
+// .progress-sm .progress {
+//   height: 4px;
+// }
+// .progress {
+//   height: 13px;
+//   overflow: visible;
+//   background-color: $secondary-200;
+//   @include border-radius(15px);
+// }
+// .progress-bar {
+//   overflow: visible !important;
+//   color: inherit;
+//   position: relative;
+//   @include border-radius(15px);
+//   transition: none;
+// }
+// .progress-title {
+//   padding-bottom: 8px;
+// }
+// .progress + .progress-title {
+//   padding-top: 8px;
+//   padding-bottom: 0;
+// }
+// .progress-tooltip {
+//   position: absolute;
+//   top: -30px;
+//   right: -13px;
+//   padding: 2.5px 5px;
+//   background: $tooltip-bg;
+//   color: $white;
+//   font-weight: $font-weight-bold;
+//   font-size: 10px;
+//   @include border-radius(2px);
+//   z-index: 1;
+//   line-height: 15px;
+//   &:after {
+//     position: absolute;
+//     top: 100%;
+//     left: 50%;
+//     border-top: 5px solid $tooltip-bg;
+//     border-left: 5px solid $transparent;
+//     border-right: 5px solid $transparent;
+//     content: '';
+//     transform: translateX(-50%);
+//     z-index: 1;
+//   }
+// }
+// /* 2. 19. Fabrx Testimonials CSS  */
+// .testimonial-author {
+//   padding-bottom: 15px;
+//   margin-bottom: 15px;
+//   border-bottom: 1px solid $secondary-300;
+//   &.stack {
+//     margin-top: -10.5%;
+//   }
+// }
+// /* 2. 20. Fabrx Chips CSS  */
+// .fabrx-chip {
+//   display: inline-flex;
+//   vertical-align: middle;
+//   min-height: 32px;
+//   padding: 3px 4px;
+//   background: $white;
+//   border-width: 1px;
+//   border-style: solid;
+//   @include border-radius(50px);
+//   align-items: center;
+//   box-shadow: 0 0 1px rgba($gray-light, 0.2);
+//   &:not([class*='fabrx-outline-']) {
+//     border-color: $secondary-light-100;
+//   }
+//   img {
+//     width: 24px;
+//     height: 24px;
+//     object-fit: cover;
+//     @include border-radius(100%);
+//     + span {
+//       padding: 0 17px 0 8px;
+//     }
+//   }
+//   svg {
+//     margin: 0 -4px 0 4px;
+//   }
+//   span {
+//     padding: 0 14px;
+//   }
+// }
+// .chip-closer {
+//   margin: -4px 5px 0 -5px;
+//   svg {
+//     margin: 0;
+//   }
+// }
+// /* 2. 21. Fabrx Comments CSS  */
+// .comment-item {
+//   padding-bottom: 35px;
+//   ol {
+//     padding: 35px 0 0 150px;
+//   }
+//   &:last-child {
+//     padding-bottom: 0;
+//   }
+// }
+// /* 2. 22. Fabrx Media CSS  */
+// .media {
+//   padding: 30px;
+//   background: $white;
+//   @include border-radius(8px);
+//   box-shadow: 0 3px 4px rgba($gray-light, 0.2);
+//   display: block;
+//   .fabrx-avatar {
+//     float: left;
+//   }
+//   .media-body {
+//     overflow: hidden;
+//   }
+// }
+// /* 2. 23. Fabrx Media Links CSS  */
+// .fabrx-media-links li {
+//   + li {
+//     padding-left: 35px;
+//   }
+//   a {
+//     display: inline-flex;
+//     align-items: center;
+//     i {
+//       margin-right: 8px;
+//       transition: all ease 0.4s;
+//     }
+//     svg {
+//       margin-right: 8px;
+//       transition: all ease 0.4s;
+//       * {
+//         margin-right: 8px;
+//         transition: all ease 0.4s;
+//       }
+//     }
+//     img {
+//       margin-right: 8px;
+//       transition: all ease 0.4s;
+//     }
+//   }
+// }
+// /* 2. 24. Fabrx Datepicker CSS  */
+// .flatpickr-calendar {
+//   width: auto !important;
+//   padding: 15px;
+//   @include border-radius(10px);
+//   -webkit-box-shadow: 0 0 3px rgba($gray-light, 0.2);
+//   box-shadow: 0 0 3px rgba($gray-light, 0.2);
+//   &.inline {
+//     top: 0;
+//     width: 100%;
+//     max-height: none;
+//     .flatpickr-rContainer {
+//       display: block;
+//       width: 100%;
+//     }
+//     .flatpickr-weekdays {
+//       margin: 1% 0;
+//     }
+//     .flatpickr-days,
+//     .dayContainer {
+//       width: 100%;
+//       max-width: 100%;
+//     }
+//     .flatpickr-day {
+//       max-width: 100%;
+//       margin: 1% 0;
+//     }
+//   }
+// }
+// .flatpickr-day {
+//   position: relative;
+//   z-index: 1;
+//   &.selected {
+//     &:hover,
+//     &:focus {
+//       background-color: $transparent;
+//       border-color: $transparent;
+//     }
+//   }
+//   &:hover {
+//     background-color: $transparent;
+//     border-color: $transparent;
+//   }
+//   &.today {
+//     &:hover,
+//     &:focus {
+//       background-color: $transparent;
+//       border-color: $transparent;
+//     }
+//   }
+//   &.enfRange:hover,
+//   &.startRange:focus {
+//     background-color: $transparent;
+//     border-color: $transparent;
+//   }
+//   &.endRange {
+//     &:focus,
+//     &:hover {
+//       background-color: $transparent;
+//       border-color: $transparent;
+//     }
+//   }
+//   &.startRange:hover,
+//   &.inRange,
+//   &.endRange,
+//   &.today.inRange,
+//   &.nextMonthDay:hover,
+//   &.prevMonthDay:hover,
+//   &.selected.prevMonthDay,
+//   &.startRange.prevMonthDay,
+//   &.endRange.prevMonthDay,
+//   &.selected.nextMonthDay,
+//   &.startRange.nextMonthDay,
+//   &.endRange.nextMonthDay {
+//     background-color: $transparent;
+//     border-color: $transparent;
+//   }
+//   &.inRange {
+//     &.prevMonthDay,
+//     &.nextMonthDay {
+//       background-color: $transparent;
+//       border-color: $transparent;
+//     }
+//   }
+//   &.startRange,
+//   &:focus {
+//     background-color: $transparent;
+//     border-color: $transparent;
+//   }
+//   &:hover:before {
+//     content: '';
+//     display: block;
+//     width: 32px;
+//     height: 32px;
+//     @include border-radius(50%);
+//     position: absolute;
+//     z-index: -1;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+//   &.today {
+//     &:before,
+//     &.selected:before {
+//       content: '';
+//       display: block;
+//       width: 32px;
+//       height: 32px;
+//       @include border-radius(50%);
+//       position: absolute;
+//       z-index: -1;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+//   &.selected {
+//     &:before,
+//     &:hover:before,
+//     &:focus:before {
+//       content: '';
+//       display: block;
+//       width: 32px;
+//       height: 32px;
+//       @include border-radius(50%);
+//       position: absolute;
+//       z-index: -1;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+//   &.today.selected {
+//     &:hover:before,
+//     &:focus:before {
+//       content: '';
+//       display: block;
+//       width: 32px;
+//       height: 32px;
+//       @include border-radius(50%);
+//       position: absolute;
+//       z-index: -1;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+//   &.endRange.nextMonthDay.inRange.selected {
+//     &:before,
+//     &:hover:before,
+//     &:focus:before {
+//       content: '';
+//       display: block;
+//       width: 32px;
+//       height: 32px;
+//       @include border-radius(50%);
+//       position: absolute;
+//       z-index: -1;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+//   &.prevMonthDay.endRange {
+//     &:hover:before,
+//     &:focus:before {
+//       content: '';
+//       display: block;
+//       width: 32px;
+//       height: 32px;
+//       @include border-radius(50%);
+//       position: absolute;
+//       z-index: -1;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+//   &.nextMonthDay.endRange {
+//     &:hover:before,
+//     &:focus:before {
+//       content: '';
+//       display: block;
+//       width: 32px;
+//       height: 32px;
+//       @include border-radius(50%);
+//       position: absolute;
+//       z-index: -1;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+//   &.prevMonthDay.startRange {
+//     &:hover:before,
+//     &:focus:before {
+//       content: '';
+//       display: block;
+//       width: 32px;
+//       height: 32px;
+//       @include border-radius(50%);
+//       position: absolute;
+//       z-index: -1;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+//   &.nextMonthDay.startRange {
+//     &:hover:before,
+//     &:focus:before {
+//       content: '';
+//       display: block;
+//       width: 32px;
+//       height: 32px;
+//       @include border-radius(50%);
+//       position: absolute;
+//       z-index: -1;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+//   &.startRange {
+//     &:before,
+//     &:hover:before,
+//     &:focus:before {
+//       content: '';
+//       display: block;
+//       width: 32px;
+//       height: 32px;
+//       @include border-radius(50%);
+//       position: absolute;
+//       z-index: -1;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+//   &.nextMonthDay {
+//     &.startRange:before,
+//     &.selected.startRange.inRange:before {
+//       content: '';
+//       display: block;
+//       width: 32px;
+//       height: 32px;
+//       @include border-radius(50%);
+//       position: absolute;
+//       z-index: -1;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+//   &.selected.startRange + .flatpickr-day.endRange:before,
+//   &.endRange:before {
+//     content: '';
+//     display: block;
+//     width: 32px;
+//     height: 32px;
+//     @include border-radius(50%);
+//     position: absolute;
+//     z-index: -1;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+//   &.inRange:after {
+//     content: '';
+//     display: block;
+//     width: 100%;
+//     height: 32px;
+//     position: absolute;
+//     z-index: -1;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+//   &.today {
+//     &.inRange:after {
+//       content: '';
+//       display: block;
+//       width: 100%;
+//       height: 32px;
+//       position: absolute;
+//       z-index: -1;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//     border: none;
+//     &.selected:before {
+//       border: none;
+//     }
+//     &:hover,
+//     &:focus {
+//       color: $dark-700;
+//     }
+//     &:before,
+//     &:hover:before,
+//     &:focus:before {
+//       border: 1px solid $dark-600;
+//       background-color: $white;
+//     }
+//     &.selected {
+//       &:hover,
+//       &:focus,
+//       &:hover:before,
+//       &:focus:before {
+//         color: $white;
+//         border: 0;
+//       }
+//     }
+//   }
+//   &.startRange:after,
+//   &.endRange:after,
+//   &.selected.startRange:after,
+//   &.inRange + .flatpickr-day.endRange:after,
+//   &.selected.startRange + .flatpickr-day.endRange:after,
+//   &.inRange + .flatpickr-day.startRange:after,
+//   &.selected.endRange + .flatpickr-day.startRange:after,
+//   &.startRange + .flatpickr-day.endRange:after {
+//     content: '';
+//     display: block;
+//     width: 60%;
+//     height: 32px;
+//     position: absolute;
+//     z-index: -2;
+//     top: 50%;
+//     right: -3px;
+//     transform: translateY(-50%);
+//     background-color: $shade-200;
+//   }
+//   &.inRange + .flatpickr-day.endRange:after,
+//   &.startRange + .flatpickr-day.endRange:after,
+//   &.selected.startRange + .flatpickr-day.endRange:after,
+//   &.endRange:after {
+//     left: -4px;
+//     right: auto;
+//   }
+//   &.selected {
+//     &.endRange:after {
+//       display: none;
+//     }
+//     &.startRange + .endRange:not(:nth-child(7n + 1)) {
+//       box-shadow: none;
+//     }
+//   }
+//   &.startRange.startRange + .endRange:not(:nth-child(7n + 1)),
+//   &.endRange.startRange + .endRange:not(:nth-child(7n + 1)),
+//   &.inRange {
+//     box-shadow: none;
+//   }
+// }
+// .flatpickr-calendar {
+//   &.multiMonth .flatpickr-days .dayContainer:nth-child(n + 2) .flatpickr-day.inRange:nth-child(7n + 1) {
+//     box-shadow: none;
+//   }
+//   &.open {
+//     max-height: none;
+//   }
+// }
+// .flatpickr-months {
+//   padding-bottom: 5px;
+//   .flatpickr-prev-month,
+//   .flatpickr-next-month {
+//     position: static;
+//     display: inline-block;
+//     height: auto;
+//   }
+// }
+// .flatpickr-current-month {
+//   span.cur-month {
+//     margin-left: 0;
+//     font-weight: $font-weight-normal;
+//   }
+//   input.cur-year {
+//     font-weight: $font-weight-normal;
+//   }
+// }
+// span.flatpickr-weekday {
+//   font-weight: $font-weight-medium;
+// }
+// .flatpickr-day {
+//   &.inRange:after,
+//   &.prevMonthDay.inRange:before,
+//   &.nextMonthDay.inRange:before,
+//   &.today.inRange:after,
+//   &.prevMonthDay.today.inRange:before,
+//   &.nextMonthDay.today.inRange:before,
+//   &:hover:before,
+//   &.prevMonthDay:hover:before,
+//   &.nextMonthDay:hover:before,
+//   &:focus:before,
+//   &.prevMonthDay:focus:before,
+//   &.nextMonthDay:focus:before {
+//     background: $shade-200;
+//     border-color: $shade-200;
+//   }
+//   &.inRange::after {
+//     -webkit-box-shadow:
+//       -5px 0 0 $shade-200,
+//       5px 0 0 $shade-200;
+//     box-shadow:
+//       -5px 0 0 $shade-200,
+//       5px 0 0 $shade-200;
+//   }
+//   &.disabled {
+//     font-weight: $font-weight-light;
+//     &:hover {
+//       font-weight: $font-weight-light;
+//     }
+//   }
+//   &.prevMonthDay,
+//   &.nextMonthDay {
+//     font-weight: $font-weight-light;
+//   }
+//   &.notAllowed {
+//     font-weight: $font-weight-light;
+//     &.prevMonthDay,
+//     &.nextMonthDay {
+//       font-weight: $font-weight-light;
+//     }
+//   }
+//   &.selected {
+//     color: $white;
+//     font-weight: $font-weight-medium;
+//     background-color: $transparent;
+//     border-color: $transparent;
+//   }
+// }
+// /* 2. 25. Fabrx Dropdown CSS  */
+// [id*='FabrxAutocomplete'] ~ .dropdown-menu {
+//   width: 100%;
+//   max-height: 192px;
+//   overflow-x: hidden;
+//   overflow-y: auto;
+// }
+// .dropdown-toggle:after {
+//   vertical-align: middle;
+// }
+// .dropdown-menu {
+//   padding: 0;
+//   border: none;
+//   box-shadow: 0 0 2px rgba($gray-light, 0.2);
+//   &.fabrx-scroll {
+//     max-height: 290px;
+//   }
+//   .fabrx-scroll-height {
+//     max-height: 290px;
+//     overflow: hidden;
+//   }
+//   .dropdown-divider {
+//     margin: 0;
+//   }
+// }
+// .dropdown-menu-controls {
+//   padding: 0 15px;
+//   .custom-control {
+//     margin: 16px 0;
+//   }
+// }
+// .dropdown-menu-between .dropdown-item {
+//   justify-content: space-between;
+// }
+// .dropdown-menu-divider .dropdown-item {
+//   border-bottom: 1px solid $secondary-300;
+//   &:last-child {
+//     border-bottom: none;
+//   }
+// }
+// .dropdown-item {
+//   display: flex;
+//   min-height: 48px;
+//   padding: 8px 15px;
+//   align-items: center;
+//   &:first-child {
+//     @include border-radius(0.25rem 0.25rem 0 0);
+//   }
+//   &:last-child {
+//     @include border-radius(0 0 0.25rem 0.25rem);
+//   }
+//   i + .dropdown-text,
+//   svg + .dropdown-text,
+//   img + .dropdown-text,
+//   .fabrx-avatar + .dropdown-text {
+//     margin-left: 8px;
+//     transition: all ease 0.4s;
+//   }
+// }
+// .dropdown-text {
+//   display: inline-block;
+//   vertical-align: middle;
+// }
+// /* 2. 26. Fabrx Malihu Custom Scrollbar CSS  */
+// .fabrx-scroll {
+//   height: 100%;
+//   overflow: hidden;
+// }
+// /* 2. 27. Fabrx Uploader CSS  */
+// .custom-size {
+//   width: 150px !important;
+//   height: 150px !important;
+// }
+// .fabrx-uploader {
+//   font-size: 0;
+// }
+// .fileuploader {
+//   padding: 0;
+//   margin: 0;
+//   background: none;
+//   @include border-radius(0);
+// }
+// .fileuploader-input {
+//   display: block;
+//   padding: 50px;
+//   min-height: 100%;
+//   background: $secondary-100;
+//   text-align: center;
+//   border: 2px dotted $gray-light-200;
+//   @include border-radius(10px);
+//   .dz-preview {
+//     min-height: auto;
+//     .media {
+//       box-shadow: none;
+//     }
+//     h6 {
+//       font-size: 16px;
+//       color: $black;
+//       text-align: left;
+//       padding-right: 6px;
+//     }
+//     .dz-image {
+//       width: 60px;
+//       height: 60px;
+//       border-radius: 4px;
+//       box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+//     }
+//     .content-boxfile {
+//       width: calc(100% - 60px);
+//       padding-left: 13px;
+//       .dropdown-item {
+//         width: auto;
+//         cursor: pointer;
+//         background-color: transparent;
+//         padding: 0;
+//         svg {
+//           max-width: 15px;
+//           cursor: pointer;
+//         }
+//         &:hover {
+//           background-color: transparent;
+//           svg,
+//           svg * {
+//             fill: $primary;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .dz-message {
+//     display: block;
+//     padding: 0 0 12px;
+//     margin-right: 0;
+//     background: none;
+//     font-weight: $font-weight-normal;
+//     font-size: 24px;
+//     border: 0;
+//     @include border-radius(0);
+//     box-shadow: none;
+//     &:before {
+//       display: block;
+//       width: 40px;
+//       height: 48px;
+//       margin: 0 auto 20px;
+//       //background-image: url(../images/icons/files.svg);
+//       background-repeat: no-repeat;
+//       background-position: 50% 50%;
+//       background-size: contain;
+//       content: '';
+//       z-index: 1;
+//     }
+//   }
+//   .fileuploader-input-button {
+//     padding: 0;
+//     background: none;
+//     font-weight: $font-weight-normal;
+//     box-shadow: none;
+//     @include border-radius(0);
+//   }
+// }
+// .fileuploader-popup .fileuploader-popup-content .fileuploader-popup-button {
+//   padding: 0;
+//   background: none;
+//   font-weight: $font-weight-normal;
+//   box-shadow: none;
+//   @include border-radius(0);
+//   &.button-success {
+//     padding: 0;
+//     background: none;
+//     font-weight: $font-weight-normal;
+//     box-shadow: none;
+//     @include border-radius(0);
+//   }
+// }
+// .fileuploader-input .fileuploader-input-button:hover,
+// .fileuploader-popup .fileuploader-popup-content .fileuploader-popup-button.button-success:hover {
+//   box-shadow: none;
+// }
+// .fileuploader-items {
+//   .fileuploader-items-list {
+//     margin: 0;
+//   }
+//   .fileuploader-item {
+//     .column-actions {
+//       margin: 0;
+//     }
+//     padding: 15px;
+//     border-bottom: none;
+//     &:first-child {
+//       margin-top: 25px;
+//     }
+//     &:last-child {
+//       margin-bottom: 0;
+//     }
+//     .fileuploader-action.fileuploader-action-remove i {
+//       background: none;
+//       color: $secondary-600;
+//       border-width: 1px;
+//       border-style: solid;
+//       box-shadow: none;
+//     }
+//     .column-thumbnail {
+//       width: 24px;
+//       height: 30px;
+//     }
+//     .fileuploader-item-image {
+//       border: 1px solid $secondary-600;
+//       @include border-radius(3px);
+//     }
+//     .fileuploader-item-icon {
+//       background: none !important;
+//       color: $secondary-600;
+//       @include border-radius(0);
+//       &:before {
+//         position: absolute;
+//         top: -1px;
+//         right: -1px;
+//         width: 5px;
+//         height: 5px;
+//         border-bottom-width: 1px;
+//         border-bottom-style: solid;
+//         border-right-width: 1px;
+//         border-right-style: solid;
+//         content: '';
+//         transform: rotate(90deg);
+//         z-index: 1;
+//       }
+//       &.is-bright-color {
+//         color: $secondary-600;
+//       }
+//       i {
+//         font-size: 8px;
+//         text-transform: uppercase;
+//       }
+//     }
+//     .column-title div {
+//       padding-bottom: 3px;
+//       font-weight: $font-weight-normal;
+//     }
+//     .fileuploader-action {
+//       i {
+//         line-height: 18px;
+//       }
+//       &.fileuploader-action-remove i {
+//         &:hover,
+//         &:active {
+//           color: $white;
+//           border-color: $transparent;
+//         }
+//       }
+//     }
+//   }
+// }
+// /* 2. 28. Fabrx Page Controls CSS  */
+// .fabrx-page-controls {
+//   display: flex;
+//   padding-left: 0;
+//   line-height: 0;
+//   list-style: none;
+//   li + li {
+//     margin-left: 10px;
+//   }
+//   .page-control {
+//     display: inline-block;
+//     vertical-align: middle;
+//     width: 8px;
+//     height: 8px;
+//     background: $secondary-300;
+//     text-indent: -99999px;
+//     @include border-radius(25px);
+//   }
+// }
+// .controls-active-stack .page-control.active,
+// .controls-stack .page-control {
+//   width: 20px;
+//   height: 8px;
+// }
+// /* 2. 29. Fabrx Nav Tabs CSS */
+// /* 29. 1. Fabrx Nav Tabs Default CSS  */
+// .nav-tabs {
+//   padding: 4px;
+//   background: $white;
+//   border: none;
+//   @include border-radius(6px);
+//   box-shadow: 0 0 2px rgba($gray-light, 0.2);
+//   .nav-item.show .nav-link {
+//     color: $white;
+//     font-weight: $font-weight-medium;
+//   }
+//   .nav-link {
+//     &.active {
+//       color: $white;
+//       font-weight: $font-weight-normal;
+//     }
+//     min-width: 115px;
+//     padding: 6px 15px;
+//     text-align: center;
+//     border: none;
+//     @include border-radius(4px);
+//   }
+//   .nav-item {
+//     margin-bottom: 0;
+//   }
+// }
+// /* 29. 2. Fabrx Nav Tabs Large CSS  */
+// .nav-tabs-lg {
+//   .nav-link {
+//     padding: 14px 21px;
+//   }
+//   .nav-item.show .nav-link,
+//   .nav-link.active {
+//     font-weight: $font-weight-bold;
+//   }
+// }
+// /* 29. 3. Fabrx Nav Tabs Small CSS  */
+// .nav-tabs-sm {
+//   font-size: 10px;
+//   .nav-link {
+//     padding: 9px 13px;
+//     min-width: 11px;
+//   }
+//   .nav-item.show .nav-link,
+//   .nav-link.active {
+//     font-weight: $font-weight-bold;
+//   }
+// }
+// /* 29. 4. Fabrx Nav Tabs Rounded CSS  */
+// .nav-tabs-rounded {
+//   @include border-radius(30px);
+//   .nav-link {
+//     @include border-radius(30px);
+//   }
+// }
+// /* 29. 5. Fabrx Nav Tabs line CSS  */
+// .nav-tabs-line {
+//   background-color: $transparent;
+//   @include border-radius(0px);
+//   box-shadow: none;
+//   padding: 0;
+// }
+// .nav-tabs.nav-tabs-line {
+//   .nav-link {
+//     border-bottom: 1px solid $btn-thin-light;
+//     @include border-radius(0px);
+//   }
+//   .nav-item.show .nav-link,
+//   .nav-link.active {
+//     background-color: $transparent;
+//     border-color: $primary;
+//   }
+// }
+// /* 29. 6. Fabrx Nav Tabs Medium CSS  */
+// .nav-tabs-md .nav-link {
+//   padding: 9px 27px;
+//   min-width: 11px;
+// }
+// /* 29. 7. Fabrx Nav Tabs No Background CSS  */
+// .nav-tabs-no-bg {
+//   background-color: $transparent;
+//   box-shadow: none;
+// }
+// /* 29. 8. Fabrx Nav Tabs Stack CSS  */
+// .nav-tabs.nav-tags-stack .nav-link {
+//   display: flex;
+//   text-align: left;
+//   border-color: $secondary-300;
+// }
+// .nav-tags-stack {
+//   .fabrx-icon {
+//     padding-right: 13px;
+//   }
+//   p {
+//     margin-bottom: 0;
+//   }
+// }
+// /* 29. 9. Fabrx Nav Tabs Flex Column CSS  */
+// .flex-column.nav-tabs-line .nav-link {
+//   padding: 15px 0;
+// }
+// /* 29. 10. Fabrx Nav Tabs Children CSS  */
+// .nav-tabs.nav-tabs-children .nav-link {
+//   border-bottom: 0;
+//   font-weight: $font-weight-medium;
+// }
+// .nav-tabs-children {
+//   .nav-tabs {
+//     padding-left: 20px;
+//     .nav-link {
+//       font-weight: $font-weight-normal;
+//     }
+//   }
+//   .nav-link {
+//     padding: 10px 0;
+//   }
+//   .nav-tabs .nav-link {
+//     padding: 5px 0;
+//   }
+// }
+// .fabrx-justified.nav-tabs .nav-link {
+//   padding: 15px;
+// }
+// /* 29. 11. Fabrx Light Tabs CSS */
+// .fabrx-light-tabs {
+//   background-color: rgba($white, 0.07);
+//   @include border-radius(4px);
+//   padding: 0;
+// }
+// .fabrx-light-tabs.nav-tabs .nav-link {
+//   color: $white;
+//   padding: 17px 30px;
+// }
+// .fabrx-light-tabs.nav-tabs .nav-item.show .nav-link,
+// .fabrx-light-tabs.nav-tabs .nav-link.active {
+//   background-color: rgba($gray-light-500, 0.1);
+//   font-weight: $font-weight-normal;
+//   @include border-radius(0px);
+// }
+// .fabrx-light-tabs.nav-tabs .nav-item.show:first-child .nav-link,
+// .fabrx-light-tabs.nav-tabs .nav-item:first-child .nav-link.active {
+//   @include border-radius(4px 0 0 4px);
+// }
+// /* 2. 30. Fabrx Pagination CSS */
+// /* 2. 30. 1. Fabrx Default Pagination CSS  */
+// .pagination .page-item.active .page-link {
+//   font-weight: $font-weight-medium;
+//   color: $white;
+// }
+// .page-link {
+//   border-color: $secondary-300;
+//   padding: 9px 13px;
+//   margin-bottom: -1px;
+// }
+// .primary-page-item {
+//   background-color: $transparent;
+// }
+// .fabrx-pagination {
+//   display: flex;
+//   .primary-page-item {
+//     font-size: 14px;
+//     min-width: 75px;
+//     text-align: center;
+//     @include border-radius(4px);
+//     display: inline-flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// }
+// .pagination {
+//   flex-wrap: wrap;
+// }
+// .fabrx-pagination .pagination {
+//   margin: 0 18px;
+// }
+// /* 30. 2. Fabrx Custom Pagination CSS  */
+// .custom-select {
+//   display: inline-block;
+//   width: 100%;
+//   height: calc(1.5em + 0.75rem + 2px);
+//   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+//   font-size: 1rem;
+//   font-weight: 400;
+//   line-height: 1.5;
+//   color: #495057;
+//   vertical-align: middle;
+//   background: #ffffff
+//     url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
+//     no-repeat right 0.75rem center/8px 10px;
+//   border: 1px solid #ced4da;
+//   border-radius: 0.25rem;
+//   appearance: none;
+// }
+// .fabrix-custom-pagination {
+//   display: inline-flex;
+//   align-items: center;
+//   @include border-radius(4px);
+//   border: 1px solid $secondary-300;
+//   padding: 7px 15px;
+//   label {
+//     font-size: 12px;
+//   }
+//   .custom-select-sm {
+//     height: calc(1.5em + 0.5rem + 2px);
+//     padding-top: 0.25rem;
+//     padding-bottom: 0.25rem;
+//     padding-left: 0.5rem;
+//     font-size: 0.875rem;
+//   }
+//   .custom-select,
+//   .form-control {
+//     width: 58px;
+//     height: 22px;
+//     background-color: $transparent;
+//     text-align: center;
+//     padding: 2px 5px;
+//     min-height: 22px;
+//   }
+//   .custom-select {
+//     background-position: right 0.25rem center;
+//     line-height: 14px;
+//     padding-right: 13px;
+//   }
+// }
+// /* 2. 31. Fabrx Checks CSS  */
+// .fabrx-checks {
+//   padding-left: 0;
+//   li {
+//     position: relative;
+//     padding-left: 30px;
+//     list-style: none;
+//     margin: 8px 0;
+//     &:before {
+//       content: '';
+//       display: block;
+//       width: 16px;
+//       height: 7px;
+//       border-width: 0 0 2px 2px;
+//       border-style: solid;
+//       position: absolute;
+//       top: 5px;
+//       left: 0;
+//       transform: rotate(-45deg);
+//     }
+//     &:last-child {
+//       margin-bottom: 0;
+//     }
+//   }
+// }
+// /* 31. 1. Fabrx Plan Price CSS  */
+// .plan-heading {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: center;
+// }
+// .plan-price {
+//   margin-left: auto;
+//   font-size: 12px;
+//   font-weight: $font-weight-normal;
+//   sup {
+//     vertical-align: super;
+//     font-size: 40%;
+//   }
+// }
+// /* 31. 2. Fabrx lines CSS  */
+// .fabrx-lines {
+//   padding-left: 0;
+//   list-style: none;
+//   li {
+//     padding: 10px 0;
+//     border-bottom-width: 1px;
+//     border-bottom-style: solid;
+//     border-color: $secondary-300;
+//   }
+// }
+// .has-vertical-line {
+//   position: relative;
+//   padding-right: 60px;
+//   &:after {
+//     content: '';
+//     width: 1px;
+//     position: absolute;
+//     top: -10px;
+//     bottom: -10px;
+//     right: 35px;
+//   }
+// }
+// /* 2. 32. Fabrx Emoji CSS  */
+// .fabrx-emoji {
+//   background-color: $white;
+//   @include border-radius(40px);
+//   box-shadow: 0 0 2px rgba($gray-light, 0.2);
+//   display: inline-block;
+//   a {
+//     padding: 8px;
+//     display: inline-block;
+//     transform: scale(1);
+//     &:hover {
+//       transform: scale(1.2);
+//     }
+//   }
+// }
+// /* 2. 33. Fabrx Range Slider CSS  */
+// .addui-slider {
+//   + .progress-title {
+//     padding-top: 8px;
+//     padding-bottom: 0;
+//   }
+//   .addui-slider-track {
+//     background-color: $secondary-light;
+//   }
+// }
+// .fabrx-volting a {
+//   background-color: $secondary-light;
+// }
+// .addui-slider {
+//   .addui-slider-track .addui-slider-handle {
+//     &:after {
+//       width: 16px;
+//       height: 16px;
+//       left: 0;
+//       top: 17px;
+//     }
+//     background-color: $transparent;
+//     width: 16px;
+//     height: 16px;
+//     &:hover,
+//     &.addui-slider-handle-active {
+//       box-shadow: none;
+//       background-color: $transparent;
+//     }
+//   }
+//   &.addui-slider-horizontal {
+//     width: auto;
+//     height: auto;
+//     .addui-slider-track {
+//       top: 0;
+//     }
+//   }
+//   .addui-slider-track .addui-slider-handle .addui-slider-value {
+//     display: none;
+//   }
+//   &.addui-slider-horizontal {
+//     margin: 0;
+//   }
+// }
+// /* 2. 34. Fabrx Spinners CSS  */
+// .spinner-border {
+//   width: 60px;
+//   height: 60px;
+//   color: $shade-400;
+//   border-width: 5px;
+// }
+// /* 34. 1. Fabrx Spinners Fill CSS  */
+// .spinner-fill {
+//   border-color: $primary-light-300;
+//   position: relative;
+//   border-width: 3px;
+//   &:before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     top: -3px;
+//     bottom: -3px;
+//     left: -3px;
+//     right: -3px;
+//     @include border-radius(50%);
+//     border-width: 3px;
+//     border-style: solid;
+//     border-top-color: $transparent;
+//     border-left-color: $transparent;
+//     border-bottom-color: $transparent;
+//   }
+// }
+// /* 34. 2. Fabrx Spinners Dotted CSS  */
+// .lds-default {
+//   display: inline-block;
+//   position: relative;
+//   width: 60px;
+//   height: 60px;
+//   div {
+//     position: absolute;
+//     width: 10px;
+//     height: 10px;
+//     @include border-radius(50%);
+//     animation: lds-default 1s linear infinite;
+//     &:nth-child(1) {
+//       animation-delay: 0.05s;
+//       top: 24px;
+//       left: 49px;
+//     }
+//     &:nth-child(2) {
+//       animation-delay: 0.14s;
+//       top: 42px;
+//       left: 42px;
+//     }
+//     &:nth-child(3) {
+//       animation-delay: 0.28s;
+//       top: 49px;
+//       left: 24px;
+//     }
+//     &:nth-child(4) {
+//       animation-delay: 0.43s;
+//       top: 42px;
+//       left: 7px;
+//     }
+//     &:nth-child(5) {
+//       animation-delay: 0.57s;
+//       top: 24px;
+//       left: 0px;
+//     }
+//     &:nth-child(6) {
+//       animation-delay: 0.72s;
+//       top: 7px;
+//       left: 7px;
+//     }
+//     &:nth-child(7) {
+//       animation-delay: 0.85s;
+//       top: 0px;
+//       left: 24px;
+//     }
+//     &:nth-child(8) {
+//       animation-delay: 1s;
+//       top: 7px;
+//       left: 42px;
+//     }
+//   }
+// }
+// @keyframes lds-default {
+//   0%,
+//   20%,
+//   80%,
+//   100% {
+//     background: $primary-light-300;
+//   }
+//   50% {
+//     background: $shade-400;
+//   }
+// }
+// /* 2. 35. Fabrx Table CSS  */
+// .table {
+//   td {
+//     font-size: 14px;
+//     vertical-align: middle;
+//     background-color: $white;
+//     border-top: none;
+//     border-bottom: 1px solid $secondary-300;
+//     transition: all ease 0.4s;
+//     padding: 0.75rem;
+//   }
+//   thead th {
+//     text-transform: uppercase;
+//     font-size: 12px;
+//     vertical-align: middle;
+//     border-top: none;
+//     border-bottom: 1px solid $secondary-300;
+//     font-weight: $font-weight-medium;
+//     color: $secondary;
+//   }
+// }
+// .table > :not(:last-child) > :last-child > * {
+//   border-bottom-color: inherit;
+// }
+// .table-striped tbody tr {
+//   &:nth-of-type(even) td {
+//     background-color: $secondary-100;
+//   }
+//   td {
+//     border: none;
+//   }
+// }
+// .table > :not(caption) > * > * {
+//   background-image: none;
+// }
+// /* 35. 1. Fabrx Table has No Border CSS  */
+// .table-has-noborder {
+//   thead th,
+//   td {
+//     border-bottom: 0;
+//   }
+// }
+// .fabrx-table-star {
+//   border: 1px solid $warning;
+//   display: inline-block;
+//   @include border-radius(4px);
+//   font-weight: $font-weight-medium;
+//   padding: 1px 8px;
+// }
+// /* 35. 2. Fabrx Table Large CSS  */
+// .table-lg {
+//   td,
+//   th {
+//     padding: 24px 15px;
+//   }
+// }
+// /* 2. 36. Fabrx Social CSS  */
+// .fabrx-social a + a {
+//   margin-left: 35px;
+// }
+// /* 2. 37. Fabrx Status CSS  */
+// .fabrx-status {
+//   position: relative;
+//   &:after {
+//     content: '';
+//     width: 10px;
+//     height: 10px;
+//     @include border-radius(50%);
+//     background: $secondary-300;
+//     border: 2px solid $white;
+//     display: inline-block;
+//   }
+//   &.offline:after {
+//     background: $secondary-300;
+//     border-color: $white;
+//   }
+//   &.xl:after {
+//     width: 16px;
+//     height: 16px;
+//   }
+//   &.lg:after {
+//     width: 14px;
+//     height: 14px;
+//   }
+//   &.md:after {
+//     width: 12px;
+//     height: 12px;
+//   }
+//   &.sm:after {
+//     width: 6px;
+//     height: 6px;
+//     border-width: 1px;
+//   }
+// }
+// .status-no-border:after {
+//   border: none;
+// }
+// /* 2. 38. Fabrx Horizontal Line CSS  */
+// hr {
+//   border-color: $secondary-300;
+// }
+// /* 2. 39. Fabrx Tooltip CSS  */
+// .fabrx-tooltip {
+//   text-align: center;
+//   .tooltip {
+//     &[x-placement='top'] .arrow,
+//     &[x-placement='bottom'] .arrow {
+//       left: 0;
+//       right: 0;
+//       margin: auto;
+//     }
+//     &[x-placement='left'] .arrow,
+//     &[x-placement='right'] .arrow {
+//       top: 0;
+//       bottom: 0;
+//       margin: auto;
+//     }
+//   }
+// }
+// /* 2. 40. Fabrx Volting CSS  */
+// .fabrx-volting a {
+//   padding: 6px 12px;
+//   @include border-radius(2px);
+//   + a {
+//     margin-left: 20px;
+//   }
+// }
+// /* 2. 41. Fabrx Star Ratings CSS  */
+// .fabrx-ratings:not(:checked) > input {
+//   display: none;
+// }
+// .rating:not(:checked) > label {
+//   float: right;
+//   cursor: pointer;
+//   width: 20px;
+//   height: 20px;
+//   margin-right: 8px;
+//   transition: all ease 0.4s;
+// }
+// .has-rating {
+//   &:not(:checked) > label {
+//     //background: url(../images/icons/star.svg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     &:hover {
+//       //background: url(../images/icons/star-fill.svg);
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       ~ label {
+//         //background: url(../images/icons/star-fill.svg);
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//       }
+//     }
+//   }
+//   > {
+//     input:checked {
+//       + label:hover,
+//       ~ label:hover {
+//         //background: url(../images/icons/star-fill.svg);
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         opacity: 0.8;
+//         ~ label {
+//           //background: url(../images/icons/star-fill.svg);
+//           background-repeat: no-repeat;
+//           background-size: cover;
+//           opacity: 0.8;
+//         }
+//       }
+//     }
+//     label:hover ~ input:checked ~ label {
+//       //background: url(../images/icons/star-fill.svg);
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       opacity: 0.8;
+//     }
+//     input:checked ~ label {
+//       //background: url(../images/icons/star-fill.svg);
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//     }
+//   }
+// }
+// .has-hearts {
+//   &:not(:checked) > label {
+//     //background: url(../images/icons/heart.svg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     &:hover {
+//       //background: url(../images/icons/heart-fill.svg);
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       ~ label {
+//         //background: url(../images/icons/heart-fill.svg);
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//       }
+//     }
+//   }
+//   > {
+//     input:checked {
+//       + label:hover,
+//       ~ label:hover {
+//         //background: url(../images/icons/heart-fill.svg);
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         opacity: 0.8;
+//         ~ label {
+//           //background: url(../images/icons/heart-fill.svg);
+//           background-repeat: no-repeat;
+//           background-size: cover;
+//           opacity: 0.8;
+//         }
+//       }
+//     }
+//     label:hover ~ input:checked ~ label {
+//       //background: url(../images/icons/heart-fill.svg);
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       opacity: 0.8;
+//     }
+//     input:checked ~ label {
+//       //background: url(../images/icons/heart-fill.svg);
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//     }
+//   }
+// }
+// .fabrx-ratings-white:not(:checked) > label {
+//   //background: url(../images/icons/star-fill-white.svg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+// /* 2. 42. Fabrx Like CSS  */
+// .fabrx-like {
+//   svg {
+//     transition: all ease 0.4s;
+//     * {
+//       transition: all ease 0.4s;
+//     }
+//   }
+//   i {
+//     transition: all ease 0.4s;
+//   }
+// }
+// .fabrx-header-links {
+//   a svg {
+//     transition: all ease 0.4s;
+//     * {
+//       transition: all ease 0.4s;
+//     }
+//   }
+//   .avatar-user {
+//     transition: all ease 0.4s;
+//   }
+// }
+// /* 2. 43. Fabrx Sections CSS  */
+// .fabrx-section {
+//   padding: 80px 0;
+// }
+// /* 2. 44. Fabrx Style Guide CSS  */
+// .color-shade .badge-absolute {
+//   top: 8px;
+//   font-weight: $font-weight-normal;
+//   left: 8px;
+// }
+// /* 2. 45. Fabrx Sticky CSS */
+// .fabrx-sticky {
+//   z-index: 9;
+//   width: 100% !important;
+// }
+// /* 3. Fabrx Element Pages CSS */
+// /* 3. 1. Fabrx Typography Page CSS  */
+// .fabrx-lftbdr-title {
+//   padding: 8px 0 8px 20px;
+//   border-left: 6px solid $green-light-border;
+// }
+// .fabrx-sub-title {
+//   padding: 10px 0 30px;
+//   border-bottom: 3px solid $secondary-light-300;
+//   margin-bottom: 30px;
+//   &.text-white {
+//     border-color: $dark-light-border;
+//   }
+// }
+// .fabrx-components + .fabrx-components {
+//   padding-top: 100px;
+// }
+// .component-item {
+//   + .component-item {
+//     padding-top: 50px;
+//   }
+//   h6.fabrx-lft-dash {
+//     margin-bottom: 20px;
+//     font-weight: $font-weight-normal;
+//   }
+//   &.sizes li {
+//     border-right: 1px solid $secondary-light-200;
+//     &:last-child {
+//       border-right: none;
+//     }
+//     small {
+//       color: $secondary-light-600;
+//     }
+//   }
+// }
+// .inline-component {
+//   display: flex;
+//   padding: 13px 0;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   li {
+//     padding: 15px 28px;
+//   }
+//   &.content-align li {
+//     display: flex;
+//     padding: 30px;
+//     flex-wrap: wrap;
+//     flex-direction: column;
+//     justify-content: center;
+//     -ms-flex-preferred-size: 0;
+//     flex-basis: 0;
+//     -webkit-box-flex: 1;
+//     -ms-flex-positive: 1;
+//     flex-grow: 1;
+//   }
+//   span {
+//     display: inline-block;
+//     vertical-align: top;
+//     width: 23px;
+//     height: 23px;
+//     margin-right: 5px;
+//   }
+// }
+// /* 3. 2. Fabrx Shapes Page CSS  */
+// .component-list {
+//   display: flex;
+//   margin: 0 -15px;
+//   flex-wrap: wrap;
+//   align-items: center;
+//   li {
+//     padding: 15px;
+//     > span {
+//       display: block;
+//       padding-top: 12px;
+//       color: $primary-dark-500;
+//     }
+//   }
+//   &.strength {
+//     margin: 0 -25px;
+//     li {
+//       padding: 0 25px 25px;
+//     }
+//   }
+//   &.less-space {
+//     margin: 0 -7.5px;
+//     li {
+//       padding: 5px 7.5px;
+//     }
+//   }
+//   &.more-space {
+//     margin: 0 -20px;
+//     li {
+//       padding: 40px 20px;
+//     }
+//   }
+//   &.more-space-two {
+//     margin: 0 -40px;
+//     li {
+//       padding: 40px;
+//     }
+//   }
+// }
+// .more-space-bottom li {
+//   padding-bottom: 50px;
+// }
+// /* 3. 3. Fabrx Colors Page CSS  */
+// .color-circle {
+//   display: inline-block;
+//   vertical-align: middle;
+//   width: 115px;
+//   height: 115px;
+// }
+// .color-shade {
+//   display: inline-block;
+//   vertical-align: middle;
+//   width: 55px;
+//   height: 55px;
+// }
+// .horizontal {
+//   width: 100%;
+//   height: 74px;
+// }
+// /* 3. 4. Fabrx Layout Settings Page CSS  */
+// .component-list.spacing span {
+//   padding: 0 0 10px;
+// }
+// .space-box {
+//   display: inline-block;
+//   vertical-align: middle;
+//   width: 96px;
+//   height: 96px;
+//   background: $danger-light-500;
+//   opacity: 0.4;
+//   &.eighty-eight {
+//     width: 88px;
+//     height: 88px;
+//   }
+//   &.eighty {
+//     width: 80px;
+//     height: 80px;
+//   }
+//   &.seventy-two {
+//     width: 72px;
+//     height: 72px;
+//   }
+//   &.sixty-four {
+//     width: 64px;
+//     height: 64px;
+//   }
+//   &.fifty-six {
+//     width: 56px;
+//     height: 56px;
+//   }
+//   &.fourthy-eight {
+//     width: 48px;
+//     height: 48px;
+//   }
+//   &.fourthy {
+//     width: 40px;
+//     height: 40px;
+//   }
+//   &.thirty-two {
+//     width: 32px;
+//     height: 32px;
+//   }
+//   &.twenty-four {
+//     width: 24px;
+//     height: 24px;
+//   }
+//   &.sixteen {
+//     width: 16px;
+//     height: 16px;
+//   }
+//   &.eight {
+//     width: 8px;
+//     height: 8px;
+//   }
+// }
+// /* 4. Fabrx Layouts Pages CSS */
+// /* 4. 1. Fabrx Aside CSS  */
+// .fabrx-aside {
+//   width: 251px;
+//   background-color: $white;
+// }
+// .has-aside {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100%;
+//   .fabrx-aside-footer {
+//     margin-top: auto;
+//     margin-bottom: 30px;
+//   }
+// }
+// .fabrx-aside-xl {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 280px;
+//   height: 100%;
+//   overflow-y: auto;
+//   transform: translateX(-100%);
+//   transition: all ease 0.5s;
+//   z-index: 3;
+// }
+// .aside-open .fabrx-aside {
+//   transform: translateX(0);
+// }
+// .fabrx-aside-header {
+//   background-color: $secondary-100;
+//   padding: 20px 32px;
+//   min-height: 80px;
+//   display: flex;
+//   align-items: center;
+// }
+// .fabrx-aside .fabrx-aside-body {
+//   height: calc(100vh - 152px);
+// }
+// .font-size-12 {
+//   font-size: 12px;
+// }
+// .fabrx-menu-category {
+//   padding: 25px 0 10px;
+//   > .menu-category-title {
+//     padding: 10px 32px;
+//     font-weight: $font-weight-medium;
+//     text-transform: uppercase;
+//     color: $secondary;
+//   }
+// }
+// .menu-category {
+//   > li > a {
+//     font-size: 14px;
+//     font-weight: $font-weight-medium;
+//     border-left: 5px solid $white;
+//     padding: 18px 27px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     > span + svg {
+//       margin-left: auto;
+//     }
+//   }
+//   li {
+//     a:hover,
+//     &.active > a {
+//       background-color: $shade-200;
+//     }
+//     a.mPS2id-clicked {
+//       background-color: $shade-200;
+//     }
+//   }
+//   .menu-category {
+//     > li {
+//       .menu-category {
+//         > li > a {
+//           padding: 10px 15px 10px 38px;
+//         }
+//       }
+//     }
+//   }
+// }
+// .fabrx-aside-two .menu-category > li {
+//   > a:hover,
+//   &.active > a {
+//     background-color: $shade-200;
+//   }
+// }
+// .menu-category li .badge-md {
+//   padding: 1px 13px;
+//   text-transform: uppercase;
+// }
+// .fabrx-aside-footer {
+//   padding: 24px 32px;
+// }
+// /* 4. 2. Fabrx Aside Two CSS  */
+// .fabrx-aside-two {
+//   .fabrx-aside-body {
+//     height: calc(100vh - 209px);
+//   }
+//   .menu-category > li > a {
+//     border-left: 0;
+//     border-right: 5px solid $white;
+//   }
+// }
+// /* 4. 3. Fabrx Aside Three CSS  */
+// .fabrx-aside-three {
+//   width: 325px;
+//   .fabrx-aside-header {
+//     padding: 40px 55px;
+//   }
+//   .fabrx-aside-body {
+//     height: calc(100vh - 104px);
+//   }
+//   .menu-category > li > a {
+//     font-weight: $font-weight-normal;
+//     padding: 18px 50px;
+//     > span + svg {
+//       margin-left: 10px;
+//     }
+//   }
+// }
+// /* 4. 4. Fabrx Aside Four CSS  */
+// .fabrx-aside-four {
+//   width: 620px;
+//   .fabrx-aside-body {
+//     height: calc(100vh - 174px);
+//   }
+//   .menu-category > li > a {
+//     padding: 4px 80px;
+//     font-size: 60px;
+//     font-weight: $font-weight-bold;
+//   }
+//   .fabrx-aside-footer {
+//     padding: 35px 80px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     list-style: none;
+//     a {
+//       font-size: 14px;
+//       color: $secondary;
+//     }
+//     li {
+//       font-size: 14px;
+//       color: $secondary;
+//       + li {
+//         margin-left: 40px;
+//       }
+//     }
+//   }
+//   .menu-category li {
+//     a:hover,
+//     &.active a {
+//       background-color: $transparent;
+//       border-color: $transparent;
+//     }
+//   }
+// }
+// .fabrx-aside-five {
+//   .menu-category li {
+//     a:hover,
+//     &.active a {
+//       background-color: $transparent;
+//       border-color: $transparent;
+//     }
+//   }
+//   width: 96px;
+// }
+// /* 4. 5. Fabrx Aside Five CSS  */
+// .fabrx-aside-six {
+//   width: 96px;
+// }
+// .fabrx-aside-five .fabrx-aside-header,
+// .fabrx-aside-six .fabrx-aside-header {
+//   background-color: $transparent;
+//   padding: 56px 24px;
+//   justify-content: center;
+// }
+// .fabrx-aside-five {
+//   .menu-category > li > a {
+//     border: none;
+//     justify-content: center;
+//     padding: 28px 27px;
+//     svg {
+//       fill: rgba($white, 0.64);
+//       * {
+//         fill: rgba($white, 0.64);
+//       }
+//     }
+//   }
+//   .fabrx-aside-footer a svg {
+//     fill: rgba($white, 0.64);
+//     * {
+//       fill: rgba($white, 0.64);
+//     }
+//   }
+// }
+// .fabrx-aside-six .fabrx-aside-footer a svg {
+//   fill: rgba($white, 0.64);
+//   * {
+//     fill: rgba($white, 0.64);
+//   }
+// }
+// .fabrx-aside-five {
+//   .menu-category > li > a:hover svg,
+//   .fabrx-aside-footer a:hover svg {
+//     fill: rgba($white, 1);
+//     * {
+//       fill: rgba($white, 1);
+//     }
+//   }
+// }
+// .fabrx-aside-six .fabrx-aside-footer a:hover svg {
+//   fill: rgba($white, 1);
+//   * {
+//     fill: rgba($white, 1);
+//   }
+// }
+// .fabrx-aside-five .fabrx-aside-footer,
+// .fabrx-aside-six .fabrx-aside-footer {
+//   text-align: center;
+// }
+// .fabrx-aside-five .fabrx-aside-body {
+//   height: calc(100vh - 232px);
+// }
+// .fabrx-aside-six {
+//   .fabrx-aside-body {
+//     height: calc(100vh - 232px);
+//   }
+//   .menu-category > li {
+//     padding: 24px 10px;
+//     > a {
+//       padding: 0;
+//       margin: auto;
+//       border: none;
+//       justify-content: center;
+//       &:hover {
+//         background-color: $transparent;
+//       }
+//     }
+//     &.active > a {
+//       background-color: $transparent;
+//     }
+//   }
+// }
+
+// /* 4. 7. Fabrx Header CSS  */
+// .fabrx-header {
+//   padding: 24px 0;
+// }
+// .fabrx-has-header {
+//   padding: 8px 0 24px;
+// }
+// .fabrx-noti-dot {
+//   position: relative;
+//   &:after {
+//     content: '';
+//     width: 6px;
+//     height: 6px;
+//     @include border-radius(50%);
+//     position: absolute;
+//     top: -5px;
+//     right: 0;
+//   }
+// }
+// .navbar-expand-lg .navbar-nav .nav-item {
+//   .nav-link {
+//     padding: 0 24px;
+//     font-size: 14px;
+//   }
+//   &:first-child .nav-link {
+//     padding-left: 0;
+//   }
+//   &:last-child .nav-link {
+//     padding-right: 0;
+//   }
+// }
+// .navbar {
+//   padding: 0;
+// }
+// .navbar-brand {
+//   padding-top: 0;
+//   padding-bottom: 0;
+// }
+// .navbar-toggler:focus {
+//   box-shadow: none;
+// }
+// /* 4. 7. 1. Fabrx Header Four CSS  */
+// .fabrx-carts {
+//   position: relative;
+//   .badge-absolute {
+//     top: -7px;
+//     right: -8px;
+//   }
+// }
+// .fabrx-header-links .avatar-user {
+//   font-size: 16px;
+//   padding-left: 10px;
+// }
+// /* 4. 8. Fabrx Footer CSS  */
+// .fabrx-footer {
+//   background-color: $white;
+//   border-top: 1px solid $secondary-300;
+//   font-size: 14px;
+// }
+// .fabrx-footer-menu {
+//   padding-left: 0;
+//   li {
+//     list-style: none;
+//     + li {
+//       margin-top: 10px;
+//     }
+//   }
+// }
+// .fabrx-footer-contnet p {
+//   line-height: 24px;
+//   padding-top: 25px;
+// }
+// /* 4. 9. Fabrx Hero CSS  */
+// .fabrx-hero {
+//   background-color: $brand-1;
+//   position: relative;
+//   z-index: 1;
+//   .direction-rtl {
+//     position: relative;
+//     z-index: -1;
+//   }
+// }
+// .hero-caption {
+//   max-width: 920px;
+//   margin: 0 auto;
+//   p {
+//     font-weight: $font-weight-normal;
+//     line-height: 30px;
+//   }
+// }
+// .fabrx-caption p {
+//   font-weight: $font-weight-normal;
+//   line-height: 30px;
+// }
+// .header-absolute {
+//   position: absolute;
+//   top: 0;
+//   z-index: 2;
+//   left: 0;
+//   right: 0;
+//   margin: 0 auto;
+// }
+// .fabrx-min-height {
+//   height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: wrap;
+//   align-items: flex-end;
+//   justify-content: center;
+// }
+// .fabrx-caption {
+//   width: 570px;
+//   float: right;
+// }
+// [class*='col-']:nth-child(2n) .fabrx-min-height {
+//   align-items: flex-start;
+//   height: 100%;
+// }
+// [class*='col-']:nth-child(2n) .fabrx-caption {
+//   float: left;
+//   text-align: right;
+// }
+// .card-columns .card img {
+//   width: 100%;
+// }
+// .fabrx-card-columns {
+//   -webkit-column-count: 2;
+//   -moz-column-count: 2;
+//   column-count: 2;
+// }
+// .fabrx-stack-box {
+//   position: relative;
+//   top: -75px;
+// }
+// /* 4. 10. Fabrx Features CSS  */
+// .left {
+//   left: 25px;
+//   right: auto;
+// }
+// .fabrx-item-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 0 -15px;
+//   li {
+//     width: 50%;
+//     font-size: 20px;
+//     padding: 15px;
+//     span {
+//       margin-left: 11px;
+//     }
+//   }
+// }
+// /* 4. 10. 1. Fabrx Item Boxes CSS  */
+// .item-boxes {
+//   background: $transparent;
+//   box-shadow: none;
+//   border-radius: unset;
+//   padding: 0;
+//   .nav-link {
+//     background-color: $white;
+//     @include border-radius(6px);
+//     box-shadow: 0 0 2px rgba($gray-light, 0.16);
+//     padding: 30px 100px 30px 35px;
+//     display: block;
+//     min-width: unset;
+//     text-align: left;
+//     &.active p {
+//       color: $white;
+//       font-weight: $font-weight-normal;
+//     }
+//     p {
+//       margin-bottom: 0;
+//       line-height: 24px;
+//     }
+//     strong {
+//       margin-bottom: 13px;
+//     }
+//   }
+//   li + li {
+//     margin-top: 25px;
+//   }
+// }
+// /* 4. 10. 2. Fabrx Owl Carousel Slider CSS  */
+// .swiper-slider-box {
+//   position: relative;
+//   .swiper-pagination {
+//     position: static;
+//     left: 0;
+//     right: 0;
+//     margin: 15px auto 0;
+//     .swiper-pagination-bullet {
+//       opacity: 1;
+//       background-color: $secondary-300;
+//       margin: 0 5px;
+//       cursor: pointer;
+//       &.swiper-pagination-bullet-active {
+//         background-color: $primary;
+//       }
+//     }
+//   }
+// }
+// .swiper-container {
+//   &.swiper-threecol,
+//   &.swiper-twohalf {
+//     overflow: visible;
+//   }
+//   .swiper-button-next,
+//   .swiper-button-prev {
+//     position: absolute;
+//     top: 50%;
+//     left: 8%;
+//     width: 54px;
+//     height: 54px;
+//     outline: none;
+//     transition: all 600ms cubic-bezier(0.645, 0.045, 0.095, 1.08);
+//     transform: translateY(-50%);
+//     z-index: 1;
+//     &:after {
+//       display: block;
+//       width: 54px;
+//       height: 54px;
+//       border-bottom-width: 5px;
+//       border-bottom-style: solid;
+//       border-left-width: 5px;
+//       border-left-style: solid;
+//       content: '';
+//       transform: rotate(45deg);
+//       z-index: 1;
+//       transition: all ease 0.4s;
+//     }
+//     &:hover:after {
+//       opacity: 0.8;
+//     }
+//   }
+//   .swiper-button-next {
+//     left: auto;
+//     right: 8%;
+//     &:after {
+//       transform: rotate(-135deg);
+//     }
+//   }
+// }
+// .current-no:after {
+//   content: '/';
+// }
+// .fabrx-middle-box {
+//   max-width: 640px;
+//   margin: auto;
+// }
+// .fabrx-cricle li + li {
+//   padding-top: 30px;
+// }
+// .carousel-gallery .owl-stage-outer {
+//   overflow: visible;
+// }
+// /* 4. 10. 3. Fabrx Owl Has Counter Slider CSS  */
+// .owl-has-counter {
+//   .swiper-button-next,
+//   .swiper-button-prev {
+//     bottom: 0;
+//     top: auto;
+//     left: 0;
+//     transform: none;
+//     width: 72px;
+//     height: 64px;
+//     background-color: $dark;
+//     &:before {
+//       content: '';
+//       width: 14px;
+//       height: 14px;
+//       margin-left: -9px;
+//       border-color: $secondary-300;
+//       border-bottom-width: 1px;
+//       border-bottom-style: solid;
+//       border-left-width: 1px;
+//       border-left-style: solid;
+//       transform: rotate(45deg);
+//     }
+//     &:after {
+//       content: '';
+//       background-color: $secondary-300;
+//       width: 24px;
+//       height: 1px;
+//       top: 50%;
+//       position: absolute;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//       border: none;
+//     }
+//   }
+//   .swiper-button-next {
+//     left: 72px;
+//     &:before {
+//       transform: rotate(-135deg);
+//       margin-left: 8px;
+//     }
+//   }
+//   .swiper-pagination-fraction {
+//     display: block;
+//     position: absolute;
+//     left: 144px;
+//     width: 112px;
+//     height: 64px;
+//     bottom: 0;
+//     color: $white;
+//     background-color: $dark;
+//     font-size: 20px;
+//     font-weight: $font-weight-100;
+//     line-height: 64px;
+//     border-left: 1px solid $secondary-600;
+//     .total-no {
+//       margin-left: 4px;
+//     }
+//     .current-no:after {
+//       margin-left: 3px;
+//     }
+//   }
+// }
+// /* 4. 10. 4. Fabrx Owl disable dots Slider CSS  */
+// .owl-disable-dots.owl-carousel .owl-dots {
+//   display: none;
+// }
+// /* 4. 11. Fabrx Masonry CSS  */
+// .fabrx-masonry {
+//   width: 100% !important;
+//   margin: 0 -15px;
+//   .masonry-item {
+//     padding: 15px;
+//     float: left;
+//     width: 33.33%;
+//     &.item-width-three {
+//       width: 66.667%;
+//     }
+//     &.item-width-full {
+//       width: 100%;
+//     }
+//     &.item-width-two {
+//       width: 50%;
+//     }
+//   }
+//   .card-img-overlay {
+//     opacity: 0;
+//     transition: all ease 0.4s;
+//   }
+//   .card {
+//     &:hover .card-img-overlay {
+//       opacity: 1;
+//     }
+//     -ms-flex-direction: unset;
+//     flex-direction: unset;
+//     img {
+//       width: 100%;
+//     }
+//   }
+//   .masonry-item {
+//     &.onethird {
+//       width: 61.35%;
+//     }
+//     &.oneforth {
+//       width: 38.65%;
+//     }
+//   }
+// }
+// .card-img-overlay .badge-light {
+//   transition: all ease 0.4s;
+//   &:hover {
+//     opacity: 0.8;
+//   }
+// }
+// /* 4. 12. Fabrx Testimonial CSS  */
+// .carousel-testimonial.owl-carousel .owl-dots {
+//   padding-top: 15px;
+// }
+// /* 4. 14. Fabrx Logo Center CSS  */
+// .fabrx-logo-center {
+//   position: relative;
+//   .navbar-brand {
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     margin-right: 0;
+//     text-align: center;
+//     z-index: 1;
+//     transform: translate(-50%, -50%);
+//   }
+//   .navbar-nav {
+//     max-width: 520px;
+//   }
+// }
+// /* 4. 15. Fabrx Accordion CSS  */
+// .faq-accordion .btn[aria-expanded='true'] svg {
+//   transform: rotate(90deg);
+// }
+// .simplebar-track {
+//   &.horizontal {
+//     overflow: hidden !important;
+//   }
+// }
+// /* 5. Fabrx Templates CSS */
+// .fabrx-templates .has-height {
+//   height: calc(100% - 80px);
+// }
+// /* 5. 1. Fabrx Tech CSS  */
+// .fabrx-tech .card-img-overlay {
+//   top: auto;
+//   left: auto;
+//   right: 40px;
+//   bottom: 30px;
+// }
+// /* 5. 2. Fabrx Commerce CSS  */
+// .fabrx-commerce {
+//   position: relative;
+//   z-index: 1;
+//   overflow: hidden;
+//   background: rgba($pink-light, 1);
+//   background: -moz-linear-gradient(-45deg, rgba($pink-light, 1) 0%, rgba($danger-light3, 1) 100%);
+//   background: -webkit-gradient(
+//     left top,
+//     right bottom,
+//     color-stop(0%, rgba($pink-light, 1)),
+//     color-stop(100%, rgba($danger-light3, 1))
+//   );
+//   background: -webkit-linear-gradient(-45deg, rgba($pink-light, 1) 0%, rgba($danger-light3, 1) 100%);
+//   background: -o-linear-gradient(-45deg, rgba($pink-light, 1) 0%, rgba($danger-light3, 1) 100%);
+//   background: -ms-linear-gradient(-45deg, rgba($pink-light, 1) 0%, rgba($danger-light3, 1) 100%);
+//   background: linear-gradient(135deg, rgba($pink-light, 1) 0%, rgba($danger-light3, 1) 100%);
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc5981', endColorstr='#ee656e', GradientType=1 );
+//   &:after {
+//     content: '';
+//     background-color: rgba($white, 0.12);
+//     width: 978px;
+//     height: 978px;
+//     @include border-radius(50%);
+//     position: absolute;
+//     bottom: -100px;
+//     z-index: -1;
+//     right: -200px;
+//   }
+//   .btn-outline-light {
+//     &:hover svg,
+//     &:focus svg {
+//       fill: $gray-900;
+//       * {
+//         fill: $gray-900;
+//       }
+//     }
+//   }
+// }
+// /* 5. 3. Fabrx Service CSS  */
+// .fabrx-service {
+//   background-color: $secondary-200;
+// }
+// .fabrx-power-by img {
+//   max-width: 44px;
+// }
+// .fabrx-service .form-control {
+//   background-color: $white;
+//   &::-webkit-input-placeholder,
+//   &::-moz-placeholder,
+//   &:-ms-input-placeholder,
+//   &::-ms-input-placeholder,
+//   &::placeholder {
+//     color: $dark;
+//   }
+// }
+// /* 5. 4. Fabrx Tool Full CSS  */
+// .fabrx-grid-icon {
+//   width: 64px;
+//   height: 64px;
+// }
+// /* 5. 5. Fabrx Quantity CSS  */
+// .quantity input {
+//   &[type='number'] {
+//     @include border-radius(0);
+//     background-color: $white;
+//     width: 50px;
+//     height: 48px;
+//     text-align: center;
+//     -moz-appearance: textfield;
+//   }
+//   &::-webkit-outer-spin-button,
+//   &::-webkit-inner-spin-button {
+//     -webkit-appearance: none;
+//     margin: 0;
+//   }
+// }
+// .quantity-arrow {
+//   background-color: $white;
+//   border: 1px solid $secondary-300;
+//   @include border-radius(3px 0 0 3px);
+//   width: 45px;
+//   height: 48px;
+//   line-height: 43px;
+//   text-align: center;
+//   border-right: 0;
+//   cursor: pointer;
+// }
+// .quantity-up.quantity-arrow {
+//   border: 1px solid $secondary-300;
+//   border-left: 0;
+//   @include border-radius(0 3px 3px 0);
+// }
+// /* 5. 6. Fabrx Package Delivery CSS  */
+// .delivery-steps li {
+//   .steps-common {
+//     position: relative;
+//     padding-left: 30px;
+//     &:before {
+//       content: '';
+//       width: 14px;
+//       height: 14px;
+//       @include border-radius(50%);
+//       background-color: $secondary-300;
+//       position: absolute;
+//       left: 0;
+//       top: 4px;
+//     }
+//     &:after {
+//       content: '';
+//       width: 2px;
+//       height: 100%;
+//       position: absolute;
+//       top: 35px;
+//       left: 6px;
+//     }
+//   }
+//   + li {
+//     padding-top: 30px;
+//   }
+//   &:last-child .steps-common:after {
+//     display: none;
+//   }
+//   .steps-common {
+//     &.away:before {
+//       background-color: $warning;
+//     }
+//     &.purple:before {
+//       background-color: $purple;
+//     }
+//   }
+// }
+// .biggy-price {
+//   border: 2px solid $white;
+//   @include border-radius(60px);
+//   padding-right: 45px;
+//   .badge.circle.xxl {
+//     width: 80px;
+//     height: 80px;
+//   }
+// }
+// /* 5. 7. Fabrx Product CSS  */
+// .fabrx-product {
+//   background-color: $brand-8;
+// }
+// /* 5. 8. Fabrx Background CSS  */
+// .fabrx-bg {
+//   // background-image: url(../images/placeholders/placeholder-62.jpg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+// }
+// .overlay-img {
+//   transition: all ease 0.4s;
+// }
+// .overlay-img.active {
+//   background-color: $dark-light;
+// }
+// .overlay-img.active img {
+//   opacity: 0.3;
+// }
+// /* 5. 9. Fabrx spaces CSS  */
+// .fabrx-space-md {
+//   padding: 100px 0;
+// }
+// .fabrx-space-lg {
+//   padding: 125px 0;
+// }
+// .fabrx-space-xl {
+//   padding: 150px 0;
+// }
+// /* 5. 10. Fabrx Lesser CSS  */
+// .fabrx-lesser {
+//   background-color: $secondary-100;
+//   .fabrx-masonry {
+//     .badge {
+//       padding: 9px 30px;
+//     }
+//     .badge-absolute {
+//       top: 15px;
+//       right: 15px;
+//     }
+//   }
+// }
+// /* 5. 11. Fabrx Dashboard CSS  */
+// .fabrx-dashboard {
+//   .menu-category > li {
+//     > a {
+//       border-color: $dark-100;
+//       color: $white;
+//       &:hover {
+//         background-color: $dark-light;
+//       }
+//     }
+//     &.active > a {
+//       background-color: $dark-light;
+//     }
+//   }
+//   .dropdown-menu {
+//     background-color: $dark-light;
+//   }
+//   .menu-category > li {
+//     > a:hover svg,
+//     &.active > a svg {
+//       fill: $white;
+//       * {
+//         fill: $white;
+//       }
+//     }
+//   }
+//   .fabrx-aside-footer a,
+//   .dropdown-menu a {
+//     color: $white;
+//   }
+//   .border-bottom {
+//     border-color: $dark !important;
+//   }
+//   .dropdown-menu a:hover {
+//     background-color: $dark-700;
+//   }
+// }
+// /* 5. 12. Fabrx Tool CSS  */
+// .fabrx-tool {
+//   background: rgba($blue-dark-700, 1);
+//   background: -moz-linear-gradient(top, rgba($blue-dark-700, 1) 0%, rgba($brand-2, 1) 100%);
+//   background: -webkit-gradient(
+//     left top,
+//     left bottom,
+//     color-stop(0%, rgba($blue-dark-700, 1)),
+//     color-stop(100%, rgba($brand-2, 1))
+//   );
+//   background: -webkit-linear-gradient(top, rgba($blue-dark-700, 1) 0%, rgba($brand-2, 1) 100%);
+//   background: -o-linear-gradient(top, rgba($blue-dark-700, 1) 0%, rgba($brand-2, 1) 100%);
+//   background: -ms-linear-gradient(top, rgba($blue-dark-700, 1) 0%, rgba($brand-2, 1) 100%);
+//   background: linear-gradient(to bottom, rgba($blue-dark-700, 1) 0%, rgba($brand-2, 1) 100%);
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#082054', endColorstr='#203956', GradientType=0 );
+//   .fabrx-header-links {
+//     background-color: $blue-dark-800;
+//   }
+// }
+// /* 5. 13. Fabrx Has Btn Manage CSS */
+// .has-btn-manage {
+//   position: absolute;
+//   bottom: 70px;
+//   right: 100px;
+//   z-index: 1;
+// }
+// .has-btn-center {
+//   bottom: 80px;
+//   left: 0;
+//   right: 0;
+// }
+// /* 6. Fabrx Tables Light CSS  */
+// .fabrx-table-header .fabrx-header-links a.btn svg {
+//   fill: $white;
+//   * {
+//     fill: $white;
+//   }
+// }
+// .fabrx-tables-light table {
+//   thead th {
+//     background-color: $secondary-100;
+//     padding: 25px 13px;
+//   }
+//   tbody {
+//     tr {
+//       &.active td,
+//       &:hover td {
+//         background-color: $shade-200;
+//       }
+//     }
+//   }
+// }
+// /* 7. Fabrx Library CSS */
+// .fabrx-library {
+//   text-align: center;
+//   max-width: 585px;
+//   margin: 0 auto;
+// }
+// .fabrx-library-content .card-img-overlay.card-overlay-show {
+//   opacity: 0;
+//   transition: all ease 0.4s;
+// }
+// .fabrx-library-content .card:hover .card-img-overlay.card-overlay-show {
+//   opacity: 1;
+// }
+// .manage-page,
+// .has-sidebar-body {
+//   overflow: hidden;
+// }
+// /* 8. Fabrx Back to Top */
+// .fabrx-back-top {
+//   position: fixed;
+//   bottom: 10px;
+//   left: 10px;
+//   z-index: 8;
+//   line-height: 42px;
+// }
+// .badge-primary.js-tooltip {
+//   margin-left: 15px;
+// }
+// .copy-clipboard {
+//   position: relative;
+//   z-index: 1;
+// }
+
+// /* Fabrx Responsive CSS */
+// @media screen and (max-width: 1600px) {
+//   /* 5. Fabrx Templates CSS */
+//   .fabrx-templates .fabrx-caption div.mt-4 {
+//     max-width: 380px;
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   /* 5. Fabrx Templates CSS */
+//   .col-xxl {
+//     flex: 0 0 420px;
+//     max-width: 420px;
+//   }
+//   .container {
+//     max-width: 1140px;
+//   }
+// }
+
+// @media screen and (max-width: 1439px) {
+//   /* Fabrx Package Delivery, Blue Dark */
+//   .fabrx-package-delivery .fabrx-caption {
+//     width: 90%;
+//   }
+// }
+
+// @media screen and (min-width: 1280px) {
+//   /* Fabrx Normal CSS */
+//   .container {
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+//   .line-height-74 {
+//     line-height: 74px;
+//   }
+//   /* Fabrx Smart Layouts Page CSS */
+//   .smart-layouts .row {
+//     margin: 0 -30px;
+
+//     > * {
+//       padding: 0 30px;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 1279px) {
+//   /* Fabrx Normal CSS */
+//   /* Fabrx Social CSS */
+//   .fabrx-social a + a {
+//     margin-left: 25px;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   /* Fabrx Normal CSS */
+//   .custom-container {
+//     max-width: 1200px;
+//   }
+// }
+
+// @media screen and (max-width: 1199px) {
+//   /* Fabrx Normal CSS */
+//   /* Fabrx Shapes Page CSS */
+//   .component-list.more-space-two {
+//     margin: 0 -15px;
+
+//     li {
+//       padding: 15px;
+//     }
+//   }
+//   /* Fabrx Item Boxes CSS */
+//   .item-boxes .nav-link {
+//     padding: 20px 50px 20px 20px;
+
+//     strong {
+//       margin-bottom: 8px;
+//     }
+//   }
+//   /* Fabrx Hero CSS */
+//   .fabrx-caption {
+//     width: 465px;
+//   }
+//   /* Fabrx Masonry CSS */
+//   .fabrx-masonry .masonry-item {
+//     &.onethird {
+//       width: 61%;
+//     }
+
+//     &.oneforth {
+//       width: 39%;
+//     }
+//   }
+//   /* Fabrx Footer CSS */
+//   .fabrx-footer-contnet p br {
+//     display: none;
+//   }
+//   .fabrx-section {
+//     [class*='col-'] .fabrx-aside {
+//       width: 100%;
+//     }
+//     [class*='col-'] .fabrx-aside.fabrx-aside-five,
+//     [class*='col-'] .fabrx-aside.fabrx-aside-six,
+//     .aside-open [class*='col-'] .fabrx-aside.fabrx-aside-five {
+//       width: 96px;
+//     }
+//     .aside-open [class*='col-'] .fabrx-aside {
+//       width: 280px;
+//       height: 100%;
+//     }
+//     .aside-open [class*='col-'] .fabrx-aside.fabrx-aside-five {
+//       width: 280px;
+//       height: 100%;
+//     }
+//     [class*='col-'] {
+//       .fabrx-aside-lg,
+//       .fabrx-aside-md,
+//       .fabrx-aside-sm {
+//         width: 280px;
+//         height: 100%;
+//       }
+//     }
+//   }
+//   /* 4. Fabrx Layouts Pages CSS */
+//   /* 4. 1. Fabrx Aside CSS  */
+//   .fabrx-aside-lg {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 280px;
+//     height: 100%;
+//     overflow-y: auto;
+//     transform: translateX(-100%);
+//     transition: all ease 0.5s;
+//     z-index: 3;
+//   }
+//   .aside-open .fabrx-aside {
+//     transform: translateX(0);
+//   }
+//   .fabrx-templates .fabrx-caption > h2 {
+//     font-size: 48px;
+//   }
+//   /* 5. Fabrx Templates CSS */
+//   .fabrx-tech.fabrx-templates .fabrx-caption {
+//     width: 90%;
+//   }
+//   .fabrx-docs-content {
+//     margin-left: 0;
+//     width: calc(100% - 0px);
+//   }
+//   .aside-toggle {
+//     &:hover {
+//       svg,
+//       svg * {
+//         fill: $primary;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 991px) {
+//   /* Fabrx Normal CSS */
+//   .mw-auto {
+//     max-width: 100%;
+//   }
+//   .swiper-container {
+//     &.owl-has-counter {
+//       .swiper-button-next,
+//       .swiper-button-prev {
+//         width: 72px;
+//         height: 64px;
+//         transform: translateY(0%);
+//         &:after {
+//           width: 24px;
+//           height: 1px;
+//           border-bottom-width: 5px;
+//           border-left-width: 5px;
+//         }
+//       }
+//     }
+//     .swiper-button-next,
+//     .swiper-button-prev {
+//       width: 30px;
+//       height: 30px;
+//       transform: translateY(0%);
+//       &:after {
+//         width: 30px;
+//         height: 30px;
+//         border-bottom-width: 3px;
+//         border-left-width: 3px;
+//       }
+//     }
+//   }
+
+//   /* Fabrx Datepicker CSS */
+//   .flatpickr-days,
+//   .flatpickr-innerContainer {
+//     overflow: visible;
+//   }
+//   /* Fabrx Comments CSS */
+//   .comment-item ol {
+//     padding: 35px 0 0 35px;
+//   }
+//   /* Fabrx Header CSS */
+//   .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+//     padding: 13px 0;
+//   }
+//   .mobile-color a svg {
+//     fill: $dark;
+
+//     * {
+//       fill: $dark;
+//     }
+//   }
+//   .white-icon.mobile-color .fabrx-header-links a:hover svg {
+//     opacity: 1;
+//     fill: $primary;
+
+//     * {
+//       opacity: 1;
+//       fill: $primary;
+//     }
+//   }
+//   .fabrx-tech .mobile-color .fabrx-header-links .avatar-user {
+//     color: $dark;
+//   }
+//   /* Fabrx Footer CSS */
+//   .fabrx-footer {
+//     .navbar-nav {
+//       flex-direction: row;
+//     }
+//     .navbar-expand-lg .navbar-nav .nav-item {
+//       .nav-link {
+//         padding: 0 24px;
+//       }
+
+//       &:last-child .nav-link {
+//         padding-right: 0;
+//       }
+
+//       &:first-child .nav-link {
+//         padding-left: 0;
+//       }
+//     }
+//   }
+//   /* Fabrx Hero CSS */
+//   .fabrx-caption {
+//     width: 690px;
+//     float: none;
+//     margin: auto;
+//   }
+//   .fabrx-min-height {
+//     height: auto;
+//     justify-content: flex-start;
+//   }
+//   [class*='col-']:nth-child(2n) .fabrx-caption {
+//     float: none;
+//     text-align: center;
+//     justify-content: center;
+//   }
+//   .align-items-center.vh-100 {
+//     height: 100% !important;
+//   }
+//   .fabrx-stack-box {
+//     padding: 40px 0 30px;
+//     top: 0;
+//   }
+//   /* Fabrx Masonry CSS */
+//   .fabrx-masonry .masonry-item {
+//     padding: 8px;
+//   }
+//   .marign-manage {
+//     margin-left: 0 !important;
+//   }
+//   /* Fabrx Item Boxes CSS */
+//   .item-boxes {
+//     flex-direction: row !important;
+//     margin: 0 -8px;
+
+//     li {
+//       width: calc(33.33% - 16px);
+//       margin: 8px;
+
+//       + li {
+//         margin-top: 8px;
+//       }
+//     }
+//     .nav-link {
+//       padding: 20px;
+//     }
+//   }
+//   /* Fabrx Aside Four CSS */
+//   .fabrx-aside-four {
+//     .fabrx-aside-footer {
+//       padding: 35px 45px;
+//     }
+//     .menu-category > li > a {
+//       padding: 4px 45px;
+//     }
+//     .fabrx-aside-footer li + li {
+//       margin-left: 25px;
+//     }
+//   }
+//   /* Fabrx Logo Center CSS */
+//   .fabrx-logo-center .navbar-brand {
+//     left: 0;
+//     top: 0;
+//     transform: none;
+//   }
+//   /* Fabrx Commerce CSS */
+//   .fabrx-commerce:after {
+//     width: 800px;
+//     height: 800px;
+//     right: -160px;
+//   }
+//   /* 4. Fabrx Layouts Pages CSS */
+//   /* 4. 1. Fabrx Aside CSS  */
+//   .fabrx-aside-md {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 280px;
+//     height: 100%;
+//     overflow-y: auto;
+//     transform: translateX(-100%);
+//     transition: all ease 0.5s;
+//     z-index: 3;
+//   }
+//   .aside-open .fabrx-aside {
+//     transform: translateX(0);
+//   }
+//   /* 5. 14. Fabrx Templates CSS */
+//   .fabrx-templates .fabrx-min-height.vh-100,
+//   .fabrx-product.fabrx-templates.vh-100,
+//   .fabrx-food.fabrx-templates.vh-100,
+//   .fabrx-service.fabrx-templates.vh-100,
+//   .fabrx-commerce.fabrx-templates.vh-100 {
+//     height: 100% !important;
+//   }
+//   .fabrx-catalog.fabrx-templates.vh-100 {
+//     height: 100% !important;
+
+//     .item div.vh-100 {
+//       height: 100% !important;
+//     }
+//   }
+//   .fabrx-templates.vh-100 img {
+//     height: auto !important;
+//   }
+//   .fabrx-aside-four {
+//     width: 100%;
+//   }
+// }
+
+// @media screen and (max-width: 767px) {
+//   /* Fabrx Normal CSS */
+//   .fabrx-section {
+//     padding: 50px 0;
+//   }
+//   .slider .tooltip.bs-tooltip-top {
+//     display: none;
+//   }
+//   .fabrx-components + .fabrx-components,
+//   .component-item + .component-item {
+//     padding-top: 35px;
+//   }
+//   h1,
+//   .h1 {
+//     font-size: 48px;
+//   }
+//   h2,
+//   .h2 {
+//     font-size: 36px;
+//   }
+//   h3,
+//   .h3 {
+//     font-size: 30px;
+//   }
+//   h4,
+//   .h4 {
+//     font-size: 24px;
+//   }
+//   h5,
+//   .h5 {
+//     font-size: 20px;
+//   }
+//   h6,
+//   .h6 {
+//     font-size: 18px;
+//   }
+//   big,
+//   .big {
+//     font-size: 16px;
+//   }
+//   .font-size-100 {
+//     font-size: 62px;
+//   }
+//   .font-size-140 {
+//     font-size: 95px;
+//     line-height: 95px;
+//   }
+//   .btn-group-lg > .btn,
+//   .btn-lg {
+//     min-width: 120px;
+//   }
+//   /* Fabrx Cards CSS */
+//   .card-xl {
+//     .card-body,
+//     .card-img-overlay {
+//       padding: 30px;
+//     }
+//   }
+//   .card.border-left {
+//     border-left: none !important;
+//   }
+//   /* Fabrx Testimonials CSS */
+//   .testimonial-author.stack {
+//     margin-top: 0;
+//     padding-top: 15px;
+//   }
+//   /* Fabrx lines CSS */
+//   .has-vertical-line {
+//     &:after {
+//       display: none;
+//     }
+
+//     padding-right: 0;
+//   }
+//   /* Fabrx Table has No Border CSS */
+//   .fabrx-table td {
+//     white-space: nowrap;
+//   }
+//   .table {
+//     thead th,
+//     tbody td {
+//       white-space: nowrap;
+//     }
+//   }
+//   /* Fabrx Datepicker CSS */
+//   .rangeMode {
+//     .flatpickr-weekdaycontainer + .flatpickr-weekdaycontainer {
+//       display: none;
+//     }
+//     .flatpickr-days {
+//       display: block;
+//     }
+//   }
+//   .flatpickr-days .dayContainer {
+//     min-width: 100%;
+//     max-width: 100%;
+//   }
+//   .rangeMode .dayContainer + .dayContainer {
+//     -webkit-box-shadow: 0 -1px 0 $secondary-light-300;
+//     box-shadow: 0 -1px 0 $secondary-light-300;
+//   }
+//   /* Fabrx Nav Tabs CSS */
+//   .fabrx-justified .nav-item {
+//     -ms-flex-preferred-size: unset;
+//     flex-basis: unset;
+//     -ms-flex-positive: unset;
+//     flex-grow: unset;
+//   }
+//   /* Fabrx Shapes Page CSS */
+//   .component-list.more-space li {
+//     padding: 15px;
+//   }
+//   /* Fabrx Media CSS */
+//   .media .media-body {
+//     overflow: visible;
+//   }
+//   /* Fabrx Footer CSS */
+//   .fabrx-footer .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+//     padding: 8px 15px;
+//   }
+//   /* Fabrx Hero CSS */
+//   .fabrx-caption {
+//     width: 510px;
+//   }
+//   .hero-caption p br {
+//     display: none;
+//   }
+//   .fabrx-caption {
+//     p br,
+//     h2 br {
+//       display: none;
+//     }
+//   }
+//   /* Fabrx Features CSS */
+//   .fabrx-item-list li {
+//     width: 100%;
+//     padding: 10px 15px;
+//   }
+//   /* Fabrx Item Boxes CSS */
+//   .item-boxes {
+//     .nav-link {
+//       padding: 10px;
+//     }
+
+//     margin: 0;
+
+//     li {
+//       width: 100%;
+//       margin: 0;
+
+//       + li {
+//         margin-top: 13px;
+//       }
+//     }
+//   }
+//   /* Fabrx Masonry CSS */
+//   .fabrx-masonry {
+//     .card-img-overlay {
+//       padding: 15px;
+//     }
+//     .masonry-item {
+//       width: 50%;
+
+//       &.item-width-three {
+//         width: 100%;
+//       }
+//     }
+//     .badge.circle {
+//       &.xxl {
+//         width: 36px;
+//         height: 36px;
+//       }
+//       svg {
+//         width: 16px;
+//         height: 16px;
+//       }
+//     }
+//     margin: 0 -8px;
+
+//     .masonry-item {
+//       &.onethird,
+//       &.oneforth {
+//         width: 100%;
+//       }
+//     }
+//   }
+//   /* Fabrx Tables Light CSS */
+//   .fabrx-tables-light header {
+//     padding-top: 0;
+
+//     .h3 {
+//       font-size: 24px;
+//     }
+//   }
+//   .fabrx-aside-three {
+//     width: 100%;
+//   }
+//   /* 4. Fabrx Layouts Pages CSS */
+//   /* 4. 1. Fabrx Aside CSS  */
+//   .fabrx-aside-sm {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 280px;
+//     height: 100%;
+//     overflow-y: auto;
+//     transform: translateX(-100%);
+//     transition: all ease 0.5s;
+//     z-index: 3;
+//   }
+//   [class*='col-'] .fabrx-aside.fabrx-aside-four .menu-category > li > a {
+//     font-size: 32px;
+//   }
+//   .aside-open .fabrx-aside,
+//   .aside-main-open .row.has-height > .fabrx-aside {
+//     transform: translateX(0);
+//   }
+//   body.has-sidebar-body {
+//     overflow: hidden;
+//   }
+//   /* 5. 14. Fabrx Templates CSS */
+//   .fabrx-templates.vh-100 {
+//     height: 100% !important;
+//   }
+//   .fabrx-commerce::after {
+//     width: 265px;
+//     height: 265px;
+//     right: -220px;
+//   }
+//   /* 5. Fabrx Templates CSS */
+//   .fabrx-templates .fabrx-caption div.mt-4 {
+//     margin-bottom: 30px;
+//   }
+//   .fabrx-grid-icon {
+//     width: 50px;
+//     height: 50px;
+//   }
+//   .owl-has-counter {
+//     .swiper-pagination-fraction {
+//       width: 100px;
+//       height: 50px;
+//       line-height: 50px;
+//     }
+
+//     .swiper-button-next,
+//     .swiper-button-prev {
+//       width: 72px;
+//       height: 50px;
+//     }
+//   }
+//   /* 29. 11. Fabrx Light Tabs CSS */
+//   .fabrx-light-tabs {
+//     flex-direction: column;
+
+//     &.nav-tabs .nav-link {
+//       text-align: left;
+//       padding: 15px 25px;
+//     }
+//   }
+//   .copy-clipboard {
+//     clear: both;
+//     padding-top: 10px;
+//   }
+//   .swiper-container {
+//     &.owl-has-counter {
+//       .swiper-button-next,
+//       .swiper-button-prev {
+//         width: 72px;
+//         height: 50px;
+//         transform: translateY(0%);
+//         &:after {
+//           width: 24px;
+//           height: 1px;
+//           border-bottom-width: 5px;
+//           border-left-width: 5px;
+//         }
+//       }
+//     }
+//   }
+//   .component-list.more-space-two {
+//     margin: 0;
+//   }
+//   .fabrx-sticky {
+//     position: sticky !important;
+//   }
+// }
+
+// @media screen and (max-width: 575px) {
+//   /* Fabrx Normal CSS */
+//   .fabrx-form {
+//     .form-group {
+//       a {
+//         font-size: 14px;
+//       }
+//       .form-check {
+//         .form-check-label {
+//           font-size: 14px;
+//         }
+//       }
+//     }
+//   }
+//   /* Fabrx Shapes Page CSS */
+//   .component-list {
+//     margin: 0 -10px;
+
+//     li {
+//       padding: 8px 10px;
+//     }
+
+//     &.less-space li {
+//       padding: 8px;
+//     }
+
+//     &.more-space {
+//       margin: 0 -15px;
+//     }
+//   }
+//   /* Fabrx Progress Bar CSS */
+//   .progress-item {
+//     padding-bottom: 15px;
+//   }
+//   /* Fabrx Cards CSS */
+//   .card-gradient-height {
+//     min-height: 200px;
+//   }
+//   /* Fabrx Hero CSS */
+//   .fabrx-caption {
+//     width: calc(100% - 30px);
+//   }
+//   .biggy-price .badge.circle.xxl {
+//     width: 75px;
+//     height: 75px;
+//   }
+//   /* 5. 13. Fabrx Has Btn Manage CSS */
+//   .has-btn-center {
+//     bottom: 40px;
+//   }
+//   .has-btn-manage {
+//     bottom: 60px;
+//     right: 60px;
+//   }
+// }
+
+// @media screen and (max-width: 479px) {
+//   /* Fabrx Normal CSS */
+//   /* Fabrx Button CSS */
+//   .btn {
+//     min-width: 11px;
+//   }
+//   /* Fabrx Alert CSS */
+//   .fabrx-alert {
+//     flex-wrap: wrap;
+//     padding: 15px;
+//     display: block;
+//   }
+//   .alert-actions {
+//     margin-top: 5px;
+//     margin-left: 0;
+//     white-space: normal;
+//     text-align: right;
+//   }
+//   .fabrx-alert-stack .alert-actions {
+//     border-top: 1px solid $secondary-300;
+//     border-left: none;
+//     width: 100%;
+//   }
+//   .list-group {
+//     flex-direction: unset;
+//     -ms-flex-direction: unset;
+//   }
+//   .fabrx-alert-stack .list-group-item {
+//     border-right: 1px solid $secondary-300;
+//     border-bottom: none;
+//     @include border-radius(0);
+//     width: 50%;
+
+//     &:last-child {
+//       border-right: none;
+//     }
+//   }
+//   .fabrx-alert {
+//     &.fabrx-alert-stack {
+//       padding: 15px 0 0;
+
+//       .fabrx-icon {
+//         margin-left: 15px;
+//       }
+//     }
+//     img + .alert-captions,
+//     svg + .alert-captions,
+//     i + .alert-captions,
+//     div + .alert-captions {
+//       padding-left: 0;
+//     }
+//   }
+//   .alert-captions {
+//     padding: 5px 0;
+//   }
+//   .fabrx-alert.fabrx-alert-stack .alert-captions {
+//     padding-left: 15px;
+//   }
+//   /* Fabrx Cards CSS */
+//   .card-xl {
+//     .card-body,
+//     .card-img-overlay {
+//       padding: 23px;
+//     }
+//   }
+//   .card-body,
+//   .card-img-overlay {
+//     padding: 15px;
+//   }
+//   .card {
+//     .btn-xl {
+//       min-width: 180px;
+//       min-height: 50px;
+//       padding: 10px 20px;
+//       font-size: 18px;
+//     }
+//     .h6 {
+//       font-size: 17px;
+//       margin-bottom: 18px;
+//     }
+//   }
+//   .card-body p {
+//     font-size: 15px;
+//   }
+//   /* Fabrx Media CSS */
+//   .media {
+//     padding: 20px;
+
+//     .fabrx-avatar {
+//       margin-bottom: 10px;
+//     }
+//   }
+//   .fabrx-media-links li + li {
+//     padding-left: 20px;
+//   }
+//   /* Fabrx Shapes Page CSS */
+//   .component-list.more-space li {
+//     padding: 13px;
+//   }
+//   /* Fabrx Uploader CSS */
+//   .fileuploader-input {
+//     padding: 30px 15px;
+
+//     .fileuploader-input-caption {
+//       font-size: 20px;
+//     }
+//   }
+//   /* Fabrx Nav Tabs CSS */
+//   .nav-tabs .nav-link {
+//     min-width: 10px;
+//   }
+//   .nav-tabs-md .nav-link {
+//     padding: 8px 12px;
+//   }
+//   /* Fabrx Default Pagination CSS */
+//   .fabrx-pagination {
+//     display: block;
+
+//     .pagination {
+//       margin: 15px 0;
+
+//       + .primary-page-item {
+//         margin-top: 15px;
+//       }
+//     }
+//   }
+//   .btn-group.btn-group-lg .btn,
+//   .btn-group-vertical.btn-group-lg .btn {
+//     min-width: 10px;
+//   }
+//   /* Fabrx Masonry CSS */
+//   .fabrx-masonry .masonry-item {
+//     width: 100%;
+
+//     &.item-width-two {
+//       width: 100%;
+//     }
+//   }
+//   /* Fabrx Aside Four CSS */
+//   .fabrx-aside-four {
+//     .fabrx-aside-footer {
+//       padding: 35px 20px;
+//     }
+//     .menu-category > li > a {
+//       padding: 4px 20px;
+//     }
+//     .fabrx-aside-footer li {
+//       + li {
+//         margin: 6px 15px;
+//       }
+//       &:last-child {
+//         margin-left: 0;
+//       }
+//     }
+//     .menu-category > li > a {
+//       font-size: 40px;
+//     }
+//   }
+//   /* Fabrx Header CSS */
+//   .fabrx-header-links .avatar-user {
+//     font-size: 0;
+//     padding-left: 0;
+//     margin-right: 0 !important;
+//   }
+//   /* 5. 13. Fabrx Has Btn Manage CSS */
+//   .has-btn-center {
+//     bottom: 25px;
+//   }
+//   .has-btn-manage {
+//     bottom: 25px;
+//     right: 25px;
+//   }
+// }
+
+// @media screen and (max-height: 800px) {
+//   .fabrx-tool .px-4.position-relative {
+//     max-width: 700px;
+//     margin: 0 auto;
+//   }
+// }
+
+// @media screen and (max-height: 767px) {
+//   .has-btn-center {
+//     bottom: 40px;
+//   }
+// }
+
+// @media screen and (max-height: 540px) {
+//   .fabrx-tool .px-4.position-relative {
+//     max-width: 380px;
+//     margin: 0 auto;
+//   }
+// }
+
+// @media screen and (max-height: 479px) {
+//   .fabrx-tool .px-4.position-relative {
+//     max-width: 280px;
+//     margin: 0 auto;
+//   }
+// }
