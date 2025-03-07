@@ -32,7 +32,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "public/themes/custom-theme.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
