@@ -1,164 +1,21 @@
-// Custom color variables
-$primary: #007aff !default; // Blue
-$secondary: #f56d25 !default; // Orange
-// $primary: #3f51b5; // Indigo
-// $secondary: #ff4081; // Pink
+@use 'styles/style';
 
-@import 'styles/custom/material';
-@import 'styles/custom/bootstrap';
+/* You can add global styles to this file, and also import other style files */
 
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
-  background-color: whitesmoke;
-  background: var(--mat-sys-surface);
-}
+// buttons, forms (input fields, text areas, checkboxes, radio buttons), dropdown menus, modals, cards, navigation bars, tabs, accordions, progress bars, tooltips, alerts, paginations, tables, lists, icons, spinners, and image carousels
+/*
+https://preline.co/pro/examples.html
+https://preline.co/pro/examples/header-dashboard-layouts.html
+https://preline.co/pro/examples/grid-layout-cards.html
+https://preline.co/pro/examples/drawers-offcanvas.html
+https://preline.co/pro/examples/sidebar-search.html
 
-.page-loader {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #f3f3f3;
-  z-index: 999999999;
-  align-items: center;
-  justify-content: center;
+https://block.codescandy.com/index.html
+https://block.codescandy.com/landing-sass-v1.html#
 
-  &:not(.page-loader--inner) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+https://folio.webestica.com/index-saas.html
 
-  .page-loader__spinner {
-    position: relative;
-    width: 50px;
-    height: 50px;
+https://onsen.io/v2/api/css.html
 
-    svg {
-      animation: rotate 2s linear infinite;
-      transform-origin: center center;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      &:not(:root) {
-        overflow: hidden;
-      }
-
-      circle {
-        stroke-dasharray: 1, 200;
-        stroke-dashoffset: 0;
-        animation:
-          dash 1.5s ease-in-out infinite,
-          color 6s ease-in-out infinite;
-        stroke-linecap: round;
-      }
-    }
-  }
-}
-
-body {
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
-  // Helps fonts on OSX looks more consistent with other systems
-  // Isn't currently in button styles due to performance concerns
-  * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  .mat-sidenav {
-    min-width: 15vw;
-
-    .mat-button {
-      width: 100%;
-      position: relative;
-      bottom: 0;
-      margin: 24px 0;
-    }
-  }
-
-  .demo-content {
-    padding: 32px;
-    box-sizing: border-box;
-  }
-
-  .mat-toolbar {
-    .mat-icon {
-      cursor: pointer;
-    }
-
-    .demo-toolbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-    }
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-}
-
-// stretch to screen size in fullscreen mode
-.demo-content {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.main-section {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  min-height: 100vh;
-  padding-top: 56px;
-}
-
-.main-aside {
-  display: table-cell;
-  width: 320px;
-  height: 100%;
-  background: #474ca0;
-  color: white;
-
-  .nav-link {
-    position: relative;
-    color: rgba(white, 0.5);
-    border-left: 5px solid transparent;
-
-    &:hover,
-    &:focus {
-      color: rgba(white, 0.75);
-    }
-
-    &.active {
-      color: white;
-      background: rgba(black, 0.1);
-      border-color: #ec405a;
-
-      &::after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        content: '';
-        border-right: 8px solid;
-        border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;
-      }
-    }
-  }
-}
-
-.main-container {
-  padding: 16px;
-}
+https://flowbite.com/docs/getting-started/introduction/
+*/

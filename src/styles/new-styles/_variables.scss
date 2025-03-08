@@ -1,6 +1,10 @@
 @use 'config' as *;
 @use 'colors' as *;
 
+// Colors
+$primary: #007aff !default; // Blue
+$secondary: #f56d25 !default; // Orange
+
 // Body
 $body-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 $body-font-size: 14px !default;

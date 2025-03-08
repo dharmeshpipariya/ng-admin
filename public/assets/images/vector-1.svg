@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="729" height="474.001" viewBox="0 0 729 474.001">
+  <g id="Vector_Browser_02" data-name="Vector/Browser 02" transform="translate(0 0)">
+    <circle id="Oval" cx="70" cy="70" r="70" transform="translate(36 186)" fill="#fff"/>
+    <rect id="Rectangle" width="391" height="81" transform="translate(264 99)" fill="#fff"/>
+    <path id="Shape" d="M393,82H0V0H393V82ZM1.637,1.64V80.36H391.362V1.64Z" transform="translate(292 83)" fill="#085ed0"/>
+    <circle id="Oval-2" data-name="Oval" cx="6" cy="6" r="6" transform="translate(11 10)" fill="#59a0ff"/>
+    <circle id="Oval-3" data-name="Oval" cx="6" cy="6" r="6" transform="translate(33 10)" fill="#59a0ff"/>
+    <circle id="Oval-4" data-name="Oval" cx="6" cy="6" r="6" transform="translate(54 10)" fill="#59a0ff"/>
+    <path id="Shape-2" data-name="Shape" d="M729,474H0V0H729V474ZM1.64,1.638V472.361H727.36V1.638Z" fill="#085ed0"/>
+    <rect id="Rectangle-2" data-name="Rectangle" width="727" height="2" transform="translate(1 26)" fill="#085ed0"/>
+    <path id="Shape-3" data-name="Shape" d="M7,14a7,7,0,1,1,7-7A7.008,7.008,0,0,1,7,14ZM7,1.616A5.385,5.385,0,1,0,12.385,7,5.391,5.391,0,0,0,7,1.616Z" transform="translate(12 6)" fill="#085ed0"/>
+    <path id="Shape-4" data-name="Shape" d="M7,14a7,7,0,1,1,7-7A7.008,7.008,0,0,1,7,14ZM7.269,1.616A5.261,5.261,0,0,0,2.154,7a5.261,5.261,0,0,0,5.116,5.385A5.261,5.261,0,0,0,12.385,7,5.271,5.271,0,0,0,7.269,1.616Z" transform="translate(32 6)" fill="#085ed0"/>
+    <path id="Shape-5" data-name="Shape" d="M7,14a7,7,0,1,1,7-7A7.008,7.008,0,0,1,7,14ZM7,1.616A5.384,5.384,0,1,0,12.385,7,5.369,5.369,0,0,0,7,1.616Z" transform="translate(53 6)" fill="#085ed0"/>
+    <rect id="Rectangle-3" data-name="Rectangle" width="2" height="447" transform="translate(228 27)" fill="#085ed0"/>
+    <rect id="Rectangle-4" data-name="Rectangle" width="126" height="18" transform="translate(312 246)" fill="#fff"/>
+    <rect id="Rectangle-5" data-name="Rectangle" width="126" height="18" transform="translate(511 246)" fill="#fff"/>
+    <path id="Shape-6" data-name="Shape" d="M129,19H0V0H129V19ZM1.64,1.677V17.323H127.36V1.677Z" transform="translate(317 237)" fill="#085ed0"/>
+    <rect id="Rectangle-6" data-name="Rectangle" width="126" height="18" transform="translate(312 380)" fill="#fff"/>
+    <path id="Shape-7" data-name="Shape" d="M129,19H0V0H129V19ZM1.64,1.677V17.323H127.36V1.677Z" transform="translate(317 371)" fill="#085ed0"/>
+    <rect id="Rectangle-7" data-name="Rectangle" width="327" height="18" transform="translate(312 312)" fill="#fff"/>
+    <path id="Shape-8" data-name="Shape" d="M329,19H0V0H329V19ZM1.64,1.677V17.323H327.361V1.677Z" transform="translate(318 304)" fill="#085ed0"/>
+    <path id="Shape-9" data-name="Shape" d="M129,19H0V0H129V19ZM1.64,1.677V17.323H127.36V1.677Z" transform="translate(517 237)" fill="#085ed0"/>
+    <path id="Shape-10" data-name="Shape" d="M71,142A71.019,71.019,0,0,1,43.364,5.58,71.006,71.006,0,0,1,98.623,136.4,70.638,70.638,0,0,1,71,142ZM71,2.184A68.815,68.815,0,1,0,139.815,71,68.894,68.894,0,0,0,71,2.184Z" transform="translate(46 166)" fill="#085ed0"/>
+  </g>
+</svg>

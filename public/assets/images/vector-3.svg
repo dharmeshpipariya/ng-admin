@@ -1,0 +1,24 @@
+<svg id="Vector_Browser" data-name="Vector/Browser" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="426" viewBox="0 0 600 426">
+  <defs>
+    <clipPath>
+      <rect id="Frame" width="600" height="426" rx="10" fill="none" stroke="#085ed0" stroke-miterlimit="10" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1" data-name="Group 1">
+    <g id="Frame-2" data-name="Frame" fill="none" stroke="#085ed0" stroke-miterlimit="10" stroke-width="2">
+      <rect width="600" height="426" rx="10" stroke="none"/>
+      <rect x="1" y="1" width="598" height="424" rx="9" fill="none"/>
+    </g>
+    <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+      <rect id="Separator" width="600" height="2" transform="translate(0 65)" fill="#085ed0"/>
+      <g id="Header" transform="translate(32 16)">
+        <path id="Oval_Copy" data-name="Oval Copy" d="M13,26A13,13,0,0,1,3.808,3.808,13,13,0,1,1,22.192,22.192,12.915,12.915,0,0,1,13,26ZM13,2A11,11,0,1,0,24,13,11.012,11.012,0,0,0,13,2Z" transform="translate(517 4)" fill="#085ed0"/>
+        <path id="Dots" d="M48,7a7,7,0,1,1,7,7A7.008,7.008,0,0,1,48,7Zm2.334,0A4.667,4.667,0,1,0,55,2.334,4.672,4.672,0,0,0,50.333,7ZM24,7a7,7,0,1,1,7,7A7.008,7.008,0,0,1,24,7Zm2.334,0A4.666,4.666,0,1,0,31,2.334,4.672,4.672,0,0,0,26.334,7ZM0,7a7,7,0,1,1,7,7A7.008,7.008,0,0,1,0,7ZM2.334,7A4.667,4.667,0,1,0,7,2.334,4.672,4.672,0,0,0,2.334,7Z" transform="translate(0 10)" fill="#085ed0"/>
+        <g id="Bar" transform="translate(123)" fill="none" stroke="#085ed0" stroke-miterlimit="10" stroke-width="2">
+          <rect width="291" height="34" rx="17" stroke="none"/>
+          <rect x="1" y="1" width="289" height="32" rx="16" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

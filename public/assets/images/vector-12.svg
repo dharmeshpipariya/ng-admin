@@ -1,0 +1,11 @@
+<svg id="Vector_Plant_03" data-name="Vector/Plant 03" xmlns="http://www.w3.org/2000/svg" width="101" height="240" viewBox="0 0 101 240">
+  <rect id="Vector_Plant_03_Light_background" data-name="Vector/Plant 03/Light background" width="101" height="240" fill="none"/>
+  <path id="Path" d="M6.907,215c-.2-.316-4.8-7.933-6.39-23.751-1.463-14.512-.522-38.972,12.27-73.092C37.021,53.519,7.2,1.366,6.9.846L8.368,0c.077.132,7.772,13.429,12.317,34.6a149.77,149.77,0,0,1-6.3,84.143c-24.193,64.528-6.207,95.075-6.023,95.376Z" transform="translate(43 25)" fill="#085ed0"/>
+  <circle id="Oval" cx="11" cy="11" r="11" transform="translate(30)" fill="#97c3ff"/>
+  <circle id="Oval-2" data-name="Oval" cx="11" cy="11" r="11" transform="translate(68 40)" fill="#59a0ff"/>
+  <circle id="Oval-3" data-name="Oval" cx="11" cy="11" r="11" transform="translate(35 72)" fill="#fff"/>
+  <circle id="Oval-4" data-name="Oval" cx="11" cy="11" r="11" transform="translate(79 94)" fill="#fff"/>
+  <circle id="Oval-5" data-name="Oval" cx="11" cy="11" r="11" transform="translate(30 125)" fill="#59a0ff"/>
+  <path id="Path-2" data-name="Path" d="M1.778,47S-9.333,20.143,24,0Z" transform="translate(55 193)" fill="#59a0ff"/>
+  <path id="Path-3" data-name="Path" d="M44,28S38.966-.24,0,0Z" transform="translate(0 211)" fill="#97c3ff"/>
+</svg>
