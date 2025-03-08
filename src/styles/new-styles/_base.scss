@@ -1,0 +1,31 @@
+@use 'config' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--#{$prefix}body-font-family);
+  font-size: var(--#{$prefix}body-font-size);
+  font-weight: var(--#{$prefix}body-font-weight);
+  line-height: var(--#{$prefix}body-line-height);
+  color: var(--#{$prefix}body-color);
+  text-align: var(--#{$prefix}body-text-align);
+  background-color: var(--#{$prefix}body-bg);
+  -webkit-text-size-adjust: 100%;
+}
+
+// hr {
+//   margin: $hr-margin-y 0;
+//   color: $hr-color; // 1
+//   border: 0;
+//   border-top: $hr-border-width solid $hr-border-color;
+//   opacity: $hr-opacity;
+// }

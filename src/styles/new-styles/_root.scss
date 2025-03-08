@@ -1,0 +1,55 @@
+@use 'config' as *;
+@use 'variables' as *;
+
+:root {
+  // Colors
+  --#{$prefix}primary-color: #3a6ea5;
+  --#{$prefix}light-gray: #f8f9fa;
+  --#{$prefix}dark-gray: #333;
+
+  // Body
+  --#{$prefix}body-font-family: #{$body-font-family};
+  --#{$prefix}body-font-size: #{$body-font-size};
+  --#{$prefix}body-font-weight: #{$body-font-weight};
+  --#{$prefix}body-line-height: #{$body-line-height};
+
+  @if $body-text-align != null {
+    --#{$prefix}body-text-align: #{$body-text-align};
+  }
+
+  --#{$prefix}body-color: #{$body-color};
+  // --#{$prefix}body-color-rgb: #{to-rgb($body-color)};
+  --#{$prefix}body-bg: #{$body-bg};
+  // --#{$prefix}body-bg-rgb: #{to-rgb($body-bg)};
+
+  // Header
+  --#{$prefix}header-color: #333;
+  --#{$prefix}header-bg: #ffffff;
+  --#{$prefix}header-border: 1px solid #e5e7eb;
+  --#{$prefix}header-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+
+  // Aside
+  --#{$prefix}aside-color: #333;
+  --#{$prefix}aside-bg: #ffffff;
+  --#{$prefix}aside-border: 1px solid #e5e7eb;
+  --#{$prefix}aside-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+
+  // Main
+  --main-bg: #ffffff;
+  --main-color: #333;
+  --main-margin: 20px;
+  --main-padding: 20px;
+  --main-border: 1px solid #e5e7eb;
+
+  // Components
+  // Button
+  --button-bg: var(--primary-color);
+  --button-color: #ffffff;
+  --button-border: none;
+  --button-padding: 10px 20px;
+  --button-border-radius: var(--border-radius);
+  --button-hover-bg: #2e5aac;
+  --button-hover-color: #ffffff;
+  --button-hover-border: none;
+  --button-hover-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}

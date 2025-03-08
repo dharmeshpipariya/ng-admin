@@ -1,0 +1,18 @@
+@use 'config' as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: var(--#{$prefix}header-color);
+  border-bottom: var(--#{$prefix}header-border);
+  background: var(--#{$prefix}header-bg);
+  box-shadow: var(--#{$prefix}header-box-shadow);
+}
+
+.aside {
+  color: var(--#{$prefix}aside-color);
+  border-right: var(--#{$prefix}aside-border);
+  background: var(--#{$prefix}aside-bg);
+  box-shadow: var(--#{$prefix}aside-box-shadow);
+}

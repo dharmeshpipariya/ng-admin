@@ -1,0 +1,11 @@
+@use 'config' as *;
+@use 'colors' as *;
+
+// Body
+$body-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$body-font-size: 14px !default;
+$body-font-weight: 400 !default;
+$body-line-height: 1.42857143 !default;
+$body-text-align: null !default;
+$body-color: $gray-900 !default;
+$body-bg: $white !default;
